@@ -1,17 +1,17 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
-        
+
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        
+
         <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
         <title>GAInTheHouse</title>
-        
+
         <!-- Bootstrap Core CSS -->
         <link href="css/bootstrap.min.css" rel="stylesheet">
-        
+
         <!-- Custom CSS: This stylesheet is to override any Bootstrap styles and apply own styles -->
         <link href="css/custom.css" rel="stylesheet">
 
@@ -23,7 +23,7 @@
         <!-- Custom Fonts from Google -->
         <link href="https://fonts.googleapis.com/css?family=Charmonman" rel="stylesheet">
         <link href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
-        
+
         <!-- Title & Fav Icons -->
         <link rel="apple-touch-icon" sizes="57x57" href="/fav/apple-icon-57x57.png">
         <link rel="apple-touch-icon" sizes="60x60" href="/fav/apple-icon-60x60.png">
@@ -42,7 +42,7 @@
         <meta name="msapplication-TileColor" content="#ffffff">
         <meta name="msapplication-TileImage" content="/fav/ms-icon-144x144.png">
         <meta name="theme-color" content="#ffffff">
-    
+
     </head>
 
     <body>
@@ -59,7 +59,7 @@
                         <span class="icon-bar"></span>
                     </button>
                     <a class="navbar-brand" href="#">
-                	   <span class="glyphicon glyphicon-fire"></span> 
+                	   <span class="glyphicon glyphicon-fire"></span>
                 	   #GAInTheHouse
                     </a>
                 </div>
@@ -73,16 +73,16 @@
                             <a href="#innovations">Innovations</a>
                         </li>
 					    <li>
-						    <a href="#passion">My Passion</a>		
+						    <a href="#passion">My Passion</a>
 					    </li>
                         <li>
-						    <a href="#story">My Story</a>		
+						    <a href="#story">My Story</a>
 					    </li>
                         <li>
                             <a href="#socials">Socials</a>
                         </li>
                     </ul>
-                
+
               </div><!-- /.navbar-collapse -->
          </div><!-- /.container -->
     </nav>
@@ -91,11 +91,11 @@
        <header>
         <div class="header-content" id="head">
             <div class="header-content-inner">
-                <img src="images/1.jpg" class="gautam-image">
+                <img src="images/1.png" class="gautam-image">
                 <br><br><br><br><br><br>
                 <h1 style="float:left;">&nbsp;&nbsp;Hi! I am Gautam</h1>
                 <br><br><br><br><br><br><br>
-                
+
             </div>
         </div>
     </header>
@@ -104,87 +104,439 @@
        <section class="content innovations" id="innovations">
         <div class="container">
             <div class="row">
+
                 <div class="col-sm-6">
-                    <img class="img-responsive img-circle center-block" src="images/microphone.jpg" alt="">
+                	<h2 class="section-header">Projects</h2>
+
                 </div>
-                <div class="col-sm-6">
-                	<h2 class="section-header">Ideas That Go Unmatched</h2>
-                	<p class="lead text-muted">"The true sign of intelligence in not knowledge but imagination"
-                        <span style="font-style: italic"> - Sir Albert Einstein</span></p>
-                	<button id="myBtn" class="btn btn-primary btn-lg">Classify It</button>
-                    
-                    <!-- The Modal -->
-                    <div id="myModalidea" class="modal-idea">
-                        <!-- Modal content For Idea -->
-                        <div class="modal-content-idea">
-                            <div class="modal-header-idea">
-                                <span class="close-idea">&times;</span>
-                                <h2>Robo"Mop"</h2>
-                            </div>
-                            <div class="modal-body-idea">
-                                <ul> 
-                                    <li>An advanced automated cleaning robot that uses arduino language.</li>
-                                    <li>Incorporates obstacles, avoids them and serves end-to-end clening services.</li>
-                                    <li>Second-to-second actions monitorable by online dynamic dashboard.</li>
-                                </ul>
-                            </div>
-                            <div class="modal-footer-idea">
-                                <h3><a href="dashboard.html">Click here</a> to view the dashboard</h3>
-                            </div>
-                        </div>
-                    </div>
-                    <script>
-                        // Get the modal
-                        var modal = document.getElementById('myModalidea');
-                        // Get the button that opens the modal
-                        var btn = document.getElementById("myBtn");
-                        // Get the <span> element that closes the modal
-                        var span = document.getElementsByClassName("close-idea")[0];
-                        // When the user clicks the button, open the modal 
-                        btn.onclick = function() 
-                        {
-                            modal.style.display = "block";
-                        }
-                        // When the user clicks on <span> (x), close the modal
-                        span.onclick = function() 
-                        {
-                            modal.style.display = "none";
-                        }
-                        // When the user clicks anywhere outside of the modal, close it
-                        window.onclick = function(event) 
-                        {
-                            if (event.target == modal) 
-                            {
-                                modal.style.display = "none";
-                            }
-                        }
-                    </script>
-                </div>                
             </div>
         </div>
     </section>
-    
+
+    <div class="container-fluid">
+                <div class="row promo">
+                   <a onclick="openModal();currentSlide(1)" class="cursor">
+                    <div class="col-md-4 promo-item item-2">
+                            <h1 class="cursor">ProjectX</h1>
+    				</div>
+                   </a>
+                   <a onclick="openModal();currentSlide(2)" class="cursor">
+                        <div class="col-md-4 promo-item item-1">
+                            <h1>Blind Man's Bluff</h1>
+                        </div>
+                    </a>
+                    <a onclick="openModal();currentSlide(3)" class="cursor">
+    				    <div class="col-md-4 promo-item item-3">
+                             <h1>COVID Bot</h1>
+                        </div>
+                    </a>
+                </div>
+        </div>
+        <div id="myModallightbox" class="modal-lightbox">
+                <span class="close-lightbox cursor" onclick="closeModallightbox()">&times;</span>
+                <div class="modal-content-lightbox">
+                    <div class="mySlides" style="background: url(images/concert.jpg) no-repeat; background-size: auto;">
+                        <div class="numbertext" >1/3</div>
+                        <br>
+                        <h1 style="font-family:'Charmonman',cursive;text-align: center" class="music-icon">
+                            <span class="glyphicon glyphicon-music" style="font-size:6px;"></span>
+                            <span class="glyphicon glyphicon-music" style="font-size:12px;"></span>
+                            <span class="glyphicon glyphicon-music" style="font-size:18px;"></span>
+                            <span class="glyphicon glyphicon-music" style="font-size:24px;"></span>
+                            <span class="glyphicon glyphicon-music" style="font-size:30px;"></span>
+                        </h1>
+                        <p style="font-size: 18px; color:white;">&nbsp;&nbsp;&nbsp;&nbsp;
+                            Music breathes life within you. It encourages you, motivates you and pours energy into you.<br>
+                        </p>
+                        <ul style="font-size: 18px; color: white;">
+                            <li>I host a youtube channel, "GA InTheHouse" to showcase my talent in music.</li>
+                        </ul>
+                        <h1 style="font-family:'Charmonman',cursive; font-size: 30px; color: white;">
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;My Favourite Pieces
+                        </h1>
+                        <div class="gallery">
+                            <video controls>
+                                <source src="videos/sway.mp4" type="video/mp4">
+                                    Your browser does not support the video tag.
+                            </video>
+                            <div class="desc">Sway</div>
+                        </div>
+                        <div class="gallery">
+                            <video controls>
+                                <source src="videos/jamaican.mp4" type="video/mp4">
+                                    Your browser does not support the video tag.
+                            </video>
+                            <div class="desc">Jamaican Farewell</div>
+                        </div>
+                        <div class="gallery">
+                            <video controls>
+                                <source src="videos/imagine.mp4" type="video/mp4">
+                                    Your browser does not support the video tag.
+                            </video>
+                            <div class="desc">Imagine</div>
+                        </div>
+                        <br><br><br><br><br><br><br><br><br><br><br><br><br>
+                        <p style="color: white">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                            View some more videos on
+                            <a href="https://www.youtube.com/channel/UCxS1_cz53xz7WYj1E4BYRvg?view_as=subscriber">
+                                <img src="images/youtube.png">
+                            </a>
+                        </p>
+                        <br>
+                    </div>
+                    <div class="mySlides item-1" style="background: url(images/writing.jpg) no-repeat; background-size:auto">
+                        <div class="numbertext">2/3</div>
+                        <h1 style="font-family:'Charmonman',cursive;text-align: center;" class="writing-icon">
+                            <span class="glyphicon glyphicon-book" style="font-size:12px;"></span>
+                            <span class="glyphicon glyphicon-pencil" style="font-size:12px;"></span>
+                            <span class="glyphicon glyphicon-pencil" style="font-size:18px;"></span>
+                            <span class="glyphicon glyphicon-pencil" style="font-size:24px;"></span>
+                            <span class="glyphicon glyphicon-pencil" style="font-size:36px;"></span>
+                        </h1>
+                        <br>
+                        <br>
+                        <h1 style="font-family:'Charmonman',cursive; font-size: 30px; color: skyblue;">
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;My Favourite Artworks
+                        </h1>
+                        <div class="gallery">
+                            <img src="images/art1.jpg">
+                            <div class="desc" style="color: black"><b>Name Doodle</b></div>
+                        </div>
+                        <div class="gallery">
+                            <img src="images/art2.jpg">
+                            <div class="desc" style="color: black"><b>Playing with lines</b></div>
+                        </div>
+                        <div class="gallery">
+                            <img src="images/art3.jpg">
+                            <div class="desc"style="color: black"><b>Abstract Art</b></div>
+                        </div>
+                        <br><br><br><br><br> <br><br><br><br><br> <br><br><br><br><br> <br><br>
+                    </div>
+                    <div class="mySlides" style="background: url(images/AI.jpg) no-repeat; background-size:auto">
+                        <div class="numbertext">3/3</div>
+                        <br><br>
+                        <h1 style="text-align: center; color: aliceblue;">
+                            <img src="images/computer.png">
+                            <br>
+                            Computer Vision
+                        </h1>
+                        <br>
+                        <br>
+                        <h1 style="font-family:'Charmonman',cursive; font-size: 30px; color: skyblue;">
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;My Favourite Models
+                        </h1>
+                        <div class="gallery">
+                            <img src="images/cv1.jpg">
+                            <div class="desc">Cone Detection</div>
+                        </div>
+                        <div class="gallery">
+                            <img src="">
+                            <div class="desc">Stand Out Work</div>
+                        </div>
+                        <div class="gallery">
+                            <img src="">
+                            <div class="desc">Stand Out Work</div>
+                        </div>
+    <br><br><br><br><br><br><br><br><br><br><br><br><br>
+                        <p style="color: white">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                            View some more models on
+                            <a href="https://github.com/GAInTheHouse"><img src="images/github.png"></a>
+                        </p>
+                        <br>
+                    </div>
+                    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+                    <div class="caption-container">
+                        <p id="caption"></p>
+                    </div>
+                    <div class="column-lightbox">
+                        <img class="demo cursor" src="images/concert.jpg" style="max-width:100%; max-height: 100%;" onclick="currentSlide(1)" alt="Music">
+                    </div>
+                    <div class="column-lightbox">
+                        <img class="demo cursor" src="images/writing.jpg" style="width:100%" onclick="currentSlide(2)" alt="Writing">
+                    </div>
+                    <div class="column-lightbox">
+                        <img class="demo cursor" src="images/AI.jpg" style="max-width:100%; max-height:100%" onclick="currentSlide(3)" alt="Artificial Intelligence">
+                    </div>
+                </div>
+            </div>
+        <script>
+            function openModal()
+            {
+                document.getElementById('myModallightbox').style.display = "block";
+            }
+
+            function closeModallightbox()
+            {
+                document.getElementById('myModallightbox').style.display = "none";
+            }
+
+            var slideIndex = 1;
+            showSlides(slideIndex);
+
+            function plusSlides(n)
+            {
+                showSlides(slideIndex += n);
+            }
+
+            function currentSlide(n)
+            {
+                showSlides(slideIndex = n);
+            }
+
+            function showSlides(n)
+            {
+                var i;
+                var slides = document.getElementsByClassName("mySlides");
+                var dots = document.getElementsByClassName("demo");
+                var captionText = document.getElementById("caption");
+                if (n > slides.length) {slideIndex = 1}
+                if (n < 1) {slideIndex = slides.length}
+                for (i = 0; i < slides.length; i++)
+                {
+                    slides[i].style.display = "none";
+                }
+                for (i = 0; i < dots.length; i++)
+                {
+                    dots[i].className = dots[i].className.replace(" active", "");
+                }
+                slides[slideIndex-1].style.display = "block";
+                dots[slideIndex-1].className += " active";
+                captionText.innerHTML = dots[slideIndex-1].alt;
+            }
+        </script>
+
+        <!-- Organizations -->
+         <section class="content content-2" id="passion">
+           <div class="container">
+               <div class="row">
+                   <div class="col-sm-6">
+                     <h2 class="section-header">Organizations</h2>
+
+                   </div>
+
+               </div>
+           </div>
+        </section>
+
+        <div class="container-fluid">
+               <div class="row promo">
+                  <a onclick="openModal();currentSlide(1)" class="cursor">
+                   <div class="col-md-4 promo-item item-2">
+                           <h1 class="cursor">
+                             DotData
+                             <br>
+                             Data Science @ UW
+                           </h1>
+
+           </div>
+                  </a>
+                  <a onclick="openModal();currentSlide(2)" class="cursor">
+                       <div class="col-md-4 promo-item item-1">
+                           <h1>Badger Cricket Club</h1>
+                       </div>
+                   </a>
+                   <a onclick="openModal();currentSlide(3)" class="cursor">
+               <div class="col-md-4 promo-item item-3">
+                            <h1>Revolutionize</h1>
+                       </div>
+                   </a>
+               </div>
+           </div><!-- /.container-fluid -->
+           <div id="myModallightbox" class="modal-lightbox">
+               <span class="close-lightbox cursor" onclick="closeModallightbox()">&times;</span>
+               <div class="modal-content-lightbox">
+                   <div class="mySlides" style="background: url(images/concert.jpg) no-repeat; background-size: auto;">
+                       <div class="numbertext" >1/3</div>
+                       <br>
+                       <h1 style="font-family:'Charmonman',cursive;text-align: center" class="music-icon">
+                           <span class="glyphicon glyphicon-music" style="font-size:6px;"></span>
+                           <span class="glyphicon glyphicon-music" style="font-size:12px;"></span>
+                           <span class="glyphicon glyphicon-music" style="font-size:18px;"></span>
+                           <span class="glyphicon glyphicon-music" style="font-size:24px;"></span>
+                           <span class="glyphicon glyphicon-music" style="font-size:30px;"></span>
+                       </h1>
+                       <p style="font-size: 18px; color:white;">&nbsp;&nbsp;&nbsp;&nbsp;
+                           Music breathes life within you. It encourages you, motivates you and pours energy into you.<br>
+                       </p>
+                       <ul style="font-size: 18px; color: white;">
+                           <li>I host a youtube channel, "GA InTheHouse" to showcase my talent in music.</li>
+                       </ul>
+                       <h1 style="font-family:'Charmonman',cursive; font-size: 30px; color: white;">
+                           &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;My Favourite Pieces
+                       </h1>
+                       <div class="gallery">
+                           <video controls>
+                               <source src="videos/sway.mp4" type="video/mp4">
+                                   Your browser does not support the video tag.
+                           </video>
+                           <div class="desc">Sway</div>
+                       </div>
+                       <div class="gallery">
+                           <video controls>
+                               <source src="videos/jamaican.mp4" type="video/mp4">
+                                   Your browser does not support the video tag.
+                           </video>
+                           <div class="desc">Jamaican Farewell</div>
+                       </div>
+                       <div class="gallery">
+                           <video controls>
+                               <source src="videos/imagine.mp4" type="video/mp4">
+                                   Your browser does not support the video tag.
+                           </video>
+                           <div class="desc">Imagine</div>
+                       </div>
+                       <br><br><br><br><br><br><br><br><br><br><br><br><br>
+                       <p style="color: white">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                           View some more videos on
+                           <a href="https://www.youtube.com/channel/UCxS1_cz53xz7WYj1E4BYRvg?view_as=subscriber">
+                               <img src="images/youtube.png">
+                           </a>
+                       </p>
+                       <br>
+                   </div>
+                   <div class="mySlides item-1" style="background: url(images/writing.jpg) no-repeat; background-size:auto">
+                       <div class="numbertext">2/3</div>
+                       <h1 style="font-family:'Charmonman',cursive;text-align: center;" class="writing-icon">
+                           <span class="glyphicon glyphicon-book" style="font-size:12px;"></span>
+                           <span class="glyphicon glyphicon-pencil" style="font-size:12px;"></span>
+                           <span class="glyphicon glyphicon-pencil" style="font-size:18px;"></span>
+                           <span class="glyphicon glyphicon-pencil" style="font-size:24px;"></span>
+                           <span class="glyphicon glyphicon-pencil" style="font-size:36px;"></span>
+                       </h1>
+                       <br>
+                       <br>
+                       <h1 style="font-family:'Charmonman',cursive; font-size: 30px; color: skyblue;">
+                           &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;My Favourite Artworks
+                       </h1>
+                       <div class="gallery">
+                           <img src="images/art1.jpg">
+                           <div class="desc" style="color: black"><b>Name Doodle</b></div>
+                       </div>
+                       <div class="gallery">
+                           <img src="images/art2.jpg">
+                           <div class="desc" style="color: black"><b>Playing with lines</b></div>
+                       </div>
+                       <div class="gallery">
+                           <img src="images/art3.jpg">
+                           <div class="desc"style="color: black"><b>Abstract Art</b></div>
+                       </div>
+                       <br><br><br><br><br> <br><br><br><br><br> <br><br><br><br><br> <br><br>
+                   </div>
+                   <div class="mySlides" style="background: url(images/AI.jpg) no-repeat; background-size:auto">
+                       <div class="numbertext">3/3</div>
+                       <br><br>
+                       <h1 style="text-align: center; color: aliceblue;">
+                           <img src="images/computer.png">
+                           <br>
+                           Computer Vision
+                       </h1>
+                       <br>
+                       <br>
+                       <h1 style="font-family:'Charmonman',cursive; font-size: 30px; color: skyblue;">
+                           &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;My Favourite Models
+                       </h1>
+                       <div class="gallery">
+                           <img src="images/cv1.jpg">
+                           <div class="desc">Cone Detection</div>
+                       </div>
+                       <div class="gallery">
+                           <img src="">
+                           <div class="desc">Stand Out Work</div>
+                       </div>
+                       <div class="gallery">
+                           <img src="">
+                           <div class="desc">Stand Out Work</div>
+                       </div>
+        <br><br><br><br><br><br><br><br><br><br><br><br><br>
+                       <p style="color: white">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                           View some more models on
+                           <a href="https://github.com/GAInTheHouse"><img src="images/github.png"></a>
+                       </p>
+                       <br>
+                   </div>
+                   <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                   <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+                   <div class="caption-container">
+                       <p id="caption"></p>
+                   </div>
+                   <div class="column-lightbox">
+                       <img class="demo cursor" src="images/concert.jpg" style="max-width:100%; max-height: 100%;" onclick="currentSlide(1)" alt="Music">
+                   </div>
+                   <div class="column-lightbox">
+                       <img class="demo cursor" src="images/writing.jpg" style="width:100%" onclick="currentSlide(2)" alt="Writing">
+                   </div>
+                   <div class="column-lightbox">
+                       <img class="demo cursor" src="images/AI.jpg" style="max-width:100%; max-height:100%" onclick="currentSlide(3)" alt="Artificial Intelligence">
+                   </div>
+               </div>
+           </div>
+        <script>
+           function openModal()
+           {
+               document.getElementById('myModallightbox').style.display = "block";
+           }
+
+           function closeModallightbox()
+           {
+               document.getElementById('myModallightbox').style.display = "none";
+           }
+
+           var slideIndex = 1;
+           showSlides(slideIndex);
+
+           function plusSlides(n)
+           {
+               showSlides(slideIndex += n);
+           }
+
+           function currentSlide(n)
+           {
+               showSlides(slideIndex = n);
+           }
+
+           function showSlides(n)
+           {
+               var i;
+               var slides = document.getElementsByClassName("mySlides");
+               var dots = document.getElementsByClassName("demo");
+               var captionText = document.getElementById("caption");
+               if (n > slides.length) {slideIndex = 1}
+               if (n < 1) {slideIndex = slides.length}
+               for (i = 0; i < slides.length; i++)
+               {
+                   slides[i].style.display = "none";
+               }
+               for (i = 0; i < dots.length; i++)
+               {
+                   dots[i].className = dots[i].className.replace(" active", "");
+               }
+               slides[slideIndex-1].style.display = "block";
+               dots[slideIndex-1].className += " active";
+               captionText.innerHTML = dots[slideIndex-1].alt;
+           }
+        </script>
+
 	   <!-- Passion -->
-       <section class="content content-2" id="passion">
+      <section class="content content-2" id="passion">
         <div class="container">
             <div class="row">
                 <div class="col-sm-6">
-                	<h2 class="section-header">Passion That Unites</h2>
-                	<p class="lead text-light">Hobby that amplifies peace,raises harmony and promotes quality living.</p>
-                </div>    
-                <div class="col-sm-6">
-                    <img class="img-responsive img-circle center-block" src="images/iphone.jpg" alt="">
-                </div>            
+                	<h2 class="section-header">Hobbies</h2>
+
+                </div>
+
             </div>
         </div>
-    </section>    
+    </section>
 
-       <!-- Promos -->
-	   <div class="container-fluid">
+	  <div class="container-fluid">
             <div class="row promo">
                <a onclick="openModal();currentSlide(1)" class="cursor">
                 <div class="col-md-4 promo-item item-2">
-                        <h1 class="cursor">Synergize</h1>       
+                        <h1 class="cursor">Synergize</h1>
 				</div>
                </a>
                <a onclick="openModal();currentSlide(2)" class="cursor">
@@ -212,7 +564,7 @@
                         <span class="glyphicon glyphicon-music" style="font-size:24px;"></span>
                         <span class="glyphicon glyphicon-music" style="font-size:30px;"></span>
                     </h1>
-                    <p style="font-size: 18px; color:white;">&nbsp;&nbsp;&nbsp;&nbsp; 
+                    <p style="font-size: 18px; color:white;">&nbsp;&nbsp;&nbsp;&nbsp;
                         Music breathes life within you. It encourages you, motivates you and pours energy into you.<br>
                     </p>
                     <ul style="font-size: 18px; color: white;">
@@ -244,13 +596,13 @@
                     </div>
                     <br><br><br><br><br><br><br><br><br><br><br><br><br>
                     <p style="color: white">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                        View some more videos on 
+                        View some more videos on
                         <a href="https://www.youtube.com/channel/UCxS1_cz53xz7WYj1E4BYRvg?view_as=subscriber">
                             <img src="images/youtube.png">
-                        </a> 
+                        </a>
                     </p>
                     <br>
-                </div>    
+                </div>
                 <div class="mySlides item-1" style="background: url(images/writing.jpg) no-repeat; background-size:auto">
                     <div class="numbertext">2/3</div>
                     <h1 style="font-family:'Charmonman',cursive;text-align: center;" class="writing-icon">
@@ -306,8 +658,8 @@
                     </div>
 <br><br><br><br><br><br><br><br><br><br><br><br><br>
                     <p style="color: white">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                        View some more models on 
-                        <a href="https://github.com/GAInTheHouse"><img src="images/github.png"></a> 
+                        View some more models on
+                        <a href="https://github.com/GAInTheHouse"><img src="images/github.png"></a>
                     </p>
                     <br>
                 </div>
@@ -329,12 +681,12 @@
             </div>
         </div>
     <script>
-        function openModal() 
+        function openModal()
         {
             document.getElementById('myModallightbox').style.display = "block";
-        }   
+        }
 
-        function closeModallightbox() 
+        function closeModallightbox()
         {
             document.getElementById('myModallightbox').style.display = "none";
         }
@@ -342,17 +694,17 @@
         var slideIndex = 1;
         showSlides(slideIndex);
 
-        function plusSlides(n) 
+        function plusSlides(n)
         {
             showSlides(slideIndex += n);
         }
 
-        function currentSlide(n) 
+        function currentSlide(n)
         {
             showSlides(slideIndex = n);
         }
 
-        function showSlides(n) 
+        function showSlides(n)
         {
             var i;
             var slides = document.getElementsByClassName("mySlides");
@@ -360,11 +712,11 @@
             var captionText = document.getElementById("caption");
             if (n > slides.length) {slideIndex = 1}
             if (n < 1) {slideIndex = slides.length}
-            for (i = 0; i < slides.length; i++) 
+            for (i = 0; i < slides.length; i++)
             {
                 slides[i].style.display = "none";
             }
-            for (i = 0; i < dots.length; i++) 
+            for (i = 0; i < dots.length; i++)
             {
                 dots[i].className = dots[i].className.replace(" active", "");
             }
@@ -373,27 +725,109 @@
             captionText.innerHTML = dots[slideIndex-1].alt;
         }
     </script>
-        
+
 
 	   <!-- The Story Of My Life -->
        <section class="content content-3" id="story">
-        <div><br><br><br>
-			<h2 class="section-header" style="font-family: 'Charmonman', cursive; "><span class="glyphicon glyphicon-pushpin text-primary"></span><br>TheStoryOfMyLife</h2> <br>
-            
-             <img class="row-grid" src="images/Story.jpg">
-                
-            <p class="lead text-muted"></p>              
+        <div>
+          <br><br><br>
+			    <h2 class="section-header" style="font-family: 'Charmonman', cursive; ">
+              <span class="glyphicon glyphicon-pushpin text-primary"></span>
+              <br><br>
+              In The Media
+          </h2>
+          <p class="lead text-muted"><br></p>
        </div>
      </section>
-    
+
+     <!-- Skills -->
+       <section class="content content-4" id="socials">
+         <div class="container">
+
+               <h2 class="section-header" style="font-family: 'Charmonman', cursive; ">
+                 <span class="glyphicon glyphicon-wrench text-primary"></span>
+                 <br><br>
+                 Skills
+               </h2>
+
+               <p float="centre">
+                   <br>
+                   <br>
+                   <img class="skill-icon" src="images/python.png" >
+                   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                   <img class="skill-icon" src="images/octave.png" >
+                   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                   <img class="skill-icon" src="images/R.png" >
+                   <br><br>
+                   <img class="skill-icon" src="images/c.svg" >
+                   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                   <img class="skill-icon" src="images/cpp.svg">
+                   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                   <img class="skill-icon" src="images/c-sharp.svg">
+                   <br><br>
+                   <img class="skill-icon" src="images/macos.svg">
+                   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                   <img class="skill-icon" src="images/linux.png">
+                   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                   <img class="skill-icon" src="images/microsoft.png">
+                   <br><br>
+                   <img class="skill-icon" src="images/terraform.svg" >
+                   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                   <img class="skill-icon" src="images/aws.png" >
+                   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                   <img class="skill-icon" src="images/google-cloud.svg" >
+                   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                  <img class="skill-icon" src="images/SonarQube2.png" >
+                   <br><br>
+                   <img class="skill-icon" src="images/java.svg" >
+                   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                   <img class="skill-icon" src="images/kotlin.svg" >
+                   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                   <img class="skill-icon" src="images/flutter.svg" >
+                   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                   <img class="skill-icon" src="images/android.png">
+                   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                   <br> <br>
+                   <img class="skill-icon" src="images/html.svg">
+                   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                   <img class="skill-icon" src="images/css.svg">
+                   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                   <img class="skill-icon" src="images/Javascript.svg">
+                   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                   <img class="skill-icon" src="images/php.svg">
+                   <br><br>
+
+                   <img class="skill-icon" src="images/arduino.svg">
+                   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                   <img class="skill-icon" src="images/unity.svg">
+                   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+
+                   <br><br>
+                   <img class="skill-icon" src="images/github.png">
+                   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                   <img class="skill-icon" src="images/gitLab.png">
+                   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                   <img class="skill-icon" src="images/jira.svg">
+                   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                   <br><br>
+           <a href="resume.pdf">
+                   <img src="images/resume.png">
+                   <br> My Resume
+                   </a>
+                   <br><br>
+               </p>
+         </div>
+       </section>
+
+
        <!-- Footer -->
        <footer class="page-footer">
-    
+
     	<!-- Contact Us -->
         <div class="contact" id="socials">
         	<div class="container">
-                
-				<h2 class="section-heading">Get Connected!!</h2>
+
+				        <h2 class="section-heading">Get Connected!!</h2>
                 <p>
                     <br>
                     <a href="https://www.instagram.com/gainthehouse/"><img src="images/instagram.png" float="centre"></a>
@@ -406,11 +840,6 @@
                     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                     <a href="https://devpost.com/GAInTheHouse?ref_content=user-portfolio&ref_feature=portfolio&ref_medium=global-nav"><img src="images/devpost.png"></a>
                     <br><br>
-				    <a href="resume.pdf">
-                    <img src="images/resume.png">
-                    <br> My Resume
-                    </a>
-                    <br><br>
 				    <a href="mailto:gauti@gainthehouse.com">
                         <span class="glyphicon glyphicon-envelope" style="color:white;"></span>
                         <br>gauti@gainthehouse.com
@@ -418,7 +847,7 @@
                 </p>
         	</div>
         </div>
-        	
+
         <!-- Copyright etc -->
         <div class="small-print">
         	<div class="container">
@@ -427,7 +856,7 @@
                 </p>
         	</div>
         </div>
-        
+
     </footer>
 
     <!-- jQuery -->
@@ -438,7 +867,7 @@
 
      <!-- Plugin JavaScript -->
      <script src="js/jquery.easing.min.js"></script>
-    
+
      <!-- Custom Javascript -->
      <script src="js/custom.js"></script>
 
