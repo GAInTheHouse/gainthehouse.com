@@ -174,23 +174,48 @@ header .header-content .header-content-inner h1
     vertical-align: middle;
 }
 
-.item-1
+.item-7
 {
 	background: url('../images/writing.jpg');
 
 }
 
-.item-2
+.item-6
 {
 	background: url('../images/concert.jpg');
 }
 
-.item-3
+.item-8
 {
 	background: url('../images/AI.jpg');
 }
 
-.item-1,.item-2,.item-3
+.item-1
+{
+	background: url('../images/projectx.png');
+}
+
+.item-2
+{
+	background: url('../images/blind.jpg');
+}
+
+.item-3
+{
+	background: url('../images/bot.jpg');
+}
+
+.item-4
+{
+	background: url('../images/dotData.png');
+}
+
+.item-5
+{
+	background: url('../images/bcc.jpeg');
+}
+
+.item-1,.item-2,.item-3, .item-4, .item-5, .item-6, .item-7, .item-8
 {
 	background-size: cover;
 	background-position: 50% 50%;
@@ -832,7 +857,7 @@ div.quotes:hover
   cursor: pointer;
 }
 
-.mySlides
+.mySlides, .mySlides2, .mySlied3
 {
   display: none;
   background-size: 100%
@@ -893,16 +918,15 @@ div.quotes:hover
   color: white;
 }
 
-.demo
+.demo, .demo2, .demo3
 {
   opacity: 0.6;
 }
 
-.active,.demo:hover
+.active,.demo:hover, .demo2:hover, .demo3:hover
 {
   opacity: 1;
 }
-
 
 .music-icon, .writing-icon
 {
