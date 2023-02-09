@@ -1,0 +1,181 @@
+div.gallery
+{
+     margin: 8px;
+     border: 1px solid #ccc;
+     float: left;
+     width: 350px;
+     height: 250px;
+}
+div.gallery:hover
+{
+     border: 1px solid #777;
+}
+div.gallery video,div.gallery img
+{
+     width: 350px;
+     height: 215px;
+}
+div.desc
+{
+     padding: 2px;
+     text-align: center;
+     font-size: 18px;
+    color: aliceblue;
+}
+
+@media screen and (max-width: 1250px) {
+
+    div.gallery
+{
+     margin: 8px;
+     border: 1px solid #ccc;
+     float: left;
+     width: 250px;
+     height: 215px;
+}
+
+    div.gallery video,div.gallery img
+{
+     width: 250px;
+     height: 175px;
+}
+
+    div.desc
+{
+     padding: 1.5px;
+     text-align: center;
+     font-size: 16px;
+    color: aliceblue;
+}
+
+
+}
+
+@media screen and (max-width: 950px) {
+
+    div.gallery
+{
+     margin: 8px;
+     border: 1px solid #ccc;
+     float: left;
+     width: 200px;
+     height: 215px;
+}
+
+    div.gallery video,div.gallery img
+{
+     width: 200px;
+     height: 175px;
+}
+
+    div.desc
+{
+     padding: 1px;
+     text-align: center;
+     font-size: 14px;
+    color: aliceblue;
+}
+
+
+}
+
+
+@media screen and (max-width: 700px) {
+
+    div.gallery
+{
+     margin: 8px;
+     border: 1px solid #ccc;
+     float: left;
+     width: 150px;
+     height: 200px;
+}
+
+    div.gallery video,div.gallery img
+{
+     width: 150px;
+     height: 150px;
+}
+
+    div.desc
+{
+     padding: 1px;
+     text-align: center;
+     font-size: 12px;
+    color: aliceblue;
+}
+
+
+}
+
+@media screen and (max-width: 550px) {
+
+    div.gallery
+{
+     margin: 8px;
+     border: 1px solid #ccc;
+     float: left;
+     width: 100px;
+     height: 175px;
+}
+
+    div.gallery video,div.gallery img
+{
+     width: 100px;
+     height: 125px;
+}
+
+    div.desc
+{
+     padding: 1px;
+     text-align: center;
+     font-size: 12px;
+    color: aliceblue;
+}
+
+
+}
+
+@media screen and (max-width: 400px) {
+
+    div.gallery
+{
+     margin: 8px;
+     border: 1px solid #ccc;
+     float: left;
+     width: 75px;
+     height: 150px;
+}
+
+    div.gallery video,div.gallery img
+{
+     width: 75px;
+     height: 100px;
+}
+
+    div.desc
+{
+     padding: 1px;
+     text-align: center;
+     font-size: 12px;
+    color: aliceblue;
+}
+
+}
+
+
+div.quotes
+{
+     text-align: center;
+     margin: 10px;
+     border: 1px solid #ccc;
+     float: left;
+     width: 350px;
+     height: 300px;
+     font-size: 50px;
+     color:black;
+}
+div.quotes:hover
+{
+     border: 1px solid #777;
+}

@@ -14,6 +14,12 @@
 
   <!-- Custom CSS: This stylesheet is to override any Bootstrap styles and apply own styles -->
   <link href="css/custom.css" rel="stylesheet">
+  <link href="css/custom_header.css" rel="stylesheet">
+  <link href="css/custom_navigation.css" rel="stylesheet">
+  <link href="css/custom_footer.css" rel="stylesheet">
+  <link href="css/custom_gallery.css" rel="stylesheet">
+  <link href="css/custom_articles.css" rel="stylesheet">
+  <link href="css/custom_lightbox.css" rel="stylesheet">
 
   <!--[if lt IE 9]>
   <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
@@ -47,8 +53,8 @@
 
 <body>
 
-  <!-- Navigation -->
-  <nav id="siteNav" class="navbar navbar-default navbar-fixed-top" role="navigation">
+    <!-- Navigation -->
+    <nav id="siteNav" class="navbar navbar-default navbar-fixed-top" role="navigation">
     <div class="container">
       <!-- Logo and responsive toggle -->
       <div class="navbar-header">
@@ -70,7 +76,13 @@
             <a href="#head">Home</a>
           </li>
           <li>
-            <a href="#innovations">Innovations</a>
+            <a href="#research">Research</a>
+          </li>
+          <li>
+            <a href="#projects">Software Projects</a>
+          </li>
+          <li>
+            <a href="#work-ex">Work Experience</a>
           </li>
           <li>
             <a href="#org">My Organizations</a>
@@ -79,7 +91,7 @@
             <a href="#passion">My Passion</a>
           </li>
           <li>
-            <a href="#story">News Headlines</a>
+            <a href="#story">Articles</a>
           </li>
           <li>
             <a href="#skills">Skillset</a>
@@ -93,8 +105,8 @@
     </div><!-- /.container -->
   </nav>
 
-  <!-- Header -->
-  <header>
+    <!-- Header -->
+    <header>
     <div class="header-content" id="head">
       <div class="header-content-inner">
         <img src="images/1.png" class="gautam-image">
@@ -106,12 +118,12 @@
     </div>
   </header>
 
-  <!-- Innovations-->
-  <section class="content innovations" id="innovations">
+    <!-- Research Projects-->
+    <section class="content" id="research">
     <div class="container">
       <div class="row">
         <div class="col-sm-6">
-          <h2 class="section-header">Projects</h2>
+          <h2 class="section-header">Research Projects</h2>
         </div>
       </div>
     </div>
@@ -123,13 +135,12 @@
           </div>
         </a>
         <a onclick="openModal();currentSlide(2)" class="cursor">
-          <div class="col-md-4 promo-item item-2">
-            <h1>Blind Man's Bluff</h1>
+          <div class="col-md-4 promo-item item-10">
           </div>
         </a>
         <a onclick="openModal();currentSlide(3)" class="cursor">
-          <div class="col-md-4 promo-item item-3">
-            <h1>COVID Bot</h1>
+          <div class="col-md-4 promo-item item-11">
+            <h1>Uncertainty Estimation</h1>
           </div>
         </a>
       </div>
@@ -147,7 +158,7 @@
 
           <a href="https://github.com/GAInTheHouse/BadgerX/blob/main/Submissions/Deliverable%203.pdf" class="cursor">
             <div class="gallery">
-              <img src="images/paper.png">
+              <img src="images/paper_1.png">
               <div class="desc"><b>Research Paper</b></div>
             </div>
           </a>
@@ -185,64 +196,54 @@
           <div class="numbertext">2/3</div>
           <br>
           <h1 style="font-family:'Charmonman',cursive;text-align: center" class=" music-icon">
-            Blind Man's Bluff
+            Water Infrastructure
           </h1>
           <br><br>
-          <a href="Blind.pdf">
+          <a href="Water_Infrastructure_Paper.pdf">
           <div class="gallery">
-            <img src="images/blindpresentation.svg">
-            <div class="desc"><b>Presentation</b></div>
+            <img src="images/Water_Infrastructure_JSPG.png">
+            <div class="desc"><b>Paper</b></div>
           </div>
         </a>
+        <a href="Water_Infrastructure_Presentation.pdf">
           <div class="gallery">
-            <img src="images/blind.jpg">
-            <div class="desc"><b>Prototype Snapshot</b></div>
+            <img src="images/Water_Infrastructure.svg">
+            <div class="desc"><b>Presentation</b></div>
           </div>
+            </a>
           <div class="gallery">
-            <video controls>
-              <source src="videos/demo.mp4" type="video/mp4">
-                Your browser does not support the video tag.
-              </video>
-            <div class="desc"><b>Demo</b></div>
-          </div>
+                <a target="_blank" href="https://madison.com/ct/news/local/govt-and-politics/data-science-in-madison-class-offers-uw-students-real-world-projects/article_9e5db95e-192c-5747-bd3a-a467d2228c30.html?omhide=true">
+                  <img src="images/638.png" alt="Madison" width="600" height="400">
+                </a>
+                <div class="desc">Data Science In Wisconsin</div>
+        </div>
           <br><br><br><br><br><br><br><br><br><br><br>
           <ul >
-            &nbsp;&nbsp;<li>Built a mobile application in flutter to help people who are blind navigate through their daily routine.</li>
-            &nbsp;&nbsp;<li>Used state of the art real-time object detection and distance estimation to alert the user through vibrations and audio feedback. </li>
-            &nbsp;&nbsp;<li> Competition: HackMIT 2020</li>
-            &nbsp;&nbsp;<li> <a href="https://github.com/GAInTheHouse/blind-mans-bluff" class="cursor">Project Repository</a></li>
+              &nbsp;&nbsp;<li>Research project using data analysis and machine learning to optimize the maintenance of roads and water mains in Madison.  </li>
+              &nbsp;&nbsp;<li>Analyzed breakage factors and predicted future breakages in water pipes; factored road quality to suggest a combined repair plan. </li>
           </ul>
           <br><br><br><br><br>
 
         </div>
-        <div class="mySlides " style="background-color: coral; font-size: 18px; color: white;" >
+        <div class="mySlides" style="background-color: coral; font-size: 18px; color: white;" >
           <div class="numbertext">3/3</div>
           <br>
-          <h1 style="font-family:'Charmonman',cursive;text-align: center" class="music-icon">COVID Bot</h1>
+          <h1 style="font-family:'Charmonman',cursive;text-align: center" class="music-icon">Uncertainty Estimation</h1>
           <br><br>
+          <a href="skunkworks_slide_deck.pdf">
           <div class="gallery">
-            <video controls>
-              <source src="videos/COVID-BOT.mp4" type="video/mp4">
-                Your browser does not support the video tag.
-              </video>
-              <div class="desc">SOS Hackathon 2020 Presentation</div>
-            </div>
+            <img src="images/skunkworks_report.svg">
+            <div class="desc">Research Deck</div>
+          </div>
+            </a>
             <div class="gallery">
-              <img src="images/bot.jpg">
-              <div class="desc"><b>Prototype Snapshot</b></div>
+              <img src="images/Skunkworks-S21.png">
+              <div class="desc">Team Picture</div>
             </div>
-            <a target="_blank" href="https://www.instagram.com/p/CCllTuADaEI/">
-            <div class="gallery">
-              <img src="images/blind.jpg">
-              <div class="desc"><b>In The Media!</b></div>
-            </div></a>
             <br><br><br><br><br><br><br><br><br><br><br>
             <ul>
-              &nbsp;&nbsp;<li>Designed, coded, and prototyped an automated mopping robot with UV disinfectant light and Arduino</li>
-              &nbsp;&nbsp;<li>Used for sanitizing surfaces in hospitals during the COVID-19 outbreak to reduce hospital maintenance staff and the infection rate </li>
-              &nbsp;&nbsp;<li> Competition: SOS Hackathon 2020</li>
-
-              &nbsp;&nbsp;<li> <a href="https://devpost.com/software/covid-bot-9m8xh6" class="cursor"> DEVPOST site</a>  | <a href="https://github.com/GAInTheHouse/COVID-BOT" class="cursor">Project Repository</a></li>
+              &nbsp;&nbsp;<li>Research project using error analysis to estimate the domain of standard machine learning models. </li>
+              &nbsp;&nbsp;<li>Explored the relationship between different distance metrics and the error in different error metrics.</li>
 
             </ul>
             <br>
@@ -258,10 +259,10 @@
             <img class="demo cursor" src="images/projectx.png" style="width:100%; max-height: 100%;" onclick="currentSlide(1)" alt="ProjectX">
           </div>
           <div class="column-lightbox">
-            <img class="demo cursor" src="images/blind.jpg" style="max-width:100%;max-height: 10%" onclick="currentSlide(2)" alt="Blind Man's Bluff">
+            <img class="demo cursor" src="images/city_of_madison.png" style="max-width:100%;max-height: 10%" onclick="currentSlide(2)" alt="Water Infrastructure">
           </div>
           <div class="column-lightbox">
-            <img class="demo cursor" src="images/bot.jpg" style="max-width:100%; max-height:100%" onclick="currentSlide(3)" alt="COVID BOT">
+            <img class="demo cursor" src="images/skunkworks.png" style="max-width:100%; max-height:100%" onclick="currentSlide(3)" alt="Uncertainty Estimation">
           </div>
         </div>
       </div>
@@ -312,103 +313,148 @@
       }
       </script>
     </section>
-
-    <!-- Organizations -->
-    <section class="content content-2" id="org">
-      <div class="container">
-        <div class="row">
-          <div class="col-sm-6">
-            <h2 class="section-header">Organizations</h2>
-
-          </div>
-
+    
+    <!-- Software Projects-->
+    <section class="content content-2" id="projects">
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-6">
+          <h2 class="section-header">Projects</h2>
         </div>
       </div>
+    </div>
 
-
-      <div class="container-fluid">
-        <div class="row promo">
-          <a onclick="openModal2();currentSlide2(1)" class="cursor">
-            <div class="col-md-4 promo-item item-4">
-            </div>
-          </a>
-          <a onclick="openModal2();currentSlide2(2)" class="cursor">
-            <div class="col-md-4 promo-item item-5">
-            </div>
-          </a>
-        </div>
-      </div><!-- /.container-fluid -->
-      <div id="myModallightbox2" class="modal-lightbox">
-        <span class="close-lightbox cursor" onclick="closeModallightbox2()">&times;</span>
-        <div class="modal-content-lightbox">
-          <div class="mySlides2" style="background-color: coral; font-size: 18px; color: white;">
-            <div class="numbertext" >1/2</div>
-            <br>
-            <h1 style="text-align: center"  class="cursor">
-              <img src="images/dotData.png"  float="center">
-            </h1>
-
-            <br>
-            <div class="gallery">
-              <img src="images/">
-              <div class="desc"style="color: black"><b>End of Year Presentation</b></div>
-            </div>
-            <div class="gallery">
-              <img src="images/virtual.png">
-              <div class="desc"style="color: black"><b>Virtual Meeting with Amazon Scientist</b></div>
-            </div>
-            <div class="gallery">
-              <img src="images/">
-              <div class="desc"style="color: black"><b>TBD</b></div>
-            </div>
-            <br><br><br><br><br><br><br><br><br><br><br>
-            <ul style="color:black">
-              &nbsp;&nbsp;<li>Position: President</li>
-              &nbsp;&nbsp;<li>About the Club: Data Science Club is an inspirational place to begin surfing society’s next big wave — Big Data. Data science has grown immensely across CS, statistics, business, sciences, and other fields, and we would like to connect, educate, and inspire students across campus, helping them understand how data science fits into their interests and careers. Our main activities/events will range from seminars & talks to study groups to semester long projects, and other opportunities to get students engaged outside of lectures.</li>
-              &nbsp;&nbsp;<li>My role: Contribute to Industry & Faculty Outreach, Social Media Marketing, Collaboration Discussions. Organize Data Science and Career Development Workshops and Virtual Networking Events for 525 club members</li>
-              &nbsp;&nbsp;<li> <a href="http://dotdatascience.org/" class="cursor"> Website</a>  | <a href="https://win.wisc.edu/organization/dotdata" class="cursor">Wisonsin Involvment Network</a> | <a href="https://www.linkedin.com/company/dotdatascienceuw/" class="cursor">LinkedIn</a></li>
-
-            </ul>
-            <br><br>
+    <div class="container-fluid">
+      <div class="row promo">
+        <a onclick="openModal2();currentSlide2(1)" class="cursor">
+          <div class="col-md-4 promo-item item-12">
+            
           </div>
-          <div class="mySlides2" style="background-color: coral; font-size: 18px; color: white;">
-            <div class="numbertext">2/2</div>
-            <br>
-            <h1 style="text-align: center"  class="cursor">
-              <img src="images/bcc_no_bg.png" width="5%" height="5%" float="center">
-            </h1>
-            <br>
-            <a href="bcc.pdf">
+        </a>
+        <a onclick="openModal2();currentSlide2(2)" class="cursor">
+          <div class="col-md-4 promo-item item-2">
+            <h1>Blind Man's Bluff</h1>
+          </div>
+        </a>
+        <a onclick="openModal2();currentSlide2(3)" class="cursor">
+          <div class="col-md-4 promo-item item-3">
+            <h1>COVID Bot</h1>
+          </div>
+        </a>
+      </div>
+    </div>
+    <div id="myModallightbox2" class="modal-lightbox">
+      <span class="close-lightbox cursor" onclick="closeModallightbox2()">&times;</span>
+      <div class="modal-content-lightbox">
+        <div class="mySlides2" style="background-color: coral; font-size: 18px; color: white;">
+          <div class="numbertext" >1/3</div>
+          <br>
+          <h1 style="text-align: center"  class="cursor">
+            Cyber Jacket
+          </h1>
+          <br>
+
+          
             <div class="gallery">
-              <img src="images/bcc.jpeg">
-              <div class="desc"style="color: black"><b>First Presentation</b></div>
+              <img src="images/cybersecurity_jacket.jpg">
+              <div class="desc"><b>Jacket</b></div>
             </div>
+
+          <a href="images/cybersecurity_poster.jpg" class="cursor">
+            <div class="gallery">
+              <img src="images/cybersecurity_poster.jpg">
+              <div class="desc">Poster</div>
+            </div>
+          </a>
+
+            <a href="images/cybersecurity_architecture.png" class="cursor">
+          <div class="gallery">
+            <img src="images/cybersecurity_architecture.png">
+            <div class="desc"><b>Project Architecture</b></div>
+          </div>
             </a>
-            <div class="gallery">
-              <video controls>
-                <source src="videos/practisce.mp4" type="video/mp4">
-                  Your browser does not support the video tag.
-                </video>
-                <div class="desc">Cricket Practisce Session</div>
-              </div>
-              <div class="gallery">
-                <video controls>
-                  <source src="videos/nets.mp4" type="video/mp4">
-                    Your browser does not support the video tag.
-                  </video>
-                  <div class="desc">Nets Session</div>
-                </div>
+          <br><br><br><br><br><br><br><br><br><br><br>
+          <ul>
+            &nbsp;&nbsp;<li> A jacket that shows your security breaches by showing whether it passes our security tests by LED colors (Red - fail, Yellow - semi-vulnerable, Green - pass) and showing solution suggestions on a website. </li>
+            &nbsp;&nbsp;<li>We designed this using a security guard-style jacket and created LED strip designs on the jacket. </li> 
+            &nbsp;&nbsp;<li>What makes this unique is that security awareness education does not involve wearable aspects, and is usually information heavy.  </li>
+            &nbsp;&nbsp;<li>This is a fun way to learn more about how security breaches and safety.</li>
+            &nbsp;&nbsp;<li>My contribution: Project Manager; Engineered the  architecture; Set up the cloud infrastructure; Developed flask application; Developed multiple arduino code bases to connect remotely to internet, scrape a website, find data, communicate beween different modules and the lights 
+                        </li>
+            &nbsp;&nbsp;<li> <a href="https://github.com/GAInTheHouse/cybersecurity-jacketS" class="cursor">Project Repository</a></li>      
 
-            <br><br><br><br><br><br><br><br><br><br><br>
-            <ul style="color:black">
-              &nbsp;&nbsp;<li>Position: Co-founder</li>
-              &nbsp;&nbsp;<li>About the Club: The only active cricket club on the campus of the University of Wisconsin - Madison. We are affiliated with American College Cricket (ACC) and aspire to spread recreational and competitive cricket. We intend to play cricket both indoors and outdoors as the weather permits. The game will be played using synthetic and tennis balls for recreation cricket and leather balls with cricketing gear for competitive. The equipment will be provided by the club but members are open to bring their own equipment too. No prior experience is required. We would like to promote greater bonds of friendships between organization members by playing cricket together. </li>
-              &nbsp;&nbsp;<li>My role: Manage organization affiliation, organize cricket matches, live match streams, and networking events. Promote cricket on campus and develop a community of about 275 cricket enthusiasts</li>
-              &nbsp;&nbsp;<li><a href="https://win.wisc.edu/organization/badgercricket" class="cursor">Wisonsin Involvment Network</a></li>
-            </ul>
-            <br><br>
+          </ul>
+          <br>
+
+
+        </div>
+        <div class="mySlides2" style="background-color: coral; font-size: 18px; color: white;">
+          <div class="numbertext">2/3</div>
+          <br>
+          <h1 style="font-family:'Charmonman',cursive;text-align: center" class=" music-icon">
+            Blind Man's Bluff
+          </h1>
+          <br><br>
+          <a href="Blind.pdf">
+          <div class="gallery">
+            <img src="images/blindpresentation.svg">
+            <div class="desc"><b>Presentation</b></div>
           </div>
+        </a>
+          <div class="gallery">
+            <img src="images/blind.jpg">
+            <div class="desc"><b>Prototype Snapshot</b></div>
+          </div>
+          <div class="gallery">
+            <video controls>
+              <source src="videos/demo.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+              </video>
+            <div class="desc"><b>Demo</b></div>
+          </div>
+          <br><br><br><br><br><br><br><br><br><br><br>
+          <ul >
+            &nbsp;&nbsp;<li>Built a mobile application in flutter to help people who are blind navigate through their daily routine.</li>
+            &nbsp;&nbsp;<li>Used state of the art real-time object detection and distance estimation to alert the user through vibrations and audio feedback. </li>
+            &nbsp;&nbsp;<li> Competition: HackMIT 2020</li>
+            &nbsp;&nbsp;<li> <a href="https://github.com/GAInTheHouse/blind-mans-bluff" class="cursor">Project Repository</a></li>
+          </ul>
+          <br><br><br><br><br>
 
+        </div>
+        <div class="mySlides2" style="background-color: coral; font-size: 18px; color: white;" >
+          <div class="numbertext">3/3</div>
+          <br>
+          <h1 style="font-family:'Charmonman',cursive;text-align: center" class="music-icon">COVID Bot</h1>
+          <br><br>
+          <div class="gallery">
+            <video controls>
+              <source src="videos/COVID-BOT.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+              </video>
+              <div class="desc">SOS Hackathon 2020 Presentation</div>
+            </div>
+            <div class="gallery">
+              <img src="images/bot.jpg">
+              <div class="desc"><b>Prototype Snapshot</b></div>
+            </div>
+            <a target="_blank" href="https://www.instagram.com/p/CCllTuADaEI/">
+            <div class="gallery">
+              <img src="images/morgridge.png">
+              <div class="desc"><b>In The Media!</b></div>
+            </div></a>
+            <br><br><br><br><br><br><br><br><br><br><br>
+            <ul>
+              &nbsp;&nbsp;<li>Designed, coded, and prototyped an automated mopping robot with UV disinfectant light and Arduino</li>
+              &nbsp;&nbsp;<li>Used for sanitizing surfaces in hospitals during the COVID-19 outbreak to reduce hospital maintenance staff and the infection rate </li>
+              &nbsp;&nbsp;<li> Competition: SOS Hackathon 2020</li>
+
+              &nbsp;&nbsp;<li> <a href="https://devpost.com/software/covid-bot-9m8xh6" class="cursor"> DEVPOST site</a>  | <a href="https://github.com/GAInTheHouse/COVID-BOT" class="cursor">Project Repository</a></li>
+
+            </ul>
+            <br>
+
+          </div>
           <a class="prev" onclick="plusSlides2(-1)">&#10094;</a>
           <a class="next" onclick="plusSlides2(1)">&#10095;</a>
 
@@ -416,13 +462,17 @@
             <p id="caption2"></p>
           </div>
           <div class="column-lightbox">
-            <img class="demo2 cursor" src="images/dotData.png" style="max-width:100%; max-height: 100%;" onclick="currentSlide2(1)" alt="dotData Science">
+            <img class="demo2 cursor" src="images/cybersecurity.jpg" style="width:100%; max-height: 100%;" onclick="currentSlide2(1)" alt="Cybersecurity Jacket">
           </div>
           <div class="column-lightbox">
-            <img class="demo2 cursor" src="images/bcc.jpeg" style="width:100%" onclick="currentSlide2(2)" alt="Badger Cricket Club">
+            <img class="demo2 cursor" src="images/blind.jpg" style="max-width:100%;max-height: 10%" onclick="currentSlide2(2)" alt="Blind Man's Bluff">
+          </div>
+          <div class="column-lightbox">
+            <img class="demo2 cursor" src="images/bot.jpg" style="max-width:100%; max-height:100%" onclick="currentSlide2(3)" alt="COVID BOT">
           </div>
         </div>
       </div>
+
       <script>
       function openModal2()
       {
@@ -470,12 +520,160 @@
       </script>
     </section>
 
-    <!-- Passion -->
-    <section class="content innovations" id="passion">
+    <!-- Work Experience-->
+    <section class="content" id="work-ex">
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-6">
+          <h2 class="section-header">Work Experience</h2>
+        </div>
+      </div>
+    </div>
+
+    <div class="container-fluid">
+      <div class="row promo">
+        <a onclick="openModal3();currentSlide3(1)" class="cursor">
+          <div class="col-md-4 promo-item item-13">
+              
+          </div>
+        </a>
+        <a onclick="openModal3();currentSlide3(2)" class="cursor">
+          <div class="col-md-4 promo-item item-14">
+        
+          </div>
+        </a>
+        <a onclick="openModal3();currentSlide3(3)" class="cursor">
+          <div class="col-md-4 promo-item item-15">
+          </div>
+        </a>
+      </div>
+    </div>
+    <div id="myModallightbox3" class="modal-lightbox">
+      <span class="close-lightbox cursor" onclick="closeModallightbox3()">&times;</span>
+      <div class="modal-content-lightbox">
+        <div class="mySlides3" style="background-color: coral; font-size: 18px; color: white;">
+          <div class="numbertext" >1/3</div>
+          <br>
+          <h1 style="font-family:'Charmonman',cursive;text-align: center" class=" music-icon">
+            SWE Intern - Google LLC
+          </h1>
+          <br><br>
+          <br><br>
+          <ul>
+            &nbsp;&nbsp;<li> Developed workflow using Python and Google tools to automate the cost model generation and update the cost model weekly </li>
+            &nbsp;&nbsp;<li> Modularized and refactored unchecked code; found and fixed bugs while migrating code to the official repository. </li>
+            &nbsp;&nbsp;<li> Engineered a fast light-weight validation method to replace the traditional iterative A/B validation method. </li>
+            &nbsp;&nbsp;<li> Decreased 7 manual steps to a single confirmation step; improved runtime from 16 - 28 hours to 8 hours; decreased server load</li>
+          </ul>
+          <br>
+
+
+        </div>
+        <div class="mySlides3" style="background-color: coral; font-size: 18px; color: white;">
+          <div class="numbertext">2/3</div>
+          <br>
+          <h1 style="font-family:'Charmonman',cursive;text-align: center" class=" music-icon">
+           Media Workflow Engineering Intern - WarnerMedia 
+          </h1>
+          <br><br>
+          <br><br>
+          <ul >
+            &nbsp;&nbsp;<li>Developed media workflows software using SDVI and AWS platforms </li>
+            &nbsp;&nbsp;<li>Participated in Scrum methodologies and teamwork strategies like pair programming and code reviews</li>
+          </ul>
+          <br><br><br><br><br>
+
+        </div>
+        <div class="mySlides3" style="background-color: coral; font-size: 18px; color: white;" >
+          <div class="numbertext">3/3</div>
+          <br>
+          <h1 style="font-family:'Charmonman',cursive;text-align: center" class="music-icon">Enterprise Integration Intern, Division of Information Technology</h1>
+          <br><br>
+            <ul>
+              &nbsp;&nbsp;<li>Helped integrate IT systems and data across the UW, worked with modern DevOps technologies and cloud platforms. </li>
+              &nbsp;&nbsp;<li>Migrated systems integration to new Platforms: Informatica, AWS, & Apigee</li>
+            </ul>
+          <br><br>
+          <br><br>
+          <h1 style="font-family:'Charmonman',cursive;text-align: center" class="music-icon">Undergraduate Teaching Assistant, Department of Computer Sciences</h1>
+          <br><br>
+            <ul>
+              &nbsp;&nbsp;<li>Designed content for intermediate python course exploring web scraping and machine learning; debugging exercises and projects. </li>
+              &nbsp;&nbsp;<li>Guided upto 75 students throughout the course during office hours and weekly group mentoring sessions</li>
+            </ul>
+            <br>
+          </div>
+          <a class="prev" onclick="plusSlides3(-1)">&#10094;</a>
+          <a class="next" onclick="plusSlides3(1)">&#10095;</a>
+
+          <div class="caption-container">
+            <p id="caption3"></p>
+          </div>
+          <div class="column-lightbox">
+            <img class="demo3 cursor" src="images/google.png" style="width:100%; max-height: 100%;" onclick="currentSlide3(1)" alt="Google SWE Intern">
+          </div>
+          <div class="column-lightbox">
+            <img class="demo3 cursor" src="images/warnermedia.jpg" style="max-width:100%;max-height: 10%" onclick="currentSlide3(2)" alt="WarnerMedia Media Workflow Engineering Intern">
+          </div>
+          <div class="column-lightbox">
+            <img class="demo3 cursor" src="images/uw_logo.png" style="max-width:100%; max-height:100%" onclick="currentSlide3(3)" alt="Multiple Positions at University of Wisconsin-Madison">
+          </div>
+        </div>
+      </div>
+
+      <script>
+      function openModal3()
+      {
+        document.getElementById('myModallightbox3').style.display = "block";
+      }
+
+      function closeModallightbox3()
+      {
+        document.getElementById('myModallightbox3').style.display = "none";
+      }
+
+      var slideIndex = 1;
+      showSlides3(slideIndex);
+
+      function plusSlides3(n)
+      {
+        showSlides3(slideIndex += n);
+      }
+
+      function currentSlide3(n)
+      {
+        showSlides3(slideIndex = n);
+      }
+
+      function showSlides3(n)
+      {
+        var i;
+        var slides = document.getElementsByClassName("mySlides3");
+        var dots = document.getElementsByClassName("demo3");
+        var captionText = document.getElementById("caption3");
+        if (n > slides.length) {slideIndex = 1}
+        if (n < 1) {slideIndex = slides.length}
+        for (i = 0; i < slides.length; i++)
+        {
+          slides[i].style.display = "none";
+        }
+        for (i = 0; i < dots.length; i++)
+        {
+          dots[i].className = dots[i].className.replace(" active", "");
+        }
+        slides[slideIndex-1].style.display = "block";
+        dots[slideIndex-1].className += " active";
+        captionText.innerHTML = dots[slideIndex-1].alt;
+      }
+      </script>
+    </section>
+    
+    <!-- Organizations -->
+    <section class="content content-2" id="org">
       <div class="container">
         <div class="row">
           <div class="col-sm-6">
-            <h2 class="section-header">Hobbies</h2>
+            <h2 class="section-header">Organizations</h2>
 
           </div>
 
@@ -485,27 +683,184 @@
 
       <div class="container-fluid">
         <div class="row promo">
-          <a onclick="openModal3();currentSlide3(1)" class="cursor">
+          <a onclick="openModal4();currentSlide4(1)" class="cursor">
+            <div class="col-md-4 promo-item item-4">
+            </div>
+          </a>
+          <a onclick="openModal4();currentSlide4(2)" class="cursor">
+            <div class="col-md-4 promo-item item-5">
+            </div>
+          </a>
+        </div>
+      </div><!-- /.container-fluid -->
+      <div id="myModallightbox4" class="modal-lightbox">
+        <span class="close-lightbox cursor" onclick="closeModallightbox4()">&times;</span>
+        <div class="modal-content-lightbox">
+          <div class="mySlides4" style="background-color: coral; font-size: 18px; color: white;">
+            <div class="numbertext" >1/2</div>
+            <br>
+            <h1 style="text-align: center"  class="cursor">
+              <img src="images/dotData.png"  float="center">
+            </h1>
+
+            <br>
+            <a href="End%20of%20the%20Year.pdf">
+            <div class="gallery">
+              <img src="images/end_of_year.svg">
+              <div class="desc"style="color: black"><b>End of Year Presentation</b></div>
+            </div>
+              </a>
+            <div class="gallery">
+              <img src="images/virtual.png">
+              <div class="desc"style="color: black"><b>Virtual Meeting with Amazon Scientist</b></div>
+            </div>
+            <div class="gallery">
+              <img src="images/datathon.jpg">
+              <div class="desc"style="color: black"><b>Datathon</b></div>
+            </div>
+            <br><br><br><br><br><br><br><br><br><br><br>
+            <ul style="color:black">
+              &nbsp;&nbsp;<li>Position: President</li>
+              &nbsp;&nbsp;<li>About the Club: Data Science Club is an inspirational place to begin surfing society’s next big wave — Big Data. Data science has grown immensely across CS, statistics, business, sciences, and other fields, and we would like to connect, educate, and inspire students across campus, helping them understand how data science fits into their interests and careers. Our main activities/events will range from seminars & talks to study groups to semester long projects, and other opportunities to get students engaged outside of lectures.</li>
+              &nbsp;&nbsp;<li>My role: Contribute to Industry & Faculty Outreach, Social Media Marketing, Collaboration Discussions. Organize Data Science and Career Development Workshops and Virtual Networking Events for 525 club members</li>
+              &nbsp;&nbsp;<li> <a href="http://dotdatascience.org/" class="cursor"> Website</a>  | <a href="https://win.wisc.edu/organization/dotdata" class="cursor">Wisonsin Involvment Network</a> | <a href="https://www.linkedin.com/company/dotdatascienceuw/" class="cursor">LinkedIn</a></li>
+
+            </ul>
+            <br><br>
+          </div>
+          <div class="mySlides4" style="background-color: coral; font-size: 18px; color: white;">
+            <div class="numbertext">2/2</div>
+            <br>
+            <h1 style="text-align: center"  class="cursor">
+              <img src="images/bcc_no_bg.png" width="5%" height="5%" float="center">
+            </h1>
+            <br>
+            <a href="bcc.pdf">
+            <div class="gallery">
+              <img src="images/bcc.jpeg">
+              <div class="desc"style="color: black"><b>First Presentation</b></div>
+            </div>
+            </a>
+            <div class="gallery">
+              <video controls>
+                <source src="videos/practisce.mp4" type="video/mp4">
+                  Your browser does not support the video tag.
+                </video>
+                <div class="desc">Cricket Practisce Session</div>
+              </div>
+              <div class="gallery">
+                <video controls>
+                  <source src="videos/nets.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                  </video>
+                  <div class="desc">Nets Session</div>
+                </div>
+
+            <br><br><br><br><br><br><br><br><br><br><br>
+            <ul style="color:black">
+              &nbsp;&nbsp;<li>Position: Co-founder</li>
+              &nbsp;&nbsp;<li>About the Club: The only active cricket club on the campus of the University of Wisconsin - Madison. We are affiliated with American College Cricket (ACC) and aspire to spread recreational and competitive cricket. We intend to play cricket both indoors and outdoors as the weather permits. The game will be played using synthetic and tennis balls for recreation cricket and leather balls with cricketing gear for competitive. The equipment will be provided by the club but members are open to bring their own equipment too. No prior experience is required. We would like to promote greater bonds of friendships between organization members by playing cricket together. </li>
+              &nbsp;&nbsp;<li>My role: Manage organization affiliation, organize cricket matches, live match streams, and networking events. Promote cricket on campus and develop a community of about 275 cricket enthusiasts</li>
+              &nbsp;&nbsp;<li><a href="https://win.wisc.edu/organization/badgercricket" class="cursor">Wisonsin Involvment Network</a></li>
+            </ul>
+            <br><br>
+          </div>
+
+          <a class="prev" onclick="plusSlides4(-1)">&#10094;</a>
+          <a class="next" onclick="plusSlides4(1)">&#10095;</a>
+
+          <div class="caption-container">
+            <p id="caption4"></p>
+          </div>
+          <div class="column-lightbox">
+            <img class="demo4 cursor" src="images/dotData.png" style="max-width:100%; max-height: 100%;" onclick="currentSlide4(1)" alt="dotData Science">
+          </div>
+          <div class="column-lightbox">
+            <img class="demo4 cursor" src="images/bcc.jpeg" style="width:100%" onclick="currentSlide4(2)" alt="Badger Cricket Club">
+          </div>
+        </div>
+      </div>
+      <script>
+      function openModal4()
+      {
+        document.getElementById('myModallightbox4').style.display = "block";
+      }
+
+      function closeModallightbox4()
+      {
+        document.getElementById('myModallightbox4').style.display = "none";
+      }
+
+      var slideIndex = 1;
+      showSlides4(slideIndex);
+
+      function plusSlides4(n)
+      {
+        showSlides4(slideIndex += n);
+      }
+
+      function currentSlide4(n)
+      {
+        showSlides4(slideIndex = n);
+      }
+
+      function showSlides4(n)
+      {
+        var i;
+        var slides = document.getElementsByClassName("mySlides4");
+        var dots = document.getElementsByClassName("demo4");
+        var captionText = document.getElementById("caption4");
+        if (n > slides.length) {slideIndex = 1}
+        if (n < 1) {slideIndex = slides.length}
+        for (i = 0; i < slides.length; i++)
+        {
+          slides[i].style.display = "none";
+        }
+        for (i = 0; i < dots.length; i++)
+        {
+          dots[i].className = dots[i].className.replace(" active", "");
+        }
+        slides[slideIndex-1].style.display = "block";
+        dots[slideIndex-1].className += " active";
+        captionText.innerHTML = dots[slideIndex-1].alt;
+      }
+      </script>
+    </section>
+
+    <!-- Passion -->
+    <section class="content" id="passion">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-6">
+            <h2 class="section-header">Hobbies</h2>
+          </div>
+        </div>
+      </div>
+
+
+      <div class="container-fluid">
+        <div class="row promo">
+          <a onclick="openModal5();currentSlide5(1)" class="cursor">
             <div class="col-md-4 promo-item item-6">
-              <h1 class="cursor">Synergize</h1>
+              
             </div>
           </a>
-          <a onclick="openModal3();currentSlide3(2)" class="cursor">
+          <a onclick="openModal5();currentSlide5(2)" class="cursor">
             <div class="col-md-4 promo-item item-7">
-              <h1>Unleash</h1>
+              
             </div>
           </a>
-          <a onclick="openModal3();currentSlide3(3)" class="cursor">
+          <a onclick="openModal5();currentSlide5(3)" class="cursor">
             <div class="col-md-4 promo-item item-8">
-              <h1>Revolutionize</h1>
+              
             </div>
           </a>
         </div>
       </div>
-      <div id="myModallightbox3" class="modal-lightbox">
-        <span class="close-lightbox cursor" onclick="closeModallightbox3()">&times;</span>
+      <div id="myModallightbox5" class="modal-lightbox">
+        <span class="close-lightbox cursor" onclick="closeModallightbox5()">&times;</span>
         <div class="modal-content-lightbox">
-          <div class="mySlides3 item-6" style="background: url(images/concert.jpg) no-repeat; background-size: auto;">
+          <div class="mySlides5 item-6" style="background: url(images/concert.jpg) no-repeat; background-size: auto;">
             <div class="numbertext" >1/3</div>
             <br>
             <h1 style="font-family:'Charmonman',cursive;text-align: center" class="music-icon">
@@ -516,8 +871,8 @@
               <span class="glyphicon glyphicon-music" style="font-size:30px;"></span>
             </h1>
             <p style="font-size: 18px; color:white;">
-              &nbsp;&nbsp;&nbsp;&nbsp; Music breathes life within me. It encourages me, motivates me and pours energy into me.<br>
-              &nbsp;&nbsp;&nbsp;&nbsp; I host a youtube channel, "GA InTheHouse" to document a few of my attempts at creating good music.<br>
+              &nbsp;&nbsp;&nbsp;&nbsp; I like playing the keyboard, piano and singing along to tunes.<br>
+              &nbsp;&nbsp;&nbsp;&nbsp; Back in highschool, I hosted a youtube channel, "GA InTheHouse" to document a few of my attempts at creating good music.<br>
             </p>
             <h1 style="font-family:'Charmonman',cursive; font-size: 30px; color: white;">
               &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;My Favourite Pieces
@@ -552,7 +907,7 @@
                   </p>
                   <br>
                 </div>
-                <div class="mySlides3 item-7" style="background: url(images/writing.jpg) no-repeat; background-size:auto">
+                <div class="mySlides5 item-7" style="background: url(images/writing.jpg) no-repeat; background-size:auto">
                   <div class="numbertext">2/3</div>
                   <h1 style="font-family:'Charmonman',cursive;text-align: center;" class="writing-icon">
                     <span class="glyphicon glyphicon-book" style="font-size:12px;"></span>
@@ -580,7 +935,7 @@
                   </div>
                   <br><br><br><br><br> <br><br><br><br><br> <br><br><br><br><br> <br><br>
                 </div>
-                <div class="mySlides3 item-8">
+                <div class="mySlides5 item-8">
                   <div class="numbertext">3/3</div>
                   <br><br>
                   <h1 style="text-align: center; color: aliceblue;">
@@ -597,64 +952,65 @@
                   <br>
                   <ul>
                     <li>Island Hopping In Indonesia</li>
+                    <li>Sailing and Hiking In Seattle</li>
                     <li>The Venetian Macau's Casino</li>
                     <li>Wisconsin Dells Waterparks</li>
-                    <li>Mini waterfalls during monsoon alonf Mumbai - Pune Expressway In India</li>
+                    <li>Mini waterfalls during monsoon along Mumbai - Pune Expressway In India</li>
                   </ul>
                   <br>
                   <br>
                   <h1 style="font-family:'Charmonman',cursive; font-size: 25px;">
-                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;My Last Visit: Seattle, Washington, United States
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;My Last Visit: Manhattan, New York, United States
                   </h1>
                   <br><br><br><br><br> <br><br><br><br><br> <br><br><br><br><br> <br><br>
                 </div>
-                <a class="prev" onclick="plusSlides3(-1)">&#10094;</a>
-                <a class="next" onclick="plusSlides3(1)">&#10095;</a>
+                <a class="prev" onclick="plusSlides5(-1)">&#10094;</a>
+                <a class="next" onclick="plusSlides5(1)">&#10095;</a>
 
                 <div class="caption-container">
-                  <p id="caption3"></p>
+                  <p id="caption5"></p>
                 </div>
                 <div class="column-lightbox">
-                  <img class="demo3 cursor" src="images/concert.jpg" style="max-width:100%; max-height: 100%;" onclick="currentSlide3(1)" alt="Music">
+                  <img class="demo5 cursor" src="images/concert.jpg" style="max-width:100%; max-height: 100%;" onclick="currentSlide5(1)" alt="Music">
                 </div>
                 <div class="column-lightbox">
-                  <img class="demo3 cursor" src="images/writing.jpg" style="width:100%" onclick="currentSlide3(2)" alt="Art">
+                  <img class="demo5 cursor" src="images/writing.jpg" style="width:100%" onclick="currentSlide5(2)" alt="Art">
                 </div>
                 <div class="column-lightbox">
-                  <img class="demo3 cursor" src="images/map.jpg" style="max-width:100%; max-height:100%" onclick="currentSlide3(3)" alt="Travelling">
+                  <img class="demo5 cursor" src="images/map.jpg" style="max-width:100%; max-height:100%" onclick="currentSlide5(3)" alt="Travelling">
                 </div>
               </div>
             </div>
             <script>
-            function openModal3()
+            function openModal5()
             {
-              document.getElementById('myModallightbox3').style.display = "block";
+              document.getElementById('myModallightbox5').style.display = "block";
             }
 
-            function closeModallightbox3()
+            function closeModallightbox5()
             {
-              document.getElementById('myModallightbox3').style.display = "none";
+              document.getElementById('myModallightbox5').style.display = "none";
             }
 
             var slideIndex = 1;
-            showSlides3(slideIndex);
+            showSlides5(slideIndex);
 
-            function plusSlides3(n)
+            function plusSlides5(n)
             {
-              showSlides3(slideIndex += n);
+              showSlides5(slideIndex += n);
             }
 
-            function currentSlide3(n)
+            function currentSlide5(n)
             {
-              showSlides3(slideIndex = n);
+              showSlides5(slideIndex = n);
             }
 
-            function showSlides3(n)
+            function showSlides5(n)
             {
               var i;
-              var slides = document.getElementsByClassName("mySlides3");
-              var dots = document.getElementsByClassName("demo3");
-              var captionText = document.getElementById("caption3");
+              var slides = document.getElementsByClassName("mySlides5");
+              var dots = document.getElementsByClassName("demo5");
+              var captionText = document.getElementById("caption5");
               if (n > slides.length) {slideIndex = 1}
               if (n < 1) {slideIndex = slides.length}
               for (i = 0; i < slides.length; i++)
@@ -673,9 +1029,8 @@
 
           </section>
 
-
-          <!-- The Story Of My Life -->
-          <section class="content content-2" id="story">
+    <!-- The Story Of My Life -->
+    <section class="content content-2" id="story">
             <div class="container">
               <div class="row">
                 <div class="col-sm-6">
@@ -683,7 +1038,7 @@
                   <h2 class="section-header" style="font-family: 'Charmonman', cursive; ">
                     &nbsp;&nbsp;&nbsp;&nbsp;<span class="glyphicon glyphicon-pushpin text-primary"></span>
                     <br>
-                    In The Media
+                    Articles
                   </h2>
                 </div>
               </div>
@@ -717,18 +1072,17 @@
             <div class="responsive">
               <div class="gallery">
                 <a target="_blank" href="https://madison.com/ct/news/local/govt-and-politics/data-science-in-madison-class-offers-uw-students-real-world-projects/article_9e5db95e-192c-5747-bd3a-a467d2228c30.html?omhide=true">
-                  <img src="images/638.png" alt="Mountains" width="600" height="400">
+                  <img src="images/638.png" alt="Madison" width="600" height="400">
                 </a>
                 <div class="desc">Data Science In Wisconsin</div>
               </div>
             </div>
 
-            <div class="clearfix"></div>
 
-          </section>
+    </section>
 
-          <!-- Skills -->
-          <section class="content content-4" id="skills">
+    <!-- Skills -->
+    <section class="content content-4" id="skills">
             <div class="container">
 
               <h2 class="section-header" style="font-family: 'Charmonman', cursive; ">
@@ -809,14 +1163,14 @@
           </section>
 
 
-          <!-- Footer -->
-          <footer class="page-footer">
+    <!-- Footer -->
+    <footer class="page-footer">
 
             <!-- Contact Us -->
             <div class="contact" id="socials">
               <div class="container">
 
-                <h2 class="section-heading">Get Connected!!</h2>
+                <h2 class="footer-header">Get Connected!!</h2>
                 <p>
                   <br>
                   <a href="https://www.instagram.com/gainthehouse/"><img src="images/instagram.png" float="centre"></a>
@@ -828,11 +1182,9 @@
                   <a href="https://github.com/GAInTheHouse"><img src="images/github.png"></a>
                   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                   <a href="https://devpost.com/GAInTheHouse?ref_content=user-portfolio&ref_feature=portfolio&ref_medium=global-nav"><img src="images/devpost.png"></a>
-                  <br><br>
-                  <a href="mailto:gauti@gainthehouse.com">
+                  <br><br>                  
                     <span class="glyphicon glyphicon-envelope" style="color:white;"></span>
-                    <br>gauti@gainthehouse.com
-                  </a>
+                    <br>agarwal gautam 2010 at gmail
                 </p>
               </div>
             </div>
@@ -848,17 +1200,17 @@
 
           </footer>
 
-          <!-- jQuery -->
-          <script src="js/jquery-1.11.3.min.js"></script>
+    <!-- jQuery -->
+    <script src="js/jquery-1.11.3.min.js"></script>
 
-          <!-- Bootstrap Core JavaScript -->
-          <script src="js/bootstrap.min.js"></script>
+    <!-- Bootstrap Core JavaScript -->
+    <script src="js/bootstrap.min.js"></script>
 
-          <!-- Plugin JavaScript -->
-          <script src="js/jquery.easing.min.js"></script>
+    <!-- Plugin JavaScript -->
+    <script src="js/jquery.easing.min.js"></script>
 
-          <!-- Custom Javascript -->
-          <script src="js/custom.js"></script>
+    <!-- Custom Javascript -->
+    <script src="js/custom.js"></script>
     
     <script type="module">
   // Import the functions you need from the SDKs you need
@@ -884,5 +1236,6 @@
   const analytics = getAnalytics(app);
 </script>
 
-        </body>
-        </html>
+</body>
+</html>
+    
