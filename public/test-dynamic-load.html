@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dynamic Content Test</title>
+    <script src="js/jquery-1.11.3.min.js"></script>
+</head>
+<body>
+    <h1>Dynamic Content Loading Test</h1>
+    <div id="status"></div>
+    <div id="results"></div>
+
+    <script>
+        $(document).ready(function() {
+            console.log('jQuery loaded:', typeof jQuery !== 'undefined');
+            $('#status').append('<p>jQuery loaded: ' + (typeof jQuery !== 'undefined') + '</p>');
+
+            // Test loading research.json
+            $.getJSON('data/research.json')
+                .done(function(data) {
+                    console.log('✓ Successfully loaded research.json:', data);
+                    $('#results').append('<p style="color: green;">✓ research.json loaded: ' + data.projects.length + ' projects</p>');
+                })
+                .fail(function(jqXHR, textStatus, errorThrown) {
+                    console.error('✗ Failed to load research.json:', textStatus, errorThrown);
+                    $('#results').append('<p style="color: red;">✗ Failed to load research.json: ' + textStatus + ' - ' + errorThrown + '</p>');
+                });
+
+            // Test loading projects.json
+            $.getJSON('data/projects.json')
+                .done(function(data) {
+                    console.log('✓ Successfully loaded projects.json:', data);
+                    $('#results').append('<p style="color: green;">✓ projects.json loaded: ' + data.projects.length + ' projects</p>');
+                })
+                .fail(function(jqXHR, textStatus, errorThrown) {
+                    console.error('✗ Failed to load projects.json:', textStatus, errorThrown);
+                    $('#results').append('<p style="color: red;">✗ Failed to load projects.json: ' + textStatus + ' - ' + errorThrown + '</p>');
+                });
+
+            // Test loading work-experience.json
+            $.getJSON('data/work-experience.json')
+                .done(function(data) {
+                    console.log('✓ Successfully loaded work-experience.json:', data);
+                    $('#results').append('<p style="color: green;">✓ work-experience.json loaded: ' + data.experiences.length + ' experiences</p>');
+                })
+                .fail(function(jqXHR, textStatus, errorThrown) {
+                    console.error('✗ Failed to load work-experience.json:', textStatus, errorThrown);
+                    $('#results').append('<p style="color: red;">✗ Failed to load work-experience.json: ' + textStatus + ' - ' + errorThrown + '</p>');
+                });
+
+            // Test loading organizations.json
+            $.getJSON('data/organizations.json')
+                .done(function(data) {
+                    console.log('✓ Successfully loaded organizations.json:', data);
+                    $('#results').append('<p style="color: green;">✓ organizations.json loaded: ' + data.organizations.length + ' organizations</p>');
+                })
+                .fail(function(jqXHR, textStatus, errorThrown) {
+                    console.error('✗ Failed to load organizations.json:', textStatus, errorThrown);
+                    $('#results').append('<p style="color: red;">✗ Failed to load organizations.json: ' + textStatus + ' - ' + errorThrown + '</p>');
+                });
+
+            // Test loading hobbies.json
+            $.getJSON('data/hobbies.json')
+                .done(function(data) {
+                    console.log('✓ Successfully loaded hobbies.json:', data);
+                    $('#results').append('<p style="color: green;">✓ hobbies.json loaded: ' + data.hobbies.length + ' hobbies</p>');
+                })
+                .fail(function(jqXHR, textStatus, errorThrown) {
+                    console.error('✗ Failed to load hobbies.json:', textStatus, errorThrown);
+                    $('#results').append('<p style="color: red;">✗ Failed to load hobbies.json: ' + textStatus + ' - ' + errorThrown + '</p>');
+                });
+        });
+    </script>
+</body>
+</html>
+
