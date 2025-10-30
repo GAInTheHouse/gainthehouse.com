@@ -1,0 +1,118 @@
+{
+  "projects": [
+    {
+      "id": 1,
+      "title": "Machine Learning To Identify Diabetic Pathways in Mice and Humans",
+      "period": "May 2021 - Dec 2022",
+      "image": "images/projectx_2022.jpg",
+      "thumbnail": "images/projectx_2022.jpg",
+      "description": [
+        "Led team representing university in international ML research competition, competing against 21 universities worldwide",
+        "Applied 16 ML and Data Science Methods to correlate insulin & glucose levels in mice with gene expression data",
+        "Extracted expressive genomes from models using ExplainableAI solutions and extrapolated results with human genomes"
+      ],
+      "links": []
+    },
+    {
+      "id": 2,
+      "title": "ProjectX - Air Quality Prediction",
+      "period": "2021",
+      "image": "images/projectx_2021.jpg",
+      "thumbnail": "images/projectx_2021.jpg",
+      "logo": "images/badgerxlogo.png",
+      "description": [
+        "Represented the university in an international Machine Learning Research Competition revolving around climate change.",
+        "We compared different Machine Learning models to predict the Air Quality Index of a region in Northern California, one day after the onset of a wildfire in the vicinity.",
+        "We plan to continue our research for the next six months. This research will be useful in determining the longer-term trend to air quality index due to wildfires."
+      ],
+      "links": [
+        {
+          "type": "paper",
+          "url": "https://github.com/GAInTheHouse/BadgerX/blob/main/Submissions/Deliverable%203.pdf",
+          "image": "images/paper_1.png",
+          "text": "Research Paper"
+        },
+        {
+          "type": "document",
+          "url": "urs.pdf",
+          "image": "images/urs_logo.png",
+          "text": "Undergraduate Research Symposium 2021"
+        },
+        {
+          "type": "image",
+          "url": null,
+          "image": "images/urs.svg",
+          "text": "Team Snapshot"
+        },
+        {
+          "type": "external",
+          "url": "https://www.projectx2020.com/",
+          "text": "Competition Website"
+        },
+        {
+          "type": "video",
+          "url": "https://www.youtube.com/watch?v=AykKGLMdZtg",
+          "image": "images/youtube.png",
+          "text": "Participants video"
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "title": "Water Infrastructure",
+      "period": "2020-2021",
+      "image": "images/city_of_madison.png",
+      "thumbnail": "images/city_of_madison.png",
+      "description": [
+        "Research project using data analysis and machine learning to optimize the maintenance of roads and water mains in Madison.",
+        "Analyzed breakage factors and predicted future breakages in water pipes; factored road quality to suggest a combined repair plan."
+      ],
+      "links": [
+        {
+          "type": "document",
+          "url": "Water_Infrastructure_Paper.pdf",
+          "image": "images/Water_Infrastructure_JSPG.png",
+          "text": "Paper"
+        },
+        {
+          "type": "document",
+          "url": "Water_Infrastructure_Presentation.pdf",
+          "image": "images/Water_Infrastructure.svg",
+          "text": "Presentation"
+        },
+        {
+          "type": "external",
+          "url": "https://madison.com/ct/news/local/govt-and-politics/data-science-in-madison-class-offers-uw-students-real-world-projects/article_9e5db95e-192c-5747-bd3a-a467d2228c30.html?omhide=true",
+          "image": "images/638.png",
+          "text": "Data Science In Wisconsin"
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "title": "Uncertainty Estimation",
+      "period": "Spring 2021",
+      "image": "images/skunkworks.png",
+      "thumbnail": "images/skunkworks.png",
+      "description": [
+        "Research project using error analysis to estimate the domain of standard machine learning models.",
+        "Explored the relationship between different distance metrics and the error in different error metrics."
+      ],
+      "links": [
+        {
+          "type": "document",
+          "url": "skunkworks_slide_deck.pdf",
+          "image": "images/skunkworks_report.svg",
+          "text": "Research Deck"
+        },
+        {
+          "type": "image",
+          "url": null,
+          "image": "images/Skunkworks-S21.png",
+          "text": "Team Picture"
+        }
+      ]
+    }
+  ]
+}
+

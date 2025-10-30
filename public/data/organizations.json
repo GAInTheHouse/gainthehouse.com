@@ -1,0 +1,82 @@
+{
+  "organizations": [
+    {
+      "id": 1,
+      "name": "dotData Science",
+      "position": "President",
+      "image": "images/dotData.png",
+      "thumbnail": "images/dotData.png",
+      "description": "Data Science Club is an inspirational place to begin surfing society's next big wave — Big Data. Data science has grown immensely across CS, statistics, business, sciences, and other fields, and we would like to connect, educate, and inspire students across campus, helping them understand how data science fits into their interests and careers. Our main activities/events will range from seminars & talks to study groups to semester long projects, and other opportunities to get students engaged outside of lectures.",
+      "role": "Contribute to Industry & Faculty Outreach, Social Media Marketing, Collaboration Discussions. Organize Data Science and Career Development Workshops and Virtual Networking Events for 525 club members",
+      "links": [
+        {
+          "type": "document",
+          "url": "End%20of%20the%20Year.pdf",
+          "image": "images/end_of_year.svg",
+          "text": "End of Year Presentation"
+        },
+        {
+          "type": "image",
+          "url": null,
+          "image": "images/virtual.png",
+          "text": "Virtual Meeting with Amazon Scientist"
+        },
+        {
+          "type": "image",
+          "url": null,
+          "image": "images/datathon.jpg",
+          "text": "Datathon"
+        },
+        {
+          "type": "external",
+          "url": "http://dotdatascience.org/",
+          "text": "Website"
+        },
+        {
+          "type": "external",
+          "url": "https://win.wisc.edu/organization/dotdata",
+          "text": "Wisonsin Involvment Network"
+        },
+        {
+          "type": "linkedin",
+          "url": "https://www.linkedin.com/company/dotdatascienceuw/",
+          "text": "LinkedIn"
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "name": "Badger Cricket Club",
+      "position": "Co-founder",
+      "image": "images/bcc.jpeg",
+      "thumbnail": "images/bcc.jpeg",
+      "logo": "images/bcc_no_bg.png",
+      "description": "The only active cricket club on the campus of the University of Wisconsin - Madison. We are affiliated with American College Cricket (ACC) and aspire to spread recreational and competitive cricket. We intend to play cricket both indoors and outdoors as the weather permits. The game will be played using synthetic and tennis balls for recreation cricket and leather balls with cricketing gear for competitive. The equipment will be provided by the club but members are open to bring their own equipment too. No prior experience is required. We would like to promote greater bonds of friendships between organization members by playing cricket together.",
+      "role": "Manage organization affiliation, organize cricket matches, live match streams, and networking events. Promote cricket on campus and develop a community of about 275 cricket enthusiasts",
+      "links": [
+        {
+          "type": "document",
+          "url": "bcc.pdf",
+          "image": "images/bcc.jpeg",
+          "text": "First Presentation"
+        },
+        {
+          "type": "video",
+          "url": "videos/practisce.mp4",
+          "text": "Cricket Practisce Session"
+        },
+        {
+          "type": "video",
+          "url": "videos/nets.mp4",
+          "text": "Nets Session"
+        },
+        {
+          "type": "external",
+          "url": "https://win.wisc.edu/organization/badgercricket",
+          "text": "Wisonsin Involvment Network"
+        }
+      ]
+    }
+  ]
+}
+

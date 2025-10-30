@@ -1,0 +1,93 @@
+{
+  "experiences": [
+    {
+      "id": 1,
+      "title": "Software Engineer - Epic Systems",
+      "subtitle": "Epic Assistant - Natural Language Platform | Mar 2023 - Present",
+      "image": "images/epic.svg",
+      "thumbnail": "images/epic.svg",
+      "description": [
+        "Created general-purpose NLP library to support user interactions in 6 Epic applications; reduced LLM dependency by 80%",
+        "Set up LLM integration for conversational AI chatbot platform to automate entity extraction",
+        "Designed and constructed dynamic backend infrastructure for chatbot to extend functionality for 3 Epic applications",
+        "Led research project to enhance LLM output for multiple chatbot functionalities, improving automation by 76%",
+        "Introduced native NLP in search snippets, improving user response by 62%",
+        "Developed pre-charting clinical summarization tool cutting down provider prep time by 25 minutes per patient",
+        "Directed investigation into building native Speech-To-Text service (STT) to deploy across organization",
+        "Designed Chatbot - agentic framework integration, unlocking orchestration features and extending AI adoption across 6 products",
+        "Stretched organization roadmap by pitching ideas to enhance end-user experience across 5 AI-based features",
+        "Mentored 4 interns; provided expertise in STT & LLM-focused engineering for TranslationalAI, ConversationalAI & Summarization",
+        "Engaged with customers as product expert during multiple customer conferences and group calls with 750 customers",
+        "Judged 3 organization-sponsored hackathons and contributed to 4 university recruiting events, engaging with 400+ students"
+      ]
+    },
+    {
+      "id": 2,
+      "title": "Software Engineering Intern - Google",
+      "subtitle": "Display & Video 360 | May 2022 - Sep 2022",
+      "image": "images/google.png",
+      "thumbnail": "images/google.png",
+      "description": [
+        "Developed workflow using Python and Google tools to automate cost model generation and weekly update",
+        "Engineered fast, lightweight validation method to replace traditional iterative A/B validation method",
+        "Decreased 7 manual steps to a single confirmation step; reduced runtime from 16 - 28 hours to 8 hours; decreased server load"
+      ]
+    },
+    {
+      "id": 3,
+      "title": "Media Workflow Engineering Intern - WarnerMedia",
+      "subtitle": "Sep 2021 - Apr 2022",
+      "image": "images/warnermedia.jpg",
+      "thumbnail": "images/warnermedia.jpg",
+      "description": [
+        "Developed media workflow software using SDVI and AWS platforms",
+        "Participated in Scrum methodologies and teamwork strategies like pair programming & code reviews"
+      ]
+    },
+    {
+      "id": 4,
+      "title": "Enterprise Integration Intern",
+      "subtitle": "UW-Madison Division of Information Technology | Feb 2021 - Sep 2021",
+      "image": "images/uw_logo.png",
+      "thumbnail": "images/uw_logo.png",
+      "description": [
+        "Helped integrate IT systems and data across the UW, worked with modern DevOps technologies and cloud platforms",
+        "Migrated systems integration to new Platforms: Informatica, AWS, & Apigee"
+      ]
+    },
+    {
+      "id": 5,
+      "title": "Undergraduate Teaching Assistant",
+      "subtitle": "UW-Madison Dept. of Computer Science | Jan 2021 - May 2021",
+      "image": "images/uw_logo.png",
+      "thumbnail": "images/uw_logo.png",
+      "description": [
+        "Designed debugging exercises, projects, and discussion content for Python course exploring web scraping and machine learning",
+        "Guided up to 375 students throughout the course during office hours and weekly group mentoring sessions"
+      ]
+    },
+    {
+      "id": 6,
+      "title": "AI & Computer Vision Intern",
+      "subtitle": "CamfyVision Innovations | May 2020 - Sep 2020",
+      "image": "images/camfyvision.jpg",
+      "thumbnail": "images/camfyvision.jpg",
+      "description": [
+        "Developed products through Data Collection, Inference Engine Coding, Model Training & Testing to cater to client needs",
+        "Products: Face Mask Detection, Social Distance Detection, Employee Detection, Solar Cell Detection, Helmet Detection"
+      ]
+    },
+    {
+      "id": 7,
+      "title": "Project Intern",
+      "subtitle": "The Tata Power Company Ltd. | Mumbai, India | Jul 2018 - Oct 2018",
+      "image": "images/tata.webp",
+      "thumbnail": "images/tata.webp",
+      "description": [
+        "Designed a PHP-based web application to monitor hydroelectric dam health remotely and store analyzable data",
+        "Displayed various parameters including flow rate, reservoir volume, and gate integrity on a dashboard"
+      ]
+    }
+  ]
+}
+
