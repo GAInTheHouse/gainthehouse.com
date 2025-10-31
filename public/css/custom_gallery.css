@@ -14,6 +14,7 @@ div.gallery video,div.gallery img
 {
      width: 350px;
      height: 215px;
+     object-fit: cover;
 }
 div.desc
 {
@@ -38,6 +39,7 @@ div.desc
 {
      width: 250px;
      height: 175px;
+     object-fit: cover;
 }
 
     div.desc
@@ -66,6 +68,7 @@ div.desc
 {
      width: 200px;
      height: 175px;
+     object-fit: cover;
 }
 
     div.desc
@@ -95,6 +98,7 @@ div.desc
 {
      width: 150px;
      height: 150px;
+     object-fit: cover;
 }
 
     div.desc
@@ -123,6 +127,7 @@ div.desc
 {
      width: 100px;
      height: 125px;
+     object-fit: cover;
 }
 
     div.desc
@@ -151,6 +156,7 @@ div.desc
 {
      width: 75px;
      height: 100px;
+     object-fit: cover;
 }
 
     div.desc

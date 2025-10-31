@@ -14,7 +14,14 @@
 .column-lightbox
 {
   float: left;
-  width: 33%;
+  width: calc(25% - 8px);
+  height: 150px;
+  overflow: hidden;
+  margin: 4px;
+  background-color: #f0f0f0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .modal-lightbox {
@@ -120,12 +127,31 @@
   color: white;
 }
 
-.demo, .demo2, .demo3
+.demo, .demo2, .demo3, .demo4, .demo5
 {
   opacity: 0.6;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  display: block;
 }
 
-.active,.demo:hover, .demo2:hover, .demo3:hover
+.active,.demo:hover, .demo2:hover, .demo3:hover, .demo4:hover, .demo5:hover
 {
   opacity: 1;
+}
+
+/* Responsive adjustments for lightbox thumbnails */
+@media screen and (max-width: 768px) {
+  .column-lightbox {
+    width: calc(33.33% - 8px);
+    height: 120px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .column-lightbox {
+    width: calc(50% - 8px);
+    height: 100px;
+  }
 }
