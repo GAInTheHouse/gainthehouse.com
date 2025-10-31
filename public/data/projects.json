@@ -1,0 +1,134 @@
+{
+  "projects": [
+    {
+      "id": 1,
+      "title": "MeetFree",
+      "period": "May 2024 - June 2024",
+      "image": "images/meetFree.jpeg",
+      "thumbnail": "images/meetFree.jpeg",
+      "description": [
+        "Built web application to record and auto-summarize meetings, simplifying manual note-taking for team discussions",
+        "Leveraged Google Cloud to establish infra and engineered transcription processing multi-speaker audio via Google Speech-To-Text",
+        "Engineered prompt-based summarization service utilizing Gemini to generate concise, structured notes, cutting review time"
+      ],
+      "links": []
+    },
+    {
+      "id": 2,
+      "title": "Cyber Jacket",
+      "period": "2020",
+      "image": "images/cybersecurity.jpg",
+      "thumbnail": "images/cybersecurity.jpg",
+      "description": [
+        "A jacket that shows your security breaches by showing whether it passes our security tests by LED colors (Red - fail, Yellow - semi-vulnerable, Green - pass) and showing solution suggestions on a website.",
+        "We designed this using a security guard-style jacket and created LED strip designs on the jacket.",
+        "What makes this unique is that security awareness education does not involve wearable aspects, and is usually information heavy.",
+        "This is a fun way to learn more about how security breaches and safety.",
+        "My contribution: Project Manager; Engineered the architecture; Set up the cloud infrastructure; Developed flask application; Developed multiple arduino code bases to connect remotely to internet, scrape a website, find data, communicate beween different modules and the lights"
+      ],
+      "links": [
+        {
+          "type": "image",
+          "url": null,
+          "image": "images/cybersecurity_jacket.jpg",
+          "text": "Jacket"
+        },
+        {
+          "type": "image",
+          "url": "images/cybersecurity_poster.jpg",
+          "image": "images/cybersecurity_poster.jpg",
+          "text": "Poster"
+        },
+        {
+          "type": "image",
+          "url": "images/cybersecurity_architecture.png",
+          "image": "images/cybersecurity_architecture.png",
+          "text": "Project Architecture"
+        },
+        {
+          "type": "github",
+          "url": "https://github.com/GAInTheHouse/cybersecurity-jacketS",
+          "text": "Project Repository"
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "title": "Blind Man's Bluff",
+      "period": "HackMIT 2020",
+      "image": "images/blind.jpg",
+      "thumbnail": "images/blind.jpg",
+      "description": [
+        "Built a mobile application in flutter to help people who are blind navigate through their daily routine.",
+        "Used state of the art real-time object detection and distance estimation to alert the user through vibrations and audio feedback.",
+        "Competition: HackMIT 2020"
+      ],
+      "links": [
+        {
+          "type": "document",
+          "url": "Blind.pdf",
+          "image": "images/blindpresentation.svg",
+          "text": "Presentation"
+        },
+        {
+          "type": "image",
+          "url": null,
+          "image": "images/blind.jpg",
+          "text": "Prototype Snapshot"
+        },
+        {
+          "type": "video",
+          "url": "videos/demo.mp4",
+          "text": "Demo"
+        },
+        {
+          "type": "github",
+          "url": "https://github.com/GAInTheHouse/blind-mans-bluff",
+          "text": "Project Repository"
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "title": "COVID Bot",
+      "period": "SOS Hackathon 2020",
+      "image": "images/bot.jpg",
+      "thumbnail": "images/bot.jpg",
+      "description": [
+        "Designed, coded, and prototyped an automated mopping robot with UV disinfectant light and Arduino",
+        "Used for sanitizing surfaces in hospitals during the COVID-19 outbreak to reduce hospital maintenance staff and the infection rate",
+        "Competition: SOS Hackathon 2020"
+      ],
+      "links": [
+        {
+          "type": "video",
+          "url": "videos/COVID-BOT.mp4",
+          "text": "SOS Hackathon 2020 Presentation"
+        },
+        {
+          "type": "image",
+          "url": null,
+          "image": "images/bot.jpg",
+          "text": "Prototype Snapshot"
+        },
+        {
+          "type": "external",
+          "url": "https://www.instagram.com/p/CCllTuADaEI/",
+          "image": "images/morgridge.png",
+          "text": "In The Media!"
+        },
+        {
+          "type": "devpost",
+          "url": "https://devpost.com/software/covid-bot-9m8xh6",
+          "text": "DEVPOST site"
+        },
+        {
+          "type": "github",
+          "url": "https://github.com/GAInTheHouse/COVID-BOT",
+          "text": "Project Repository"
+        }
+      ]
+    }
+  ]
+}
+

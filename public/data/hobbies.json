@@ -1,0 +1,92 @@
+{
+  "hobbies": [
+    {
+      "id": 1,
+      "title": "Music",
+      "backgroundImage": "images/concert.jpg",
+      "cssClass": "item-18",
+      "thumbnail": "images/concert.jpg",
+      "icon": {
+        "type": "glyphicon-music",
+        "sizes": [6, 12, 18, 24, 30]
+      },
+      "description": [
+        "I like playing the keyboard, piano and singing along to tunes.",
+        "Back in highschool, I hosted a youtube channel, \"GA InTheHouse\" to document a few of my attempts at creating good music."
+      ],
+      "sectionTitle": "My Favourite Pieces",
+      "videos": [
+        {
+          "url": "videos/sway.mp4",
+          "title": "Sway"
+        },
+        {
+          "url": "videos/jamaican.mp4",
+          "title": "Jamaican Farewell"
+        },
+        {
+          "url": "videos/imagine.mp4",
+          "title": "Imagine"
+        }
+      ],
+      "links": [
+        {
+          "type": "youtube",
+          "url": "https://www.youtube.com/channel/UCxS1_cz53xz7WYj1E4BYRvg?view_as=subscriber",
+          "image": "images/youtube.png",
+          "text": "View some more videos on"
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "title": "Art",
+      "backgroundImage": "images/writing.jpg",
+      "cssClass": "item-19",
+      "thumbnail": "images/writing.jpg",
+      "icon": {
+        "type": "glyphicon-pencil",
+        "additionalIcons": ["glyphicon-book"],
+        "sizes": [12, 12, 18, 24, 36]
+      },
+      "sectionTitle": "My Favourite Artworks",
+      "titleColor": "skyblue",
+      "images": [
+        {
+          "url": "images/art1.jpg",
+          "title": "Name Doodle"
+        },
+        {
+          "url": "images/art2.jpg",
+          "title": "Playing with lines"
+        },
+        {
+          "url": "images/art3.jpg",
+          "title": "Abstract Art"
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "title": "Travelling",
+      "cssClass": "item-20",
+      "thumbnail": "images/map.jpg",
+      "icon": {
+        "type": "glyphicon-globe",
+        "additionalIcons": ["glyphicon-plane"],
+        "sizes": [30, 24]
+      },
+      "titleColor": "aliceblue",
+      "sectionTitle": "My Favourite Activites",
+      "activities": [
+        "Island Hopping In Indonesia",
+        "Sailing and Hiking In Seattle",
+        "The Venetian Macau's Casino",
+        "Wisconsin Dells Waterparks",
+        "Mini waterfalls during monsoon along Mumbai - Pune Expressway In India"
+      ],
+      "lastVisit": "Manhattan, New York, United States"
+    }
+  ]
+}
+

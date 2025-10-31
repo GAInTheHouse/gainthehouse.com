@@ -1,0 +1,29 @@
+{
+  "articles": [
+    {
+      "id": 1,
+      "title": "Staying in India For Fall 2020",
+      "image": "images/abroad.png",
+      "url": "https://www.dailycardinal.com/article/2020/09/college-from-afar-some-uw-madison-students-decide-to-stay-home-for-fall-semester"
+    },
+    {
+      "id": 2,
+      "title": "COVID BOT Initiative - Morgridge Center",
+      "image": "images/morgridge.png",
+      "url": "https://www.instagram.com/p/CCllTuADaEI/"
+    },
+    {
+      "id": 3,
+      "title": "Accuweather ProjectX Podcast",
+      "image": "images/podcast.png",
+      "url": "https://www.accuweather.com/podcast/everythingunderthesun?id=8e952980-1fbc-11eb-b4b7-b7db8cbfe574&autoplay=true"
+    },
+    {
+      "id": 4,
+      "title": "Data Science In Wisconsin",
+      "image": "images/638.png",
+      "url": "https://madison.com/ct/news/local/govt-and-politics/data-science-in-madison-class-offers-uw-students-real-world-projects/article_9e5db95e-192c-5747-bd3a-a467d2228c30.html?omhide=true"
+    }
+  ]
+}
+

@@ -111,7 +111,7 @@
       <div class="header-content-inner">
         <img src="images/1.png" class="gautam-image">
         <br><br><br><br><br><br>
-        <h1  clss="gautam-font"style="float:left;">&nbsp;&nbsp;Hi! I am Gautam</h1>
+        <h1  class="gautam-font"style="float:left;">&nbsp;&nbsp;Hi! I am Gautam</h1>
         <br><br><br><br><br><br><br>
 
       </div>
@@ -135,11 +135,17 @@
           </div>
         </a>
         <a onclick="openModal();currentSlide(2)" class="cursor">
-          <div class="col-md-4 promo-item item-10">
+          <div class="col-md-4 promo-item item-2">
           </div>
         </a>
         <a onclick="openModal();currentSlide(3)" class="cursor">
-          <div class="col-md-4 promo-item item-11">
+          <div class="col-md-4 promo-item item-3">
+          </div>
+        </a>
+      </div>
+      <div class="row promo">
+        <a onclick="openModal();currentSlide(4)" class="cursor">
+          <div class="col-md-4 promo-item item-4">
             <h1>Uncertainty Estimation</h1>
           </div>
         </a>
@@ -148,107 +154,7 @@
     <div id="myModallightbox" class="modal-lightbox">
       <span class="close-lightbox cursor" onclick="closeModallightbox()">&times;</span>
       <div class="modal-content-lightbox">
-        <div class="mySlides" style="background-color: coral; font-size: 18px; color: white;">
-          <div class="numbertext" >1/3</div>
-          <br>
-          <h1 style="text-align: center"  class="cursor">
-            <img src="images/badgerxlogo.png" width="5%" height="5%" float="center">
-          </h1>
-          <br>
-
-          <a href="https://github.com/GAInTheHouse/BadgerX/blob/main/Submissions/Deliverable%203.pdf" class="cursor">
-            <div class="gallery">
-              <img src="images/paper_1.png">
-              <div class="desc"><b>Research Paper</b></div>
-            </div>
-          </a>
-          <a href="urs.pdf" class="cursor">
-            <div class="gallery">
-              <img src="images/urs_logo.png">
-              <div class="desc"><b>Undergraduate Research Symposium 2021</b></div>
-            </div>
-          </a>
-
-          <div class="gallery">
-            <img src="images/urs.svg">
-            <div class="desc"><b>Team Snapshot</b></div>
-          </div>
-          <br><br><br><br><br><br><br><br><br><br><br>
-          <ul>
-            &nbsp;&nbsp;<li>Represented the university in an international Machine Learning Research Competition revolving around climate change.</li>
-            &nbsp;&nbsp;<li>We compared different Machine Learning models to predict the Air Quality Index of a region in Northern California, one day after the onset of a wildfire in the vicinity. </li>
-            &nbsp;&nbsp;<li>We plan to continue our research for the next six months. This research will be useful in determining the longer-term trend to air quality index due to wildfires.</li>
-            &nbsp;&nbsp;<li> <a href="https://www.projectx2020.com/" class="cursor">Competition Website</a></li>
-            &nbsp;&nbsp;
-            <li>
-              <a href="https://www.youtube.com/watch?v=AykKGLMdZtg" >
-                <img src="images/youtube.png">
-              </a>
-              : Participants video
-            </li>
-
-          </ul>
-          <br>
-
-
-        </div>
-        <div class="mySlides" style="background-color: coral; font-size: 18px; color: white;">
-          <div class="numbertext">2/3</div>
-          <br>
-          <h1 style="font-family:'Charmonman',cursive;text-align: center" class=" music-icon">
-            Water Infrastructure
-          </h1>
-          <br><br>
-          <a href="Water_Infrastructure_Paper.pdf">
-          <div class="gallery">
-            <img src="images/Water_Infrastructure_JSPG.png">
-            <div class="desc"><b>Paper</b></div>
-          </div>
-        </a>
-        <a href="Water_Infrastructure_Presentation.pdf">
-          <div class="gallery">
-            <img src="images/Water_Infrastructure.svg">
-            <div class="desc"><b>Presentation</b></div>
-          </div>
-            </a>
-          <div class="gallery">
-                <a target="_blank" href="https://madison.com/ct/news/local/govt-and-politics/data-science-in-madison-class-offers-uw-students-real-world-projects/article_9e5db95e-192c-5747-bd3a-a467d2228c30.html?omhide=true">
-                  <img src="images/638.png" alt="Madison" width="600" height="400">
-                </a>
-                <div class="desc">Data Science In Wisconsin</div>
-        </div>
-          <br><br><br><br><br><br><br><br><br><br><br>
-          <ul >
-              &nbsp;&nbsp;<li>Research project using data analysis and machine learning to optimize the maintenance of roads and water mains in Madison.  </li>
-              &nbsp;&nbsp;<li>Analyzed breakage factors and predicted future breakages in water pipes; factored road quality to suggest a combined repair plan. </li>
-          </ul>
-          <br><br><br><br><br>
-
-        </div>
-        <div class="mySlides" style="background-color: coral; font-size: 18px; color: white;" >
-          <div class="numbertext">3/3</div>
-          <br>
-          <h1 style="font-family:'Charmonman',cursive;text-align: center" class="music-icon">Uncertainty Estimation</h1>
-          <br><br>
-          <a href="skunkworks_slide_deck.pdf">
-          <div class="gallery">
-            <img src="images/skunkworks_report.svg">
-            <div class="desc">Research Deck</div>
-          </div>
-            </a>
-            <div class="gallery">
-              <img src="images/Skunkworks-S21.png">
-              <div class="desc">Team Picture</div>
-            </div>
-            <br><br><br><br><br><br><br><br><br><br><br>
-            <ul>
-              &nbsp;&nbsp;<li>Research project using error analysis to estimate the domain of standard machine learning models. </li>
-              &nbsp;&nbsp;<li>Explored the relationship between different distance metrics and the error in different error metrics.</li>
-
-            </ul>
-            <br>
-
-          </div>
+        <!-- Slides will be dynamically loaded here -->
           <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
           <a class="next" onclick="plusSlides(1)">&#10095;</a>
 
@@ -256,13 +162,16 @@
             <p id="caption"></p>
           </div>
           <div class="column-lightbox">
-            <img class="demo cursor" src="images/projectx.png" style="width:100%; max-height: 100%;" onclick="currentSlide(1)" alt="ProjectX">
+            <img class="demo cursor" src="images/projectx_2022.jpg" style="width:100%; height:100%; object-fit:cover;" onclick="currentSlide(1)" alt="Machine Learning To Identify Diabetic Pathways">
           </div>
           <div class="column-lightbox">
-            <img class="demo cursor" src="images/city_of_madison.png" style="max-width:100%;max-height: 10%" onclick="currentSlide(2)" alt="Water Infrastructure">
+            <img class="demo cursor" src="images/projectx_2021.jpg" style="width:100%; height:100%; object-fit:cover;" onclick="currentSlide(2)" alt="ProjectX">
           </div>
           <div class="column-lightbox">
-            <img class="demo cursor" src="images/skunkworks.png" style="max-width:100%; max-height:100%" onclick="currentSlide(3)" alt="Uncertainty Estimation">
+            <img class="demo cursor" src="images/city_of_madison.png" style="width:100%; height:100%; object-fit:cover;" onclick="currentSlide(3)" alt="Water Infrastructure">
+          </div>
+          <div class="column-lightbox">
+            <img class="demo cursor" src="images/skunkworks.png" style="width:100%; height:100%; object-fit:cover;" onclick="currentSlide(4)" alt="Uncertainty Estimation">
           </div>
         </div>
       </div>
@@ -279,7 +188,6 @@
       }
 
       var slideIndex = 1;
-      showSlides(slideIndex);
 
       function plusSlides(n)
       {
@@ -327,17 +235,24 @@
     <div class="container-fluid">
       <div class="row promo">
         <a onclick="openModal2();currentSlide2(1)" class="cursor">
-          <div class="col-md-4 promo-item item-12">
+          <div class="col-md-4 promo-item item-5">
             
           </div>
         </a>
         <a onclick="openModal2();currentSlide2(2)" class="cursor">
-          <div class="col-md-4 promo-item item-2">
-            <h1>Blind Man's Bluff</h1>
+          <div class="col-md-4 promo-item item-6">
+            
           </div>
         </a>
         <a onclick="openModal2();currentSlide2(3)" class="cursor">
-          <div class="col-md-4 promo-item item-3">
+          <div class="col-md-4 promo-item item-7">
+            <h1>Blind Man's Bluff</h1>
+          </div>
+        </a>
+      </div>
+      <div class="row promo">
+        <a onclick="openModal2();currentSlide2(4)" class="cursor">
+          <div class="col-md-4 promo-item item-8">
             <h1>COVID Bot</h1>
           </div>
         </a>
@@ -346,115 +261,7 @@
     <div id="myModallightbox2" class="modal-lightbox">
       <span class="close-lightbox cursor" onclick="closeModallightbox2()">&times;</span>
       <div class="modal-content-lightbox">
-        <div class="mySlides2" style="background-color: coral; font-size: 18px; color: white;">
-          <div class="numbertext" >1/3</div>
-          <br>
-          <h1 style="text-align: center"  class="cursor">
-            Cyber Jacket
-          </h1>
-          <br>
-
-          
-            <div class="gallery">
-              <img src="images/cybersecurity_jacket.jpg">
-              <div class="desc"><b>Jacket</b></div>
-            </div>
-
-          <a href="images/cybersecurity_poster.jpg" class="cursor">
-            <div class="gallery">
-              <img src="images/cybersecurity_poster.jpg">
-              <div class="desc">Poster</div>
-            </div>
-          </a>
-
-            <a href="images/cybersecurity_architecture.png" class="cursor">
-          <div class="gallery">
-            <img src="images/cybersecurity_architecture.png">
-            <div class="desc"><b>Project Architecture</b></div>
-          </div>
-            </a>
-          <br><br><br><br><br><br><br><br><br><br><br>
-          <ul>
-            &nbsp;&nbsp;<li> A jacket that shows your security breaches by showing whether it passes our security tests by LED colors (Red - fail, Yellow - semi-vulnerable, Green - pass) and showing solution suggestions on a website. </li>
-            &nbsp;&nbsp;<li>We designed this using a security guard-style jacket and created LED strip designs on the jacket. </li> 
-            &nbsp;&nbsp;<li>What makes this unique is that security awareness education does not involve wearable aspects, and is usually information heavy.  </li>
-            &nbsp;&nbsp;<li>This is a fun way to learn more about how security breaches and safety.</li>
-            &nbsp;&nbsp;<li>My contribution: Project Manager; Engineered the  architecture; Set up the cloud infrastructure; Developed flask application; Developed multiple arduino code bases to connect remotely to internet, scrape a website, find data, communicate beween different modules and the lights 
-                        </li>
-            &nbsp;&nbsp;<li> <a href="https://github.com/GAInTheHouse/cybersecurity-jacketS" class="cursor">Project Repository</a></li>      
-
-          </ul>
-          <br>
-
-
-        </div>
-        <div class="mySlides2" style="background-color: coral; font-size: 18px; color: white;">
-          <div class="numbertext">2/3</div>
-          <br>
-          <h1 style="font-family:'Charmonman',cursive;text-align: center" class=" music-icon">
-            Blind Man's Bluff
-          </h1>
-          <br><br>
-          <a href="Blind.pdf">
-          <div class="gallery">
-            <img src="images/blindpresentation.svg">
-            <div class="desc"><b>Presentation</b></div>
-          </div>
-        </a>
-          <div class="gallery">
-            <img src="images/blind.jpg">
-            <div class="desc"><b>Prototype Snapshot</b></div>
-          </div>
-          <div class="gallery">
-            <video controls>
-              <source src="videos/demo.mp4" type="video/mp4">
-                Your browser does not support the video tag.
-              </video>
-            <div class="desc"><b>Demo</b></div>
-          </div>
-          <br><br><br><br><br><br><br><br><br><br><br>
-          <ul >
-            &nbsp;&nbsp;<li>Built a mobile application in flutter to help people who are blind navigate through their daily routine.</li>
-            &nbsp;&nbsp;<li>Used state of the art real-time object detection and distance estimation to alert the user through vibrations and audio feedback. </li>
-            &nbsp;&nbsp;<li> Competition: HackMIT 2020</li>
-            &nbsp;&nbsp;<li> <a href="https://github.com/GAInTheHouse/blind-mans-bluff" class="cursor">Project Repository</a></li>
-          </ul>
-          <br><br><br><br><br>
-
-        </div>
-        <div class="mySlides2" style="background-color: coral; font-size: 18px; color: white;" >
-          <div class="numbertext">3/3</div>
-          <br>
-          <h1 style="font-family:'Charmonman',cursive;text-align: center" class="music-icon">COVID Bot</h1>
-          <br><br>
-          <div class="gallery">
-            <video controls>
-              <source src="videos/COVID-BOT.mp4" type="video/mp4">
-                Your browser does not support the video tag.
-              </video>
-              <div class="desc">SOS Hackathon 2020 Presentation</div>
-            </div>
-            <div class="gallery">
-              <img src="images/bot.jpg">
-              <div class="desc"><b>Prototype Snapshot</b></div>
-            </div>
-            <a target="_blank" href="https://www.instagram.com/p/CCllTuADaEI/">
-            <div class="gallery">
-              <img src="images/morgridge.png">
-              <div class="desc"><b>In The Media!</b></div>
-            </div></a>
-            <br><br><br><br><br><br><br><br><br><br><br>
-            <ul>
-              &nbsp;&nbsp;<li>Designed, coded, and prototyped an automated mopping robot with UV disinfectant light and Arduino</li>
-              &nbsp;&nbsp;<li>Used for sanitizing surfaces in hospitals during the COVID-19 outbreak to reduce hospital maintenance staff and the infection rate </li>
-              &nbsp;&nbsp;<li> Competition: SOS Hackathon 2020</li>
-
-              &nbsp;&nbsp;<li> <a href="https://devpost.com/software/covid-bot-9m8xh6" class="cursor"> DEVPOST site</a>  | <a href="https://github.com/GAInTheHouse/COVID-BOT" class="cursor">Project Repository</a></li>
-
-            </ul>
-            <br>
-
-          </div>
+        <!-- Slides will be dynamically loaded here -->
           <a class="prev" onclick="plusSlides2(-1)">&#10094;</a>
           <a class="next" onclick="plusSlides2(1)">&#10095;</a>
 
@@ -462,13 +269,16 @@
             <p id="caption2"></p>
           </div>
           <div class="column-lightbox">
-            <img class="demo2 cursor" src="images/cybersecurity.jpg" style="width:100%; max-height: 100%;" onclick="currentSlide2(1)" alt="Cybersecurity Jacket">
+            <img class="demo2 cursor" src="images/meetFree.jpeg" style="width:100%; height:100%; object-fit:cover;" onclick="currentSlide2(1)" alt="MeetFree">
           </div>
           <div class="column-lightbox">
-            <img class="demo2 cursor" src="images/blind.jpg" style="max-width:100%;max-height: 10%" onclick="currentSlide2(2)" alt="Blind Man's Bluff">
+            <img class="demo2 cursor" src="images/cybersecurity.jpg" style="width:100%; height:100%; object-fit:cover;" onclick="currentSlide2(2)" alt="Cybersecurity Jacket">
           </div>
           <div class="column-lightbox">
-            <img class="demo2 cursor" src="images/bot.jpg" style="max-width:100%; max-height:100%" onclick="currentSlide2(3)" alt="COVID BOT">
+            <img class="demo2 cursor" src="images/blind.jpg" style="width:100%; height:100%; object-fit:cover;" onclick="currentSlide2(3)" alt="Blind Man's Bluff">
+          </div>
+          <div class="column-lightbox">
+            <img class="demo2 cursor" src="images/bot.jpg" style="width:100%; height:100%; object-fit:cover;" onclick="currentSlide2(4)" alt="COVID BOT">
           </div>
         </div>
       </div>
@@ -485,7 +295,6 @@
       }
 
       var slideIndex = 1;
-      showSlides2(slideIndex);
 
       function plusSlides2(n)
       {
@@ -533,16 +342,37 @@
     <div class="container-fluid">
       <div class="row promo">
         <a onclick="openModal3();currentSlide3(1)" class="cursor">
-          <div class="col-md-4 promo-item item-13">
+          <div class="col-md-4 promo-item item-9">
               
           </div>
         </a>
         <a onclick="openModal3();currentSlide3(2)" class="cursor">
-          <div class="col-md-4 promo-item item-14">
-        
+          <div class="col-md-4 promo-item item-10">
+              
           </div>
         </a>
         <a onclick="openModal3();currentSlide3(3)" class="cursor">
+          <div class="col-md-4 promo-item item-11">
+        
+          </div>
+        </a>
+      </div>
+      <div class="row promo">
+        <a onclick="openModal3();currentSlide3(4)" class="cursor">
+          <div class="col-md-4 promo-item item-12">
+          </div>
+        </a>
+        <a onclick="openModal3();currentSlide3(5)" class="cursor">
+          <div class="col-md-4 promo-item item-13">
+          </div>
+        </a>
+        <a onclick="openModal3();currentSlide3(6)" class="cursor">
+          <div class="col-md-4 promo-item item-14">
+          </div>
+        </a>
+      </div>
+      <div class="row promo">
+        <a onclick="openModal3();currentSlide3(7)" class="cursor">
           <div class="col-md-4 promo-item item-15">
           </div>
         </a>
@@ -551,58 +381,7 @@
     <div id="myModallightbox3" class="modal-lightbox">
       <span class="close-lightbox cursor" onclick="closeModallightbox3()">&times;</span>
       <div class="modal-content-lightbox">
-        <div class="mySlides3" style="background-color: coral; font-size: 18px; color: white;">
-          <div class="numbertext" >1/3</div>
-          <br>
-          <h1 style="font-family:'Charmonman',cursive;text-align: center" class=" music-icon">
-            SWE Intern - Google LLC
-          </h1>
-          <br><br>
-          <br><br>
-          <ul>
-            &nbsp;&nbsp;<li> Developed workflow using Python and Google tools to automate the cost model generation and update the cost model weekly </li>
-            &nbsp;&nbsp;<li> Modularized and refactored unchecked code; found and fixed bugs while migrating code to the official repository. </li>
-            &nbsp;&nbsp;<li> Engineered a fast light-weight validation method to replace the traditional iterative A/B validation method. </li>
-            &nbsp;&nbsp;<li> Decreased 7 manual steps to a single confirmation step; improved runtime from 16 - 28 hours to 8 hours; decreased server load</li>
-          </ul>
-          <br>
-
-
-        </div>
-        <div class="mySlides3" style="background-color: coral; font-size: 18px; color: white;">
-          <div class="numbertext">2/3</div>
-          <br>
-          <h1 style="font-family:'Charmonman',cursive;text-align: center" class=" music-icon">
-           Media Workflow Engineering Intern - WarnerMedia 
-          </h1>
-          <br><br>
-          <br><br>
-          <ul >
-            &nbsp;&nbsp;<li>Developed media workflows software using SDVI and AWS platforms </li>
-            &nbsp;&nbsp;<li>Participated in Scrum methodologies and teamwork strategies like pair programming and code reviews</li>
-          </ul>
-          <br><br><br><br><br>
-
-        </div>
-        <div class="mySlides3" style="background-color: coral; font-size: 18px; color: white;" >
-          <div class="numbertext">3/3</div>
-          <br>
-          <h1 style="font-family:'Charmonman',cursive;text-align: center" class="music-icon">Enterprise Integration Intern, Division of Information Technology</h1>
-          <br><br>
-            <ul>
-              &nbsp;&nbsp;<li>Helped integrate IT systems and data across the UW, worked with modern DevOps technologies and cloud platforms. </li>
-              &nbsp;&nbsp;<li>Migrated systems integration to new Platforms: Informatica, AWS, & Apigee</li>
-            </ul>
-          <br><br>
-          <br><br>
-          <h1 style="font-family:'Charmonman',cursive;text-align: center" class="music-icon">Undergraduate Teaching Assistant, Department of Computer Sciences</h1>
-          <br><br>
-            <ul>
-              &nbsp;&nbsp;<li>Designed content for intermediate python course exploring web scraping and machine learning; debugging exercises and projects. </li>
-              &nbsp;&nbsp;<li>Guided upto 75 students throughout the course during office hours and weekly group mentoring sessions</li>
-            </ul>
-            <br>
-          </div>
+        <!-- Slides will be dynamically loaded here -->
           <a class="prev" onclick="plusSlides3(-1)">&#10094;</a>
           <a class="next" onclick="plusSlides3(1)">&#10095;</a>
 
@@ -610,13 +389,25 @@
             <p id="caption3"></p>
           </div>
           <div class="column-lightbox">
-            <img class="demo3 cursor" src="images/google.png" style="width:100%; max-height: 100%;" onclick="currentSlide3(1)" alt="Google SWE Intern">
+            <img class="demo3 cursor" src="images/epic.svg" style="width:100%; height:100%; object-fit:cover;" onclick="currentSlide3(1)" alt="Epic Systems Software Engineer">
           </div>
           <div class="column-lightbox">
-            <img class="demo3 cursor" src="images/warnermedia.jpg" style="max-width:100%;max-height: 10%" onclick="currentSlide3(2)" alt="WarnerMedia Media Workflow Engineering Intern">
+            <img class="demo3 cursor" src="images/google.png" style="width:100%; height:100%; object-fit:cover;" onclick="currentSlide3(2)" alt="Google Software Engineering Intern">
           </div>
           <div class="column-lightbox">
-            <img class="demo3 cursor" src="images/uw_logo.png" style="max-width:100%; max-height:100%" onclick="currentSlide3(3)" alt="Multiple Positions at University of Wisconsin-Madison">
+            <img class="demo3 cursor" src="images/warnermedia.jpg" style="width:100%; height:100%; object-fit:cover;" onclick="currentSlide3(3)" alt="WarnerMedia Media Workflow Engineering Intern">
+          </div>
+          <div class="column-lightbox">
+            <img class="demo3 cursor" src="images/uw_logo.png" style="width:100%; height:100%; object-fit:cover;" onclick="currentSlide3(4)" alt="UW-Madison Enterprise Integration Intern">
+          </div>
+          <div class="column-lightbox">
+            <img class="demo3 cursor" src="images/uw_logo.png" style="width:100%; height:100%; object-fit:cover;" onclick="currentSlide3(5)" alt="UW-Madison Teaching Assistant">
+          </div>
+          <div class="column-lightbox">
+            <img class="demo3 cursor" src="images/camfyvision.jpg" style="width:100%; height:100%; object-fit:cover;" onclick="currentSlide3(6)" alt="CamfyVision AI & Computer Vision Intern">
+          </div>
+          <div class="column-lightbox">
+            <img class="demo3 cursor" src="images/tata.webp" style="width:100%; height:100%; object-fit:cover;" onclick="currentSlide3(7)" alt="Tata Power Project Intern">
           </div>
         </div>
       </div>
@@ -633,7 +424,6 @@
       }
 
       var slideIndex = 1;
-      showSlides3(slideIndex);
 
       function plusSlides3(n)
       {
@@ -684,11 +474,11 @@
       <div class="container-fluid">
         <div class="row promo">
           <a onclick="openModal4();currentSlide4(1)" class="cursor">
-            <div class="col-md-4 promo-item item-4">
+            <div class="col-md-4 promo-item item-16">
             </div>
           </a>
           <a onclick="openModal4();currentSlide4(2)" class="cursor">
-            <div class="col-md-4 promo-item item-5">
+            <div class="col-md-4 promo-item item-17">
             </div>
           </a>
         </div>
@@ -696,76 +486,7 @@
       <div id="myModallightbox4" class="modal-lightbox">
         <span class="close-lightbox cursor" onclick="closeModallightbox4()">&times;</span>
         <div class="modal-content-lightbox">
-          <div class="mySlides4" style="background-color: coral; font-size: 18px; color: white;">
-            <div class="numbertext" >1/2</div>
-            <br>
-            <h1 style="text-align: center"  class="cursor">
-              <img src="images/dotData.png"  float="center">
-            </h1>
-
-            <br>
-            <a href="End%20of%20the%20Year.pdf">
-            <div class="gallery">
-              <img src="images/end_of_year.svg">
-              <div class="desc"style="color: black"><b>End of Year Presentation</b></div>
-            </div>
-              </a>
-            <div class="gallery">
-              <img src="images/virtual.png">
-              <div class="desc"style="color: black"><b>Virtual Meeting with Amazon Scientist</b></div>
-            </div>
-            <div class="gallery">
-              <img src="images/datathon.jpg">
-              <div class="desc"style="color: black"><b>Datathon</b></div>
-            </div>
-            <br><br><br><br><br><br><br><br><br><br><br>
-            <ul style="color:black">
-              &nbsp;&nbsp;<li>Position: President</li>
-              &nbsp;&nbsp;<li>About the Club: Data Science Club is an inspirational place to begin surfing society’s next big wave — Big Data. Data science has grown immensely across CS, statistics, business, sciences, and other fields, and we would like to connect, educate, and inspire students across campus, helping them understand how data science fits into their interests and careers. Our main activities/events will range from seminars & talks to study groups to semester long projects, and other opportunities to get students engaged outside of lectures.</li>
-              &nbsp;&nbsp;<li>My role: Contribute to Industry & Faculty Outreach, Social Media Marketing, Collaboration Discussions. Organize Data Science and Career Development Workshops and Virtual Networking Events for 525 club members</li>
-              &nbsp;&nbsp;<li> <a href="http://dotdatascience.org/" class="cursor"> Website</a>  | <a href="https://win.wisc.edu/organization/dotdata" class="cursor">Wisonsin Involvment Network</a> | <a href="https://www.linkedin.com/company/dotdatascienceuw/" class="cursor">LinkedIn</a></li>
-
-            </ul>
-            <br><br>
-          </div>
-          <div class="mySlides4" style="background-color: coral; font-size: 18px; color: white;">
-            <div class="numbertext">2/2</div>
-            <br>
-            <h1 style="text-align: center"  class="cursor">
-              <img src="images/bcc_no_bg.png" width="5%" height="5%" float="center">
-            </h1>
-            <br>
-            <a href="bcc.pdf">
-            <div class="gallery">
-              <img src="images/bcc.jpeg">
-              <div class="desc"style="color: black"><b>First Presentation</b></div>
-            </div>
-            </a>
-            <div class="gallery">
-              <video controls>
-                <source src="videos/practisce.mp4" type="video/mp4">
-                  Your browser does not support the video tag.
-                </video>
-                <div class="desc">Cricket Practisce Session</div>
-              </div>
-              <div class="gallery">
-                <video controls>
-                  <source src="videos/nets.mp4" type="video/mp4">
-                    Your browser does not support the video tag.
-                  </video>
-                  <div class="desc">Nets Session</div>
-                </div>
-
-            <br><br><br><br><br><br><br><br><br><br><br>
-            <ul style="color:black">
-              &nbsp;&nbsp;<li>Position: Co-founder</li>
-              &nbsp;&nbsp;<li>About the Club: The only active cricket club on the campus of the University of Wisconsin - Madison. We are affiliated with American College Cricket (ACC) and aspire to spread recreational and competitive cricket. We intend to play cricket both indoors and outdoors as the weather permits. The game will be played using synthetic and tennis balls for recreation cricket and leather balls with cricketing gear for competitive. The equipment will be provided by the club but members are open to bring their own equipment too. No prior experience is required. We would like to promote greater bonds of friendships between organization members by playing cricket together. </li>
-              &nbsp;&nbsp;<li>My role: Manage organization affiliation, organize cricket matches, live match streams, and networking events. Promote cricket on campus and develop a community of about 275 cricket enthusiasts</li>
-              &nbsp;&nbsp;<li><a href="https://win.wisc.edu/organization/badgercricket" class="cursor">Wisonsin Involvment Network</a></li>
-            </ul>
-            <br><br>
-          </div>
-
+          <!-- Slides will be dynamically loaded here -->
           <a class="prev" onclick="plusSlides4(-1)">&#10094;</a>
           <a class="next" onclick="plusSlides4(1)">&#10095;</a>
 
@@ -773,10 +494,10 @@
             <p id="caption4"></p>
           </div>
           <div class="column-lightbox">
-            <img class="demo4 cursor" src="images/dotData.png" style="max-width:100%; max-height: 100%;" onclick="currentSlide4(1)" alt="dotData Science">
+            <img class="demo4 cursor" src="images/dotData.png" style="width:100%; height:100%; object-fit:cover;" onclick="currentSlide4(1)" alt="dotData Science">
           </div>
           <div class="column-lightbox">
-            <img class="demo4 cursor" src="images/bcc.jpeg" style="width:100%" onclick="currentSlide4(2)" alt="Badger Cricket Club">
+            <img class="demo4 cursor" src="images/bcc.jpeg" style="width:100%; height:100%; object-fit:cover;" onclick="currentSlide4(2)" alt="Badger Cricket Club">
           </div>
         </div>
       </div>
@@ -792,7 +513,6 @@
       }
 
       var slideIndex = 1;
-      showSlides4(slideIndex);
 
       function plusSlides4(n)
       {
@@ -841,17 +561,17 @@
       <div class="container-fluid">
         <div class="row promo">
           <a onclick="openModal5();currentSlide5(1)" class="cursor">
-            <div class="col-md-4 promo-item item-6">
+            <div class="col-md-4 promo-item item-18">
               
             </div>
           </a>
           <a onclick="openModal5();currentSlide5(2)" class="cursor">
-            <div class="col-md-4 promo-item item-7">
+            <div class="col-md-4 promo-item item-19">
               
             </div>
           </a>
           <a onclick="openModal5();currentSlide5(3)" class="cursor">
-            <div class="col-md-4 promo-item item-8">
+            <div class="col-md-4 promo-item item-20">
               
             </div>
           </a>
@@ -860,110 +580,7 @@
       <div id="myModallightbox5" class="modal-lightbox">
         <span class="close-lightbox cursor" onclick="closeModallightbox5()">&times;</span>
         <div class="modal-content-lightbox">
-          <div class="mySlides5 item-6" style="background: url(images/concert.jpg) no-repeat; background-size: auto;">
-            <div class="numbertext" >1/3</div>
-            <br>
-            <h1 style="font-family:'Charmonman',cursive;text-align: center" class="music-icon">
-              <span class="glyphicon glyphicon-music" style="font-size:6px;"></span>
-              <span class="glyphicon glyphicon-music" style="font-size:12px;"></span>
-              <span class="glyphicon glyphicon-music" style="font-size:18px;"></span>
-              <span class="glyphicon glyphicon-music" style="font-size:24px;"></span>
-              <span class="glyphicon glyphicon-music" style="font-size:30px;"></span>
-            </h1>
-            <p style="font-size: 18px; color:white;">
-              &nbsp;&nbsp;&nbsp;&nbsp; I like playing the keyboard, piano and singing along to tunes.<br>
-              &nbsp;&nbsp;&nbsp;&nbsp; Back in highschool, I hosted a youtube channel, "GA InTheHouse" to document a few of my attempts at creating good music.<br>
-            </p>
-            <h1 style="font-family:'Charmonman',cursive; font-size: 30px; color: white;">
-              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;My Favourite Pieces
-            </h1>
-            <div class="gallery">
-              <video controls>
-                <source src="videos/sway.mp4" type="video/mp4">
-                  Your browser does not support the video tag.
-                </video>
-                <div class="desc">Sway</div>
-              </div>
-              <div class="gallery">
-                <video controls>
-                  <source src="videos/jamaican.mp4" type="video/mp4">
-                    Your browser does not support the video tag.
-                  </video>
-                  <div class="desc">Jamaican Farewell</div>
-                </div>
-                <div class="gallery">
-                  <video controls>
-                    <source src="videos/imagine.mp4" type="video/mp4">
-                      Your browser does not support the video tag.
-                    </video>
-                    <div class="desc">Imagine</div>
-                  </div>
-                  <br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-                  <p style="color: white">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                    View some more videos on
-                    <a href="https://www.youtube.com/channel/UCxS1_cz53xz7WYj1E4BYRvg?view_as=subscriber">
-                      <img src="images/youtube.png">
-                    </a>
-                  </p>
-                  <br>
-                </div>
-                <div class="mySlides5 item-7" style="background: url(images/writing.jpg) no-repeat; background-size:auto">
-                  <div class="numbertext">2/3</div>
-                  <h1 style="font-family:'Charmonman',cursive;text-align: center;" class="writing-icon">
-                    <span class="glyphicon glyphicon-book" style="font-size:12px;"></span>
-                    <span class="glyphicon glyphicon-pencil" style="font-size:12px;"></span>
-                    <span class="glyphicon glyphicon-pencil" style="font-size:18px;"></span>
-                    <span class="glyphicon glyphicon-pencil" style="font-size:24px;"></span>
-                    <span class="glyphicon glyphicon-pencil" style="font-size:36px;"></span>
-                  </h1>
-                  <br>
-                  <br>
-                  <h1 style="font-family:'Charmonman',cursive; font-size: 30px; color: skyblue;">
-                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;My Favourite Artworks
-                  </h1>
-                  <div class="gallery">
-                    <img src="images/art1.jpg">
-                    <div class="desc" style="color: black"><b>Name Doodle</b></div>
-                  </div>
-                  <div class="gallery">
-                    <img src="images/art2.jpg">
-                    <div class="desc" style="color: black"><b>Playing with lines</b></div>
-                  </div>
-                  <div class="gallery">
-                    <img src="images/art3.jpg">
-                    <div class="desc"style="color: black"><b>Abstract Art</b></div>
-                  </div>
-                  <br><br><br><br><br> <br><br><br><br><br> <br><br><br><br><br> <br><br>
-                </div>
-                <div class="mySlides5 item-8">
-                  <div class="numbertext">3/3</div>
-                  <br><br>
-                  <h1 style="text-align: center; color: aliceblue;">
-                    <span class="glyphicon glyphicon-globe" style="font-size:30px;"></span>
-                    <span class="glyphicon glyphicon-plane" style="font-size:24px;"></span>
-                    <br>
-                    Travelling
-                  </h1>
-                  <br>
-                  <br>
-                  <h1 style="font-family:'Charmonman',cursive; font-size: 30px;">
-                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;My Favourite Activites
-                  </h1>
-                  <br>
-                  <ul>
-                    <li>Island Hopping In Indonesia</li>
-                    <li>Sailing and Hiking In Seattle</li>
-                    <li>The Venetian Macau's Casino</li>
-                    <li>Wisconsin Dells Waterparks</li>
-                    <li>Mini waterfalls during monsoon along Mumbai - Pune Expressway In India</li>
-                  </ul>
-                  <br>
-                  <br>
-                  <h1 style="font-family:'Charmonman',cursive; font-size: 25px;">
-                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;My Last Visit: Manhattan, New York, United States
-                  </h1>
-                  <br><br><br><br><br> <br><br><br><br><br> <br><br><br><br><br> <br><br>
-                </div>
+          <!-- Slides will be dynamically loaded here -->
                 <a class="prev" onclick="plusSlides5(-1)">&#10094;</a>
                 <a class="next" onclick="plusSlides5(1)">&#10095;</a>
 
@@ -971,13 +588,13 @@
                   <p id="caption5"></p>
                 </div>
                 <div class="column-lightbox">
-                  <img class="demo5 cursor" src="images/concert.jpg" style="max-width:100%; max-height: 100%;" onclick="currentSlide5(1)" alt="Music">
+                  <img class="demo5 cursor" src="images/concert.jpg" style="width:100%; height:100%; object-fit:cover;" onclick="currentSlide5(1)" alt="Music">
                 </div>
                 <div class="column-lightbox">
-                  <img class="demo5 cursor" src="images/writing.jpg" style="width:100%" onclick="currentSlide5(2)" alt="Art">
+                  <img class="demo5 cursor" src="images/writing.jpg" style="width:100%; height:100%; object-fit:cover;" onclick="currentSlide5(2)" alt="Art">
                 </div>
                 <div class="column-lightbox">
-                  <img class="demo5 cursor" src="images/map.jpg" style="max-width:100%; max-height:100%" onclick="currentSlide5(3)" alt="Travelling">
+                  <img class="demo5 cursor" src="images/map.jpg" style="width:100%; height:100%; object-fit:cover;" onclick="currentSlide5(3)" alt="Travelling">
                 </div>
               </div>
             </div>
@@ -993,7 +610,6 @@
             }
 
             var slideIndex = 1;
-            showSlides5(slideIndex);
 
             function plusSlides5(n)
             {
@@ -1035,7 +651,7 @@
               <div class="row">
                 <div class="col-sm-6">
                   <br>
-                  <h2 class="section-header" style="font-family: 'Charmonman', cursive; ">
+                  <h2 class="section-header">
                     &nbsp;&nbsp;&nbsp;&nbsp;<span class="glyphicon glyphicon-pushpin text-primary"></span>
                     <br>
                     Articles
@@ -1046,7 +662,7 @@
             <div class="responsive">
               <div class="gallery">
                 <a target="_blank" href="https://www.dailycardinal.com/article/2020/09/college-from-afar-some-uw-madison-students-decide-to-stay-home-for-fall-semester">
-                  <img src="images/abroad.png" alt="Cinque Terre" width="600" height="400">
+                  <img src="images/abroad.png" alt="Cinque Terre">
                 </a>
                 <div class="desc">Staying in India For Fall 2020</div>
               </div>
@@ -1054,7 +670,7 @@
             <div class="responsive">
               <div class="gallery">
                 <a target="_blank" href="https://www.instagram.com/p/CCllTuADaEI/">
-                  <img src="images/morgridge.png" alt="Forest" width="600" height="400">
+                  <img src="images/morgridge.png" alt="Forest">
                 </a>
                 <div class="desc">COVID BOT Initiative - Morgridge Center</div>
               </div>
@@ -1063,7 +679,7 @@
             <div class="responsive">
               <div class="gallery">
                 <a target="_blank" href="https://www.accuweather.com/podcast/everythingunderthesun?id=8e952980-1fbc-11eb-b4b7-b7db8cbfe574&autoplay=true">
-                  <img src="images/podcast.png" alt="Everything Under The Sun" width="600" height="400">
+                  <img src="images/podcast.png" alt="Everything Under The Sun">
                 </a>
                 <div class="desc">Accuweather ProjectX Podcast</div>
               </div>
@@ -1072,7 +688,7 @@
             <div class="responsive">
               <div class="gallery">
                 <a target="_blank" href="https://madison.com/ct/news/local/govt-and-politics/data-science-in-madison-class-offers-uw-students-real-world-projects/article_9e5db95e-192c-5747-bd3a-a467d2228c30.html?omhide=true">
-                  <img src="images/638.png" alt="Madison" width="600" height="400">
+                  <img src="images/638.png" alt="Madison">
                 </a>
                 <div class="desc">Data Science In Wisconsin</div>
               </div>
@@ -1085,7 +701,7 @@
     <section class="content content-4" id="skills">
             <div class="container">
 
-              <h2 class="section-header" style="font-family: 'Charmonman', cursive; ">
+              <h2 class="section-header">
                 <span class="glyphicon glyphicon-wrench text-primary"></span>
                 <br><br>
                 Skills
