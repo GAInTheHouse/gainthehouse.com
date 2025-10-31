@@ -271,3 +271,17 @@ img::-moz-selection
   box-sizing: border-box;
 }
 
+.section-header, .footer-header
+{
+  font-family: 'Charmonman', cursive;
+  font-size: 25px;
+}
+
+@media(min-width:850px)
+{
+  .section-header, .footer-header
+  {
+    font-size: 44px;
+  }
+}
+
