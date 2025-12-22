@@ -88,7 +88,7 @@
             <a href="#org">My Organizations</a>
           </li>
           <li>
-            <a href="#passion">My Passion</a>
+            <a href="#education">Education</a>
           </li>
           <li>
             <a href="#story">Articles</a>
@@ -532,103 +532,20 @@
       </script>
     </section>
 
-    <!-- Passion -->
-    <section class="content" id="passion">
+    <!-- Education -->
+    <section class="content" id="education">
       <div class="container">
         <div class="row">
           <div class="col-sm-6">
-            <h2 class="section-header">Hobbies</h2>
+            <h2 class="section-header">Education</h2>
           </div>
         </div>
       </div>
 
-
-      <div class="container-fluid">
-        <div class="row promo">
-          <a onclick="openModal5();currentSlide5(1)" class="cursor">
-            <div class="col-md-4 promo-item item-23">
-              
-            </div>
-          </a>
-          <a onclick="openModal5();currentSlide5(2)" class="cursor">
-            <div class="col-md-4 promo-item item-24">
-              
-            </div>
-          </a>
-          <a onclick="openModal5();currentSlide5(3)" class="cursor">
-            <div class="col-md-4 promo-item item-25">
-              
-            </div>
-          </a>
-        </div>
+      <div class="container" id="education-list">
+        <!-- Education entries will be loaded dynamically -->
       </div>
-      <div id="myModallightbox5" class="modal-lightbox">
-        <span class="close-lightbox cursor" onclick="closeModallightbox5()">&times;</span>
-        <div class="modal-content-lightbox">
-          <!-- Slides will be dynamically loaded here -->
-                <a class="prev" onclick="plusSlides5(-1)">&#10094;</a>
-                <a class="next" onclick="plusSlides5(1)">&#10095;</a>
-
-                <div class="caption-container">
-                  <p id="caption5"></p>
-                </div>
-                <div class="column-lightbox">
-                  <img class="demo5 cursor" src="images/concert.jpg" style="width:100%; height:100%; object-fit:cover;" onclick="currentSlide5(1)" alt="Music">
-                </div>
-                <div class="column-lightbox">
-                  <img class="demo5 cursor" src="images/writing.jpg" style="width:100%; height:100%; object-fit:cover;" onclick="currentSlide5(2)" alt="Art">
-                </div>
-                <div class="column-lightbox">
-                  <img class="demo5 cursor" src="images/map.jpg" style="width:100%; height:100%; object-fit:cover;" onclick="currentSlide5(3)" alt="Travelling">
-                </div>
-              </div>
-            </div>
-            <script>
-            function openModal5()
-            {
-              document.getElementById('myModallightbox5').style.display = "block";
-            }
-
-            function closeModallightbox5()
-            {
-              document.getElementById('myModallightbox5').style.display = "none";
-            }
-
-            var slideIndex = 1;
-
-            function plusSlides5(n)
-            {
-              showSlides5(slideIndex += n);
-            }
-
-            function currentSlide5(n)
-            {
-              showSlides5(slideIndex = n);
-            }
-
-            function showSlides5(n)
-            {
-              var i;
-              var slides = document.getElementsByClassName("mySlides5");
-              var dots = document.getElementsByClassName("demo5");
-              var captionText = document.getElementById("caption5");
-              if (n > slides.length) {slideIndex = 1}
-              if (n < 1) {slideIndex = slides.length}
-              for (i = 0; i < slides.length; i++)
-              {
-                slides[i].style.display = "none";
-              }
-              for (i = 0; i < dots.length; i++)
-              {
-                dots[i].className = dots[i].className.replace(" active", "");
-              }
-              slides[slideIndex-1].style.display = "block";
-              dots[slideIndex-1].className += " active";
-              captionText.innerHTML = dots[slideIndex-1].alt;
-            }
-            </script>
-
-          </section>
+    </section>
 
     <!-- The Story Of My Life -->
     <section class="content content-2" id="story">

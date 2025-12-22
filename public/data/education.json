@@ -1,0 +1,39 @@
+{
+  "education": [
+    {
+      "id": 1,
+      "institution": "Columbia University",
+      "location": "New York, NY",
+      "date": "Dec 2026",
+      "degree": "Master of Science",
+      "major": "Computer Science",
+      "track": "Machine Learning & NLP Track",
+      "courses": [
+        "NLP",
+        "High Performance ML",
+        "GenerativeAI",
+        "AgenticAI Systems",
+        "Computer Vision",
+        "Spoken Language Processing",
+        "Big Data",
+        "Applied ML Cloud"
+      ]
+    },
+    {
+      "id": 2,
+      "institution": "University of Wisconsin–Madison",
+      "location": "Madison, Wisconsin",
+      "date": "Dec 2022",
+      "degree": "Bachelor of Science",
+      "major": "Computer Science & Data Science",
+      "gpa": "3.96/4.0",
+      "awards": [
+        "L&S Scholarship Fall 2021",
+        "Summer Study Scholarship 2020",
+        "Summer Internship Scholarship 2020",
+        "Dean’s List"
+      ]
+    }
+  ]
+}
+
