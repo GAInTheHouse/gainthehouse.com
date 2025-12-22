@@ -7,7 +7,7 @@
       "date": "Dec 2026",
       "degree": "Master of Science",
       "major": "Computer Science",
-      "track": "Machine Learning & NLP Track",
+      "track": "Machine Learning Track",
       "courses": [
         "NLP",
         "High Performance ML",
@@ -32,6 +32,19 @@
         "Summer Study Scholarship 2020",
         "Summer Internship Scholarship 2020",
         "Dean’s List"
+      ],
+      "courses": [
+        "Data Structures",
+        "Algorithms",
+        "Operating Systems",
+        "Networks",
+        "Artificial Intelligence",
+        "Matrix Methods in Machine Learning",
+        "Human Computer Interaction",
+        "Wearable Technology",
+        "Data Modelling",
+        "Data Programming",
+        "Probability & Statistics"
       ]
     }
   ]
