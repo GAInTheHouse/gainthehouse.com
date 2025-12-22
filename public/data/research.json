@@ -117,8 +117,8 @@
       "id": 5,
       "title": "NFR Benchmarking Framework for IT Automation Agents",
       "period": "Sep 2025 - Present",
-      "image": "images/AI.jpg",
-      "thumbnail": "images/AI.jpg",
+      "image": "images/nfr_research.jpg",
+      "thumbnail": "images/nfr_research.jpg",
       "description": [
         "Conducted comprehensive literature review synthesizing 182+ sources to establish unified NFR taxonomy bridging software quality standards with agent-specific observability requirements, identifying critical gaps in production-readiness evaluation",
         "Implemented streaming API support for ITBench CISO agents using GPT-4o-mini, instrumenting Langfuse-based telemetry to capture Time-to-First-Token (0.79-1.69s) and token generation speed (59-72 tokens/s), revealing prefill latency as the dominant bottleneck for interactive security workflows",

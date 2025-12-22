@@ -133,8 +133,8 @@
       "id": 5,
       "title": "TaskflowAI",
       "period": "Sep 2025 - Present",
-      "image": "images/AI logo.png",
-      "thumbnail": "images/AI logo.png",
+      "image": "images/taskflow.png",
+      "thumbnail": "images/taskflow.png",
       "description": [
         "Engineered end-to-end agentic workflow system to parse email, intelligently extract tasks and calendar events, categorize by user preferences, and auto-populate productivity tools, reducing manual scheduling overhead.",
         "Designed orchestration layer for multi-agent coordination, enabling seamless integration between task extraction, categorization, and calendar management components."

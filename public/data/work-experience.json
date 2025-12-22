@@ -92,8 +92,8 @@
       "id": 8,
       "title": "Machine Learning Engineering Intern",
       "subtitle": "ArklexAI | Aug 2025 - Present",
-      "image": "images/AI.jpg",
-      "thumbnail": "images/AI.jpg",
+      "image": "images/arklexlogo.jpeg",
+      "thumbnail": "images/arklexlogo.jpeg",
       "description": [
         "Architected multi-turn conversational AI framework to transition from isolated prompt requests to system-user dialogue patterns, enabling contextually-aware GenAI interactions at scale.",
         "Extended global language support across core platform, improving accessibility and enabling deployment across diverse international customer bases."
