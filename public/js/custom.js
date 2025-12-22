@@ -36,13 +36,23 @@ function loadEducation() {
 				awardsList = `<p><strong>Awards:</strong> ${school.awards.join(', ')}</p>`;
 			}
 
+			const logoHtml = school.logo ? `
+				<div class="media-left">
+					<img class="education-logo" src="${school.logo}" alt="${school.institution} logo">
+				</div>` : '';
+
 			const panel = `
 				<div class="panel panel-default">
 					<div class="panel-body">
-						<h3>${school.institution} | ${school.location} <small>[${school.date}]</small></h3>
-						<p><strong>${school.degree}</strong>${school.major ? ' — ' + school.major : ''}${school.track ? ' (' + school.track + ')' : ''}${school.gpa ? ' | <strong>GPA:</strong> ' + school.gpa : ''}</p>
-						${coursesList}
-						${awardsList}
+						<div class="media">
+							${logoHtml}
+							<div class="media-body">
+								<h3>${school.institution} | ${school.location} <small>[${school.date}]</small></h3>
+								<p><strong>${school.degree}</strong>${school.major ? ' — ' + school.major : ''}${school.track ? ' (' + school.track + ')' : ''}${school.gpa ? ' | <strong>GPA:</strong> ' + school.gpa : ''}</p>
+								${coursesList}
+								${awardsList}
+							</div>
+						</div>
 					</div>
 				</div>
 			`;
