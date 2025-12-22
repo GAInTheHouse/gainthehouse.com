@@ -87,6 +87,17 @@
         "Designed a PHP-based web application to monitor hydroelectric dam health remotely and store analyzable data",
         "Displayed various parameters including flow rate, reservoir volume, and gate integrity on a dashboard"
       ]
+    },
+    {
+      "id": 8,
+      "title": "Machine Learning Engineering Intern",
+      "subtitle": "ArklexAI | Aug 2025 - Present",
+      "image": "images/AI.jpg",
+      "thumbnail": "images/AI.jpg",
+      "description": [
+        "Architected multi-turn conversational AI framework to transition from isolated prompt requests to system-user dialogue patterns, enabling contextually-aware GenAI interactions at scale.",
+        "Extended global language support across core platform, improving accessibility and enabling deployment across diverse international customer bases."
+      ]
     }
   ]
 }
