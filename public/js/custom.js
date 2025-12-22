@@ -21,8 +21,20 @@ $(document).ready(function() {
 function loadResearchProjects() {
 	$.getJSON('data/research.json', function(data) {
 		console.log('Loading research projects:', data.projects.length, 'projects');
-		// Remove existing slides
-		$('#myModallightbox .modal-content-lightbox .mySlides').remove();
+		// Apply thumbnails to promo cards
+		$('#research .promo-item').each((idx, el) => {
+			const project = data.projects[idx];
+			if (project) {
+				$(el).css('background-image', `url(${project.thumbnail || project.image})`);
+			}
+		});
+
+		const modalContent = $('#myModallightbox .modal-content-lightbox');
+		// Remove existing slides and thumbs
+		modalContent.find('.mySlides').remove();
+		modalContent.find('.column-lightbox').remove();
+
+		let thumbsHTML = '';
 		
 		data.projects.forEach((project, index) => {
 			const slideNumber = index + 1;
@@ -130,9 +142,18 @@ function loadResearchProjects() {
 			slideHTML += `<br></div>`;
 			
 			// Insert before the prev button
-			$('#myModallightbox .modal-content-lightbox .prev').before(slideHTML);
+			modalContent.find('.prev').before(slideHTML);
+
+			thumbsHTML += `
+				<div class="column-lightbox">
+					<img class="demo cursor" src="${project.thumbnail || project.image}" style="width:100%; height:100%; object-fit:cover;" onclick="currentSlide(${slideNumber})" alt="${project.title}">
+				</div>`;
 		});
 		
+		if (thumbsHTML) {
+			modalContent.find('.caption-container').after(thumbsHTML);
+		}
+
 		// Re-initialize the slideshow
 		console.log('Research slides inserted, initializing slideshow');
 		showSlides(1);
@@ -145,7 +166,19 @@ function loadResearchProjects() {
 function loadSoftwareProjects() {
 	$.getJSON('data/projects.json', function(data) {
 		console.log('Loading software projects:', data.projects.length, 'projects');
-		$('#myModallightbox2 .modal-content-lightbox .mySlides2').remove();
+		// Apply thumbnails to promo cards
+		$('#projects .promo-item').each((idx, el) => {
+			const project = data.projects[idx];
+			if (project) {
+				$(el).css('background-image', `url(${project.thumbnail || project.image})`);
+			}
+		});
+
+		const modalContent = $('#myModallightbox2 .modal-content-lightbox');
+		modalContent.find('.mySlides2').remove();
+		modalContent.find('.column-lightbox').remove();
+
+		let thumbsHTML = '';
 		
 		data.projects.forEach((project, index) => {
 			const slideNumber = index + 1;
@@ -226,9 +259,18 @@ function loadSoftwareProjects() {
 			slideHTML += `</ul><br></div>`;
 			
 			// Insert before the prev button
-			$('#myModallightbox2 .modal-content-lightbox .prev').before(slideHTML);
+			modalContent.find('.prev').before(slideHTML);
+
+			thumbsHTML += `
+				<div class="column-lightbox">
+					<img class="demo2 cursor" src="${project.thumbnail || project.image}" style="width:100%; height:100%; object-fit:cover;" onclick="currentSlide2(${slideNumber})" alt="${project.title}">
+				</div>`;
 		});
 		
+		if (thumbsHTML) {
+			modalContent.find('.caption-container').after(thumbsHTML);
+		}
+
 		// Re-initialize the slideshow
 		console.log('Software project slides inserted, initializing slideshow');
 		showSlides2(1);
@@ -241,7 +283,19 @@ function loadSoftwareProjects() {
 function loadWorkExperience() {
 	$.getJSON('data/work-experience.json', function(data) {
 		console.log('Loading work experience:', data.experiences.length, 'experiences');
-		$('#myModallightbox3 .modal-content-lightbox .mySlides3').remove();
+		// Apply thumbnails to promo cards
+		$('#work-ex .promo-item').each((idx, el) => {
+			const exp = data.experiences[idx];
+			if (exp) {
+				$(el).css('background-image', `url(${exp.thumbnail || exp.image})`);
+			}
+		});
+
+		const modalContent = $('#myModallightbox3 .modal-content-lightbox');
+		modalContent.find('.mySlides3').remove();
+		modalContent.find('.column-lightbox').remove();
+
+		let thumbsHTML = '';
 		
 		data.experiences.forEach((exp, index) => {
 			const slideNumber = index + 1;
@@ -265,9 +319,18 @@ function loadWorkExperience() {
 			slideHTML += `</ul><br></div>`;
 			
 			// Insert before the prev button
-			$('#myModallightbox3 .modal-content-lightbox .prev').before(slideHTML);
+			modalContent.find('.prev').before(slideHTML);
+
+			thumbsHTML += `
+				<div class="column-lightbox">
+					<img class="demo3 cursor" src="${exp.thumbnail || exp.image}" style="width:100%; height:100%; object-fit:cover;" onclick="currentSlide3(${slideNumber})" alt="${exp.title}">
+				</div>`;
 		});
 		
+		if (thumbsHTML) {
+			modalContent.find('.caption-container').after(thumbsHTML);
+		}
+
 		// Re-initialize the slideshow
 		console.log('Work experience slides inserted, initializing slideshow');
 		showSlides3(1);
