@@ -2,6 +2,17 @@
   "experiences": [
     {
       "id": 1,
+      "title": "Machine Learning Engineering Intern",
+      "subtitle": "ArklexAI | Aug 2025 - Present",
+      "image": "images/arklexlogo.jpeg",
+      "thumbnail": "images/arklexlogo.jpeg",
+      "description": [
+        "Architected multi-turn conversational AI framework to transition from isolated prompt requests to system-user dialogue patterns, enabling contextually-aware GenAI interactions at scale.",
+        "Extended global language support across core platform, improving accessibility and enabling deployment across diverse international customer bases."
+      ]
+    },
+    {
+      "id": 2,
       "title": "Software Engineer - Epic Systems",
       "subtitle": "Epic Assistant - Natural Language Platform | Mar 2023 - Present",
       "image": "images/epic.svg",
@@ -22,7 +33,7 @@
       ]
     },
     {
-      "id": 2,
+      "id": 3,
       "title": "Software Engineering Intern - Google",
       "subtitle": "Display & Video 360 | May 2022 - Sep 2022",
       "image": "images/google.png",
@@ -34,7 +45,7 @@
       ]
     },
     {
-      "id": 3,
+      "id": 4,
       "title": "Media Workflow Engineering Intern - WarnerMedia",
       "subtitle": "Sep 2021 - Apr 2022",
       "image": "images/warnermedia.jpg",
@@ -45,7 +56,7 @@
       ]
     },
     {
-      "id": 4,
+      "id": 5,
       "title": "Enterprise Integration Intern",
       "subtitle": "UW-Madison Division of Information Technology | Feb 2021 - Sep 2021",
       "image": "images/uw_logo.png",
@@ -56,7 +67,7 @@
       ]
     },
     {
-      "id": 5,
+      "id": 6,
       "title": "Undergraduate Teaching Assistant",
       "subtitle": "UW-Madison Dept. of Computer Science | Jan 2021 - May 2021",
       "image": "images/uw_logo.png",
@@ -67,7 +78,7 @@
       ]
     },
     {
-      "id": 6,
+      "id": 7,
       "title": "AI & Computer Vision Intern",
       "subtitle": "CamfyVision Innovations | May 2020 - Sep 2020",
       "image": "images/camfyvision.jpg",
@@ -78,7 +89,7 @@
       ]
     },
     {
-      "id": 7,
+      "id": 8,
       "title": "Project Intern",
       "subtitle": "The Tata Power Company Ltd. | Mumbai, India | Jul 2018 - Oct 2018",
       "image": "images/tata.webp",
@@ -87,18 +98,6 @@
         "Designed a PHP-based web application to monitor hydroelectric dam health remotely and store analyzable data",
         "Displayed various parameters including flow rate, reservoir volume, and gate integrity on a dashboard"
       ]
-    },
-    {
-      "id": 8,
-      "title": "Machine Learning Engineering Intern",
-      "subtitle": "ArklexAI | Aug 2025 - Present",
-      "image": "images/arklexlogo.jpeg",
-      "thumbnail": "images/arklexlogo.jpeg",
-      "description": [
-        "Architected multi-turn conversational AI framework to transition from isolated prompt requests to system-user dialogue patterns, enabling contextually-aware GenAI interactions at scale.",
-        "Extended global language support across core platform, improving accessibility and enabling deployment across diverse international customer bases."
-      ]
     }
   ]
 }
-

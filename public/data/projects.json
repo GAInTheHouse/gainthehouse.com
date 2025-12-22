@@ -2,6 +2,18 @@
   "projects": [
     {
       "id": 1,
+      "title": "TaskflowAI",
+      "period": "Sep 2025 - Present",
+      "image": "images/taskflow.png",
+      "thumbnail": "images/taskflow.png",
+      "description": [
+        "Engineered end-to-end agentic workflow system to parse email, intelligently extract tasks and calendar events, categorize by user preferences, and auto-populate productivity tools, reducing manual scheduling overhead.",
+        "Designed orchestration layer for multi-agent coordination, enabling seamless integration between task extraction, categorization, and calendar management components."
+      ],
+      "links": []
+    },
+    {
+      "id": 2,
       "title": "MeetFree",
       "period": "May 2024 - June 2024",
       "image": "images/meetFree.jpeg",
@@ -14,7 +26,7 @@
       "links": []
     },
     {
-      "id": 2,
+      "id": 3,
       "title": "Cyber Jacket",
       "period": "2020",
       "image": "images/cybersecurity.jpg",
@@ -53,7 +65,7 @@
       ]
     },
     {
-      "id": 3,
+      "id": 4,
       "title": "Blind Man's Bluff",
       "period": "HackMIT 2020",
       "image": "images/blind.jpg",
@@ -89,7 +101,7 @@
       ]
     },
     {
-      "id": 4,
+      "id": 5,
       "title": "COVID Bot",
       "period": "SOS Hackathon 2020",
       "image": "images/bot.jpg",
@@ -128,19 +140,6 @@
           "text": "Project Repository"
         }
       ]
-    },
-    {
-      "id": 5,
-      "title": "TaskflowAI",
-      "period": "Sep 2025 - Present",
-      "image": "images/taskflow.png",
-      "thumbnail": "images/taskflow.png",
-      "description": [
-        "Engineered end-to-end agentic workflow system to parse email, intelligently extract tasks and calendar events, categorize by user preferences, and auto-populate productivity tools, reducing manual scheduling overhead.",
-        "Designed orchestration layer for multi-agent coordination, enabling seamless integration between task extraction, categorization, and calendar management components."
-      ],
-      "links": []
     }
   ]
 }
-

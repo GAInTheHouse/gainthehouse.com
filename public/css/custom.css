@@ -81,131 +81,131 @@ p
 /* Research Projects */
 .item-1
 {
-	background: url('../images/projectx_2022.jpg');
+	background: url('../images/genai_project.jpg');
 }
 
 .item-2
 {
-	background: url('../images/projectx_2021.jpg');
+	background: url('../images/nfr_research.jpg');
 }
 
 .item-3
 {
-	background: url('../images/city_of_madison.png');
+	background: url('../images/specdec.jpg');
 }
 
 .item-4
+{
+	background: url('../images/projectx_2022.jpg');
+}
+
+.item-5
+{
+	background: url('../images/projectx_2021.jpg');
+}
+
+.item-6
+{
+	background: url('../images/city_of_madison.png');
+}
+
+.item-7
 {
 	background: url('../images/skunkworks2.png');
 }
 
 /* Software Projects */
-.item-5
+.item-8
+{
+	background: url('../images/taskflow.png');
+}
+
+.item-9
 {
 	background: url('../images/meetFree.jpeg');
 }
 
-.item-6
+.item-10
 {
 	background: url('../images/cybersecurity.jpg');
 }
 
-.item-7
+.item-11
 {
 	background: url('../images/blind.jpg');
 }
 
-.item-8
+.item-12
 {
 	background: url('../images/bot.jpg');
 }
 
 /* Work Experience */
-.item-9
-{
-	background: url('../images/epic.svg');
-}
-
-.item-10
-{
-	background: url('../images/google.png');
-}
-
-.item-11
-{
-	background: url('../images/warnermedia.jpg');
-}
-
-.item-12
-{
-	background: url('../images/uw_logo.png');
-}
-
 .item-13
 {
-	background: url('../images/uw_logo.png');
+	background: url('../images/arklexlogo.jpeg');
 }
 
 .item-14
 {
-	background: url('../images/camfyvision.jpg');
+	background: url('../images/epic.svg');
 }
 
 .item-15
+{
+	background: url('../images/google.png');
+}
+
+.item-16
+{
+	background: url('../images/warnermedia.jpg');
+}
+
+.item-17
+{
+	background: url('../images/uw_logo.png');
+}
+
+.item-18
+{
+	background: url('../images/uw_logo.png');
+}
+
+.item-19
+{
+	background: url('../images/camfyvision.jpg');
+}
+
+.item-20
 {
 	background: url('../images/tata.webp');
 }
 
 /* Organizations */
-.item-16
+.item-21
 {
 	background: url('../images/dotData.png');
 }
 
-.item-17
+.item-22
 {
 	background: url('../images/bcc.jpeg');
 }
 
 /* Hobbies */
-.item-18
+.item-23
 {
 	background: url('../images/concert.jpg');
 }
 
-.item-19
+.item-24
 {
 	background: url('../images/writing.jpg');
 }
 
-.item-20
-{
-	background: url('../images/map.jpg');
-}
-
-.item-21
-{
-	background: url('../images/nfr_research.jpg');
-}
-
-.item-22
-{
-	background: url('../images/genai_project.jpg');
-}
-
-.item-23
-{
-	background: url('../images/specdec.jpg');
-}
-
-.item-24
-{
-	background: url('../images/arklexlogo.jpeg');
-}
-
 .item-25
 {
-	background: url('../images/taskflow.png');
+	background: url('../images/map.jpg');
 }
 
 .item-1,.item-2,.item-3, .item-4, .item-5, .item-6, .item-7, .item-8, .item-9, .item-10, .item-11, .item-12, .item-13, .item-14, .item-15, .item-16, .item-17, .item-18, .item-19, .item-20, .item-21, .item-22, .item-23, .item-24, .item-25
@@ -309,4 +309,3 @@ img::-moz-selection
     font-size: 44px;
   }
 }
-

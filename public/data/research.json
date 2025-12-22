@@ -2,6 +2,45 @@
   "projects": [
     {
       "id": 1,
+      "title": "Self-Adaptive self-learning GenerativeAI Systems",
+      "period": "Sep 2025 - Present",
+      "image": "images/genai_project.jpg",
+      "thumbnail": "images/genai_project.jpg",
+      "description": [
+        "Architected closed-loop self-improvement framework integrating LLM-based error detection, automated fine-tuning orchestration, and adaptive scheduling, enabling generative models to autonomously improve post-deployment without manual retraining.",
+        "Implemented adaptive hyperparameter optimization pipeline with performance-driven scheduling algorithm that dynamically adjusts fine-tuning frequency, mitigating catastrophic forgetting while maximizing convergence efficiency and cost reduction.",
+        "Demonstrated generalization across domains using Speech-to-Text as primary use case, achieving 10-20% relative WER improvements while maintaining platform abstraction for extensibility to text generation, translation, and other generative tasks."
+      ],
+      "links": []
+    },
+    {
+      "id": 2,
+      "title": "NFR Benchmarking Framework for IT Automation Agents",
+      "period": "Sep 2025 - Present",
+      "image": "images/nfr_research.jpg",
+      "thumbnail": "images/nfr_research.jpg",
+      "description": [
+        "Conducted comprehensive literature review synthesizing 182+ sources to establish unified NFR taxonomy bridging software quality standards with agent-specific observability requirements, identifying critical gaps in production-readiness evaluation",
+        "Implemented streaming API support for ITBench CISO agents using GPT-4o-mini, instrumenting Langfuse-based telemetry to capture Time-to-First-Token (0.79-1.69s) and token generation speed (59-72 tokens/s), revealing prefill latency as the dominant bottleneck for interactive security workflows",
+        "Extended ITBench evaluation infrastructure with performance metrics enabling quantitative comparison of ReAct vs. PlanExecute architectures across latency, cost efficiency, and reliability dimensions"
+      ],
+      "links": []
+    },
+    {
+      "id": 3,
+      "title": "On-Policy Knowledge Distillation for Speculative Decoding in LLMs",
+      "period": "Sep 2025 - Dec 2025",
+      "image": "images/specdec.jpg",
+      "thumbnail": "images/specdec.jpg",
+      "description": [
+        "Investigated divergence measures (Forward KL, Reverse KL, JSD) for on-policy distillation to optimize draft-target alignment in speculative decoding, demonstrating 4.4% improvement in token acceptance rate for mathematical reasoning tasks",
+        "Led experimentation across Llama and SmolLM model families, implementing white-box token-level distillation on GSM8K and CNN-DailyMail datasets to validate task-dependent divergence superiority",
+        "Engineered dynamic batched speculative decoding evaluation framework with jagged sequence handling, enabling rigorous entropy-aware analysis revealing mode-seeking advantages in low-entropy tasks and robustness of JSD in high-entropy regimes"
+      ],
+      "links": []
+    },
+    {
+      "id": 4,
       "title": "Machine Learning To Identify Diabetic Pathways in Mice and Humans",
       "period": "May 2021 - Dec 2022",
       "image": "images/projectx_2022.jpg",
@@ -14,7 +53,7 @@
       "links": []
     },
     {
-      "id": 2,
+      "id": 5,
       "title": "ProjectX - Air Quality Prediction",
       "period": "2021",
       "image": "images/projectx_2021.jpg",
@@ -58,7 +97,7 @@
       ]
     },
     {
-      "id": 3,
+      "id": 6,
       "title": "Water Infrastructure",
       "period": "2020-2021",
       "image": "images/city_of_madison.png",
@@ -89,7 +128,7 @@
       ]
     },
     {
-      "id": 4,
+      "id": 7,
       "title": "Uncertainty Estimation",
       "period": "Spring 2021",
       "image": "images/skunkworks.png",
@@ -112,46 +151,6 @@
           "text": "Team Picture"
         }
       ]
-    },
-    {
-      "id": 5,
-      "title": "NFR Benchmarking Framework for IT Automation Agents",
-      "period": "Sep 2025 - Present",
-      "image": "images/nfr_research.jpg",
-      "thumbnail": "images/nfr_research.jpg",
-      "description": [
-        "Conducted comprehensive literature review synthesizing 182+ sources to establish unified NFR taxonomy bridging software quality standards with agent-specific observability requirements, identifying critical gaps in production-readiness evaluation",
-        "Implemented streaming API support for ITBench CISO agents using GPT-4o-mini, instrumenting Langfuse-based telemetry to capture Time-to-First-Token (0.79-1.69s) and token generation speed (59-72 tokens/s), revealing prefill latency as the dominant bottleneck for interactive security workflows",
-        "Extended ITBench evaluation infrastructure with performance metrics enabling quantitative comparison of ReAct vs. PlanExecute architectures across latency, cost efficiency, and reliability dimensions"
-      ],
-      "links": []
-    },
-    {
-      "id": 6,
-      "title": "Self-Adaptive self-learning GenerativeAI Systems",
-      "period": "Sep 2025 - Present",
-      "image": "images/genai_project.jpg",
-      "thumbnail": "images/genai_project.jpg",
-      "description": [
-        "Architected closed-loop self-improvement framework integrating LLM-based error detection, automated fine-tuning orchestration, and adaptive scheduling, enabling generative models to autonomously improve post-deployment without manual retraining.",
-        "Implemented adaptive hyperparameter optimization pipeline with performance-driven scheduling algorithm that dynamically adjusts fine-tuning frequency, mitigating catastrophic forgetting while maximizing convergence efficiency and cost reduction.",
-        "Demonstrated generalization across domains using Speech-to-Text as primary use case, achieving 10-20% relative WER improvements while maintaining platform abstraction for extensibility to text generation, translation, and other generative tasks."
-      ],
-      "links": []
-    },
-    {
-      "id": 7,
-      "title": "On-Policy Knowledge Distillation for Speculative Decoding in LLMs",
-      "period": "Sep 2025 - Dec 2025",
-      "image": "images/specdec.jpg",
-      "thumbnail": "images/specdec.jpg",
-      "description": [
-        "Investigated divergence measures (Forward KL, Reverse KL, JSD) for on-policy distillation to optimize draft-target alignment in speculative decoding, demonstrating 4.4% improvement in token acceptance rate for mathematical reasoning tasks",
-        "Led experimentation across Llama and SmolLM model families, implementing white-box token-level distillation on GSM8K and CNN-DailyMail datasets to validate task-dependent divergence superiority",
-        "Engineered dynamic batched speculative decoding evaluation framework with jagged sequence handling, enabling rigorous entropy-aware analysis revealing mode-seeking advantages in low-entropy tasks and robustness of JSD in high-entropy regimes"
-      ],
-      "links": []
     }
   ]
 }
-
