@@ -94,8 +94,8 @@
       "id": 4,
       "title": "Machine Learning To Identify Diabetic Pathways in Mice and Humans",
       "period": "May 2021 - Dec 2022",
-      "image": "images/projectx_2022.jpg",
-      "thumbnail": "images/projectx_2022.jpg",
+      "image": "images/projectx_2021.jpg",
+      "thumbnail": "images/projectx_2021.jpg",
       "description": [
         "Led team representing university in international ML research competition, competing against 21 universities worldwide",
         "Applied 16 ML and Data Science Methods to correlate insulin & glucose levels in mice with gene expression data",
@@ -113,9 +113,9 @@
     {
       "id": 5,
       "title": "ProjectX - Air Quality Prediction",
-      "period": "2021",
-      "image": "images/projectx_2021.jpg",
-      "thumbnail": "images/projectx_2021.jpg",
+      "period": "2020-2021",
+      "image": "images/projectx_2020.png",
+      "thumbnail": "images/projectx_2020.png",
       "logo": "images/badgerxlogo.png",
       "description": [
         "Represented the university in an international Machine Learning Research Competition revolving around climate change.",
