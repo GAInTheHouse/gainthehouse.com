@@ -103,6 +103,12 @@
       ],
       "links": [
         {
+          "type": "paper",
+          "url": "https://openreview.net/forum?id=HObGjRkXOAY",
+          "image": "images/paper_1.png",
+          "text": "Research Paper"
+        },
+        {
           "type": "github",
           "url": "https://github.com/2454511550Lin/ml-diabetes",
           "image": "images/github.png",
