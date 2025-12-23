@@ -23,6 +23,12 @@
           "url": "docs/self-learning_adaptive_course_presentation.pdf",
           "image": "images/genai_project.jpg",
           "text": "Course Presentation"
+        },
+        {
+          "type": "github",
+          "url": "https://github.com/GAInTheHouse/Adaptive-Self-Learning-Agentic-AI-System",
+          "image": "images/github.png",
+          "text": "Project Repository"
         }
       ]
     },
@@ -49,6 +55,12 @@
           "url": "docs/NFR_Course_Presentation.pdf",
           "image": "images/nfr_research.jpg",
           "text": "Course Presentation"
+        },
+        {
+          "type": "github",
+          "url": "https://github.com/ITBench-NFR",
+          "image": "images/github.png",
+          "text": "Project Repository"
         }
       ]
     },
@@ -69,6 +81,12 @@
           "url": "docs/distillspec.pdf",
           "image": "images/specdec.jpg",
           "text": "Research Paper"
+        },
+        {
+          "type": "github",
+          "url": "https://github.com/r-rishabh-j/distillSpec-nlp",
+          "image": "images/github.png",
+          "text": "Project Repository"
         }
       ]
     },
@@ -83,7 +101,14 @@
         "Applied 16 ML and Data Science Methods to correlate insulin & glucose levels in mice with gene expression data",
         "Extracted expressive genomes from models using ExplainableAI solutions and extrapolated results with human genomes"
       ],
-      "links": []
+      "links": [
+        {
+          "type": "github",
+          "url": "https://github.com/2454511550Lin/ml-diabetes",
+          "image": "images/github.png",
+          "text": "Project Repository"
+        }
+      ]
     },
     {
       "id": 5,
@@ -126,6 +151,12 @@
           "url": "https://www.youtube.com/watch?v=AykKGLMdZtg",
           "image": "images/youtube.png",
           "text": "Participants video"
+        },
+        {
+          "type": "github",
+          "url": "https://github.com/GAInTheHouse/BadgerX",
+          "image": "images/github.png",
+          "text": "Project Repository"
         }
       ]
     },
@@ -157,6 +188,12 @@
           "url": "https://madison.com/ct/news/local/govt-and-politics/data-science-in-madison-class-offers-uw-students-real-world-projects/article_9e5db95e-192c-5747-bd3a-a467d2228c30.html?omhide=true",
           "image": "images/638.png",
           "text": "Data Science In Wisconsin"
+        },
+        {
+          "type": "github",
+          "url": "https://github.com/GAInTheHouse/Data-Science-In-Wisconsin",
+          "image": "images/github.png",
+          "text": "Project Repository"
         }
       ]
     },

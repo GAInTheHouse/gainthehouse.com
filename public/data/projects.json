@@ -10,7 +10,14 @@
         "Engineered end-to-end agentic workflow system to parse email, intelligently extract tasks and calendar events, categorize by user preferences, and auto-populate productivity tools, reducing manual scheduling overhead.",
         "Designed orchestration layer for multi-agent coordination, enabling seamless integration between task extraction, categorization, and calendar management components."
       ],
-      "links": []
+      "links": [
+        {
+          "type": "github",
+          "url": "https://github.com/NavinColumbia/emailToTaskDev",
+          "image": "images/github.png",
+          "text": "Project Repository"
+        }
+      ]
     },
     {
       "id": 2,
@@ -23,7 +30,14 @@
         "Leveraged Google Cloud to establish infra and engineered transcription processing multi-speaker audio via Google Speech-To-Text",
         "Engineered prompt-based summarization service utilizing Gemini to generate concise, structured notes, cutting review time"
       ],
-      "links": []
+      "links": [
+        {
+          "type": "github",
+          "url": "https://github.com/GAInTheHouse/MeetFree",
+          "image": "images/github.png",
+          "text": "Project Repository"
+        }
+      ]
     },
     {
       "id": 3,
@@ -59,7 +73,8 @@
         },
         {
           "type": "github",
-          "url": "https://github.com/GAInTheHouse/cybersecurity-jacketS",
+          "url": "https://github.com/GAInTheHouse/cybersecurity-jacket",
+          "image": "images/github.png",
           "text": "Project Repository"
         }
       ]
@@ -96,6 +111,7 @@
         {
           "type": "github",
           "url": "https://github.com/GAInTheHouse/blind-mans-bluff",
+          "image": "images/github.png",
           "text": "Project Repository"
         }
       ]
@@ -137,6 +153,7 @@
         {
           "type": "github",
           "url": "https://github.com/GAInTheHouse/COVID-BOT",
+          "image": "images/github.png",
           "text": "Project Repository"
         }
       ]
