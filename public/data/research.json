@@ -73,7 +73,7 @@
         },
         {
           "type": "document",
-          "url": "urs.pdf",
+          "url": "docs/urs.pdf",
           "image": "images/urs_logo.png",
           "text": "Undergraduate Research Symposium 2021"
         },
@@ -109,13 +109,13 @@
       "links": [
         {
           "type": "document",
-          "url": "Water_Infrastructure_Paper.pdf",
+          "url": "docs/Water_Infrastructure_Paper.pdf",
           "image": "images/Water_Infrastructure_JSPG.png",
           "text": "Paper"
         },
         {
           "type": "document",
-          "url": "Water_Infrastructure_Presentation.pdf",
+          "url": "docs/Water_Infrastructure_Presentation.pdf",
           "image": "images/Water_Infrastructure.svg",
           "text": "Presentation"
         },
@@ -140,7 +140,7 @@
       "links": [
         {
           "type": "document",
-          "url": "skunkworks_slide_deck.pdf",
+          "url": "docs/skunkworks_slide_deck.pdf",
           "image": "images/skunkworks_report.svg",
           "text": "Research Deck"
         },
