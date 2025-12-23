@@ -11,7 +11,20 @@
         "Implemented adaptive hyperparameter optimization pipeline with performance-driven scheduling algorithm that dynamically adjusts fine-tuning frequency, mitigating catastrophic forgetting while maximizing convergence efficiency and cost reduction.",
         "Demonstrated generalization across domains using Speech-to-Text as primary use case, achieving 10-20% relative WER improvements while maintaining platform abstraction for extensibility to text generation, translation, and other generative tasks."
       ],
-      "links": []
+      "links": [
+        {
+          "type": "document",
+          "url": "docs/self-learning_adaptive_course_report.pdf",
+          "image": "images/genai_project.jpg",
+          "text": "Course Report"
+        },
+        {
+          "type": "document",
+          "url": "docs/self-learning_adaptive_course_presentation.pdf",
+          "image": "images/genai_project.jpg",
+          "text": "Course Presentation"
+        }
+      ]
     },
     {
       "id": 2,
@@ -24,7 +37,20 @@
         "Implemented streaming API support for ITBench CISO agents using GPT-4o-mini, instrumenting Langfuse-based telemetry to capture Time-to-First-Token (0.79-1.69s) and token generation speed (59-72 tokens/s), revealing prefill latency as the dominant bottleneck for interactive security workflows",
         "Extended ITBench evaluation infrastructure with performance metrics enabling quantitative comparison of ReAct vs. PlanExecute architectures across latency, cost efficiency, and reliability dimensions"
       ],
-      "links": []
+      "links": [
+        {
+          "type": "document",
+          "url": "docs/NFR_Course_Report.pdf",
+          "image": "images/nfr_research.jpg",
+          "text": "Course Report"
+        },
+        {
+          "type": "document",
+          "url": "docs/NFR_Course_Presentation.pdf",
+          "image": "images/nfr_research.jpg",
+          "text": "Course Presentation"
+        }
+      ]
     },
     {
       "id": 3,
@@ -37,7 +63,14 @@
         "Led experimentation across Llama and SmolLM model families, implementing white-box token-level distillation on GSM8K and CNN-DailyMail datasets to validate task-dependent divergence superiority",
         "Engineered dynamic batched speculative decoding evaluation framework with jagged sequence handling, enabling rigorous entropy-aware analysis revealing mode-seeking advantages in low-entropy tasks and robustness of JSD in high-entropy regimes"
       ],
-      "links": []
+      "links": [
+        {
+          "type": "document",
+          "url": "docs/distillspec.pdf",
+          "image": "images/specdec.jpg",
+          "text": "Research Paper"
+        }
+      ]
     },
     {
       "id": 4,
