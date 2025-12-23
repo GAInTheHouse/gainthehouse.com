@@ -2,23 +2,126 @@
   "projects": [
     {
       "id": 1,
+      "title": "Self-Adaptive self-learning GenerativeAI Systems",
+      "period": "Sep 2025 - Present",
+      "image": "images/genai_project.jpg",
+      "thumbnail": "images/genai_project.jpg",
+      "description": [
+        "Architected closed-loop self-improvement framework integrating LLM-based error detection, automated fine-tuning orchestration, and adaptive scheduling, enabling generative models to autonomously improve post-deployment without manual retraining.",
+        "Implemented adaptive hyperparameter optimization pipeline with performance-driven scheduling algorithm that dynamically adjusts fine-tuning frequency, mitigating catastrophic forgetting while maximizing convergence efficiency and cost reduction.",
+        "Demonstrated generalization across domains using Speech-to-Text as primary use case, achieving 10-20% relative WER improvements while maintaining platform abstraction for extensibility to text generation, translation, and other generative tasks."
+      ],
+      "links": [
+        {
+          "type": "document",
+          "url": "docs/self-learning_adaptive_course_report.pdf",
+          "image": "images/genai_project.jpg",
+          "text": "Course Report"
+        },
+        {
+          "type": "document",
+          "url": "docs/self-learning_adaptive_course_presentation.pdf",
+          "image": "images/genai_project.jpg",
+          "text": "Course Presentation"
+        },
+        {
+          "type": "github",
+          "url": "https://github.com/GAInTheHouse/Adaptive-Self-Learning-Agentic-AI-System",
+          "image": "images/github.png",
+          "text": "Project Repository"
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "title": "NFR Benchmarking Framework for IT Automation Agents",
+      "period": "Sep 2025 - Present",
+      "image": "images/nfr_research.jpg",
+      "thumbnail": "images/nfr_research.jpg",
+      "description": [
+        "Conducted comprehensive literature review synthesizing 182+ sources to establish unified NFR taxonomy bridging software quality standards with agent-specific observability requirements, identifying critical gaps in production-readiness evaluation",
+        "Implemented streaming API support for ITBench CISO agents using GPT-4o-mini, instrumenting Langfuse-based telemetry to capture Time-to-First-Token (0.79-1.69s) and token generation speed (59-72 tokens/s), revealing prefill latency as the dominant bottleneck for interactive security workflows",
+        "Extended ITBench evaluation infrastructure with performance metrics enabling quantitative comparison of ReAct vs. PlanExecute architectures across latency, cost efficiency, and reliability dimensions"
+      ],
+      "links": [
+        {
+          "type": "document",
+          "url": "docs/NFR_Course_Report.pdf",
+          "image": "images/nfr_research.jpg",
+          "text": "Course Report"
+        },
+        {
+          "type": "document",
+          "url": "docs/NFR_Course_Presentation.pdf",
+          "image": "images/nfr_research.jpg",
+          "text": "Course Presentation"
+        },
+        {
+          "type": "github",
+          "url": "https://github.com/ITBench-NFR",
+          "image": "images/github.png",
+          "text": "Project Repository"
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "title": "On-Policy Knowledge Distillation for Speculative Decoding in LLMs",
+      "period": "Sep 2025 - Dec 2025",
+      "image": "images/specdec.jpg",
+      "thumbnail": "images/specdec.jpg",
+      "description": [
+        "Investigated divergence measures (Forward KL, Reverse KL, JSD) for on-policy distillation to optimize draft-target alignment in speculative decoding, demonstrating 4.4% improvement in token acceptance rate for mathematical reasoning tasks",
+        "Led experimentation across Llama and SmolLM model families, implementing white-box token-level distillation on GSM8K and CNN-DailyMail datasets to validate task-dependent divergence superiority",
+        "Engineered dynamic batched speculative decoding evaluation framework with jagged sequence handling, enabling rigorous entropy-aware analysis revealing mode-seeking advantages in low-entropy tasks and robustness of JSD in high-entropy regimes"
+      ],
+      "links": [
+        {
+          "type": "document",
+          "url": "docs/distillspec.pdf",
+          "image": "images/specdec.jpg",
+          "text": "Research Paper"
+        },
+        {
+          "type": "github",
+          "url": "https://github.com/r-rishabh-j/distillSpec-nlp",
+          "image": "images/github.png",
+          "text": "Project Repository"
+        }
+      ]
+    },
+    {
+      "id": 4,
       "title": "Machine Learning To Identify Diabetic Pathways in Mice and Humans",
       "period": "May 2021 - Dec 2022",
-      "image": "images/projectx_2022.jpg",
-      "thumbnail": "images/projectx_2022.jpg",
+      "image": "images/projectx_2021.jpg",
+      "thumbnail": "images/projectx_2021.jpg",
       "description": [
         "Led team representing university in international ML research competition, competing against 21 universities worldwide",
         "Applied 16 ML and Data Science Methods to correlate insulin & glucose levels in mice with gene expression data",
         "Extracted expressive genomes from models using ExplainableAI solutions and extrapolated results with human genomes"
       ],
-      "links": []
+      "links": [
+        {
+          "type": "paper",
+          "url": "https://openreview.net/forum?id=HObGjRkXOAY",
+          "image": "images/paper_1.png",
+          "text": "Research Paper"
+        },
+        {
+          "type": "github",
+          "url": "https://github.com/2454511550Lin/ml-diabetes",
+          "image": "images/github.png",
+          "text": "Project Repository"
+        }
+      ]
     },
     {
-      "id": 2,
+      "id": 5,
       "title": "ProjectX - Air Quality Prediction",
-      "period": "2021",
-      "image": "images/projectx_2021.jpg",
-      "thumbnail": "images/projectx_2021.jpg",
+      "period": "2020-2021",
+      "image": "images/projectx_2020.png",
+      "thumbnail": "images/projectx_2020.png",
       "logo": "images/badgerxlogo.png",
       "description": [
         "Represented the university in an international Machine Learning Research Competition revolving around climate change.",
@@ -34,7 +137,7 @@
         },
         {
           "type": "document",
-          "url": "urs.pdf",
+          "url": "docs/urs.pdf",
           "image": "images/urs_logo.png",
           "text": "Undergraduate Research Symposium 2021"
         },
@@ -54,11 +157,17 @@
           "url": "https://www.youtube.com/watch?v=AykKGLMdZtg",
           "image": "images/youtube.png",
           "text": "Participants video"
+        },
+        {
+          "type": "github",
+          "url": "https://github.com/GAInTheHouse/BadgerX",
+          "image": "images/github.png",
+          "text": "Project Repository"
         }
       ]
     },
     {
-      "id": 3,
+      "id": 6,
       "title": "Water Infrastructure",
       "period": "2020-2021",
       "image": "images/city_of_madison.png",
@@ -70,13 +179,13 @@
       "links": [
         {
           "type": "document",
-          "url": "Water_Infrastructure_Paper.pdf",
+          "url": "docs/Water_Infrastructure_Paper.pdf",
           "image": "images/Water_Infrastructure_JSPG.png",
           "text": "Paper"
         },
         {
           "type": "document",
-          "url": "Water_Infrastructure_Presentation.pdf",
+          "url": "docs/Water_Infrastructure_Presentation.pdf",
           "image": "images/Water_Infrastructure.svg",
           "text": "Presentation"
         },
@@ -85,11 +194,17 @@
           "url": "https://madison.com/ct/news/local/govt-and-politics/data-science-in-madison-class-offers-uw-students-real-world-projects/article_9e5db95e-192c-5747-bd3a-a467d2228c30.html?omhide=true",
           "image": "images/638.png",
           "text": "Data Science In Wisconsin"
+        },
+        {
+          "type": "github",
+          "url": "https://github.com/GAInTheHouse/Data-Science-In-Wisconsin",
+          "image": "images/github.png",
+          "text": "Project Repository"
         }
       ]
     },
     {
-      "id": 4,
+      "id": 7,
       "title": "Uncertainty Estimation",
       "period": "Spring 2021",
       "image": "images/skunkworks.png",
@@ -101,7 +216,7 @@
       "links": [
         {
           "type": "document",
-          "url": "skunkworks_slide_deck.pdf",
+          "url": "docs/skunkworks_slide_deck.pdf",
           "image": "images/skunkworks_report.svg",
           "text": "Research Deck"
         },
@@ -115,4 +230,3 @@
     }
   ]
 }
-

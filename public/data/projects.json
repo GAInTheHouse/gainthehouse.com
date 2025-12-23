@@ -2,6 +2,25 @@
   "projects": [
     {
       "id": 1,
+      "title": "TaskflowAI",
+      "period": "Sep 2025 - Present",
+      "image": "images/taskflow.png",
+      "thumbnail": "images/taskflow.png",
+      "description": [
+        "Engineered end-to-end agentic workflow system to parse email, intelligently extract tasks and calendar events, categorize by user preferences, and auto-populate productivity tools, reducing manual scheduling overhead.",
+        "Designed orchestration layer for multi-agent coordination, enabling seamless integration between task extraction, categorization, and calendar management components."
+      ],
+      "links": [
+        {
+          "type": "github",
+          "url": "https://github.com/NavinColumbia/emailToTaskDev",
+          "image": "images/github.png",
+          "text": "Project Repository"
+        }
+      ]
+    },
+    {
+      "id": 2,
       "title": "MeetFree",
       "period": "May 2024 - June 2024",
       "image": "images/meetFree.jpeg",
@@ -11,10 +30,17 @@
         "Leveraged Google Cloud to establish infra and engineered transcription processing multi-speaker audio via Google Speech-To-Text",
         "Engineered prompt-based summarization service utilizing Gemini to generate concise, structured notes, cutting review time"
       ],
-      "links": []
+      "links": [
+        {
+          "type": "github",
+          "url": "https://github.com/GAInTheHouse/MeetFree",
+          "image": "images/github.png",
+          "text": "Project Repository"
+        }
+      ]
     },
     {
-      "id": 2,
+      "id": 3,
       "title": "Cyber Jacket",
       "period": "2020",
       "image": "images/cybersecurity.jpg",
@@ -47,13 +73,14 @@
         },
         {
           "type": "github",
-          "url": "https://github.com/GAInTheHouse/cybersecurity-jacketS",
+          "url": "https://github.com/GAInTheHouse/cybersecurity-jacket",
+          "image": "images/github.png",
           "text": "Project Repository"
         }
       ]
     },
     {
-      "id": 3,
+      "id": 4,
       "title": "Blind Man's Bluff",
       "period": "HackMIT 2020",
       "image": "images/blind.jpg",
@@ -66,7 +93,7 @@
       "links": [
         {
           "type": "document",
-          "url": "Blind.pdf",
+          "url": "docs/Blind.pdf",
           "image": "images/blindpresentation.svg",
           "text": "Presentation"
         },
@@ -84,12 +111,13 @@
         {
           "type": "github",
           "url": "https://github.com/GAInTheHouse/blind-mans-bluff",
+          "image": "images/github.png",
           "text": "Project Repository"
         }
       ]
     },
     {
-      "id": 4,
+      "id": 5,
       "title": "COVID Bot",
       "period": "SOS Hackathon 2020",
       "image": "images/bot.jpg",
@@ -125,10 +153,10 @@
         {
           "type": "github",
           "url": "https://github.com/GAInTheHouse/COVID-BOT",
+          "image": "images/github.png",
           "text": "Project Repository"
         }
       ]
     }
   ]
 }
-

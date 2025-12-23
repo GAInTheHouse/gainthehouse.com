@@ -14,15 +14,74 @@ $(document).ready(function() {
 	loadSoftwareProjects();
 	loadWorkExperience();
 	loadOrganizations();
-	loadHobbies();
+	loadEducation();
 });
+
+// Load Education
+function loadEducation() {
+	$.getJSON('data/education.json', function(data) {
+		const container = $('#education-list');
+		if (!container.length) return;
+
+		container.empty();
+
+		data.education.forEach(school => {
+			let coursesList = '';
+			if (school.courses && school.courses.length) {
+				coursesList = `<p><strong>Courses:</strong> ${school.courses.join(', ')}</p>`;
+			}
+
+			let awardsList = '';
+			if (school.awards && school.awards.length) {
+				awardsList = `<p><strong>Awards:</strong> ${school.awards.join(', ')}</p>`;
+			}
+
+			const logoHtml = school.logo ? `
+				<div class="media-left">
+					<img class="education-logo" src="${school.logo}" alt="${school.institution} logo">
+				</div>` : '';
+
+			const panel = `
+				<div class="panel panel-default">
+					<div class="panel-body">
+						<div class="media">
+							${logoHtml}
+							<div class="media-body">
+								<h3>${school.institution} | ${school.location} <small>[${school.date}]</small></h3>
+								<p><strong>${school.degree}</strong>${school.major ? ' — ' + school.major : ''}${school.track ? ' (' + school.track + ')' : ''}${school.gpa ? ' | <strong>GPA:</strong> ' + school.gpa : ''}</p>
+								${coursesList}
+								${awardsList}
+							</div>
+						</div>
+					</div>
+				</div>
+			`;
+
+			container.append(panel);
+		});
+	}).fail(function(jqXHR, textStatus, errorThrown) {
+		console.error('Error loading education:', textStatus, errorThrown);
+	});
+}
 
 // Load Research Projects
 function loadResearchProjects() {
 	$.getJSON('data/research.json', function(data) {
 		console.log('Loading research projects:', data.projects.length, 'projects');
-		// Remove existing slides
-		$('#myModallightbox .modal-content-lightbox .mySlides').remove();
+		// Apply thumbnails to promo cards
+		$('#research .promo-item').each((idx, el) => {
+			const project = data.projects[idx];
+			if (project) {
+				$(el).css('background-image', `url(${project.thumbnail || project.image})`);
+			}
+		});
+
+		const modalContent = $('#myModallightbox .modal-content-lightbox');
+		// Remove existing slides and thumbs
+		modalContent.find('.mySlides').remove();
+		modalContent.find('.column-lightbox').remove();
+
+		let thumbsHTML = '';
 		
 		data.projects.forEach((project, index) => {
 			const slideNumber = index + 1;
@@ -130,9 +189,18 @@ function loadResearchProjects() {
 			slideHTML += `<br></div>`;
 			
 			// Insert before the prev button
-			$('#myModallightbox .modal-content-lightbox .prev').before(slideHTML);
+			modalContent.find('.prev').before(slideHTML);
+
+			thumbsHTML += `
+				<div class="column-lightbox">
+					<img class="demo cursor" src="${project.thumbnail || project.image}" style="width:100%; height:100%; object-fit:cover;" onclick="currentSlide(${slideNumber})" alt="${project.title}">
+				</div>`;
 		});
 		
+		if (thumbsHTML) {
+			modalContent.find('.caption-container').after(thumbsHTML);
+		}
+
 		// Re-initialize the slideshow
 		console.log('Research slides inserted, initializing slideshow');
 		showSlides(1);
@@ -145,7 +213,19 @@ function loadResearchProjects() {
 function loadSoftwareProjects() {
 	$.getJSON('data/projects.json', function(data) {
 		console.log('Loading software projects:', data.projects.length, 'projects');
-		$('#myModallightbox2 .modal-content-lightbox .mySlides2').remove();
+		// Apply thumbnails to promo cards
+		$('#projects .promo-item').each((idx, el) => {
+			const project = data.projects[idx];
+			if (project) {
+				$(el).css('background-image', `url(${project.thumbnail || project.image})`);
+			}
+		});
+
+		const modalContent = $('#myModallightbox2 .modal-content-lightbox');
+		modalContent.find('.mySlides2').remove();
+		modalContent.find('.column-lightbox').remove();
+
+		let thumbsHTML = '';
 		
 		data.projects.forEach((project, index) => {
 			const slideNumber = index + 1;
@@ -226,9 +306,18 @@ function loadSoftwareProjects() {
 			slideHTML += `</ul><br></div>`;
 			
 			// Insert before the prev button
-			$('#myModallightbox2 .modal-content-lightbox .prev').before(slideHTML);
+			modalContent.find('.prev').before(slideHTML);
+
+			thumbsHTML += `
+				<div class="column-lightbox">
+					<img class="demo2 cursor" src="${project.thumbnail || project.image}" style="width:100%; height:100%; object-fit:cover;" onclick="currentSlide2(${slideNumber})" alt="${project.title}">
+				</div>`;
 		});
 		
+		if (thumbsHTML) {
+			modalContent.find('.caption-container').after(thumbsHTML);
+		}
+
 		// Re-initialize the slideshow
 		console.log('Software project slides inserted, initializing slideshow');
 		showSlides2(1);
@@ -241,7 +330,19 @@ function loadSoftwareProjects() {
 function loadWorkExperience() {
 	$.getJSON('data/work-experience.json', function(data) {
 		console.log('Loading work experience:', data.experiences.length, 'experiences');
-		$('#myModallightbox3 .modal-content-lightbox .mySlides3').remove();
+		// Apply thumbnails to promo cards
+		$('#work-ex .promo-item').each((idx, el) => {
+			const exp = data.experiences[idx];
+			if (exp) {
+				$(el).css('background-image', `url(${exp.thumbnail || exp.image})`);
+			}
+		});
+
+		const modalContent = $('#myModallightbox3 .modal-content-lightbox');
+		modalContent.find('.mySlides3').remove();
+		modalContent.find('.column-lightbox').remove();
+
+		let thumbsHTML = '';
 		
 		data.experiences.forEach((exp, index) => {
 			const slideNumber = index + 1;
@@ -265,9 +366,18 @@ function loadWorkExperience() {
 			slideHTML += `</ul><br></div>`;
 			
 			// Insert before the prev button
-			$('#myModallightbox3 .modal-content-lightbox .prev').before(slideHTML);
+			modalContent.find('.prev').before(slideHTML);
+
+			thumbsHTML += `
+				<div class="column-lightbox">
+					<img class="demo3 cursor" src="${exp.thumbnail || exp.image}" style="width:100%; height:100%; object-fit:cover;" onclick="currentSlide3(${slideNumber})" alt="${exp.title}">
+				</div>`;
 		});
 		
+		if (thumbsHTML) {
+			modalContent.find('.caption-container').after(thumbsHTML);
+		}
+
 		// Re-initialize the slideshow
 		console.log('Work experience slides inserted, initializing slideshow');
 		showSlides3(1);
@@ -359,146 +469,5 @@ function loadOrganizations() {
 		showSlides4(1);
 	}).fail(function(jqXHR, textStatus, errorThrown) {
 		console.error('Error loading organizations:', textStatus, errorThrown);
-	});
-}
-
-// Load Hobbies
-function loadHobbies() {
-	$.getJSON('data/hobbies.json', function(data) {
-		console.log('Loading hobbies:', data.hobbies.length, 'hobbies');
-		$('#myModallightbox5 .modal-content-lightbox .mySlides5').remove();
-		
-		data.hobbies.forEach((hobby, index) => {
-			const slideNumber = index + 1;
-			const totalSlides = data.hobbies.length;
-			
-			let slideHTML = `<div class="mySlides5 ${hobby.cssClass}"`;
-			
-			// Add background image if exists
-			if (hobby.backgroundImage) {
-				slideHTML += ` style="background: url(${hobby.backgroundImage}) no-repeat; background-size: auto;"`;
-			}
-			
-			slideHTML += `>
-				<div class="numbertext">${slideNumber}/${totalSlides}</div>
-				<br>`;
-			
-			// Add title with icons
-			if (hobby.icon) {
-				const titleColor = hobby.titleColor || 'white';
-				let iconClass = hobby.title === 'Music' ? 'music-icon' : (hobby.title === 'Art' ? 'writing-icon' : '');
-				
-				slideHTML += `<h1 style="font-family:'Charmonman',cursive;text-align: center;${hobby.titleColor ? ' color: ' + hobby.titleColor + ';' : ''}" class="${iconClass}">`;
-				
-				// Handle different icon types
-				if (hobby.icon.type === 'glyphicon-music') {
-					hobby.icon.sizes.forEach(size => {
-						slideHTML += `<span class="glyphicon glyphicon-music" style="font-size:${size}px;"></span>`;
-					});
-				} else if (hobby.icon.type === 'glyphicon-pencil' && hobby.icon.additionalIcons) {
-					// Art icons
-					slideHTML += `<span class="glyphicon glyphicon-book" style="font-size:12px;"></span>`;
-					hobby.icon.sizes.forEach(size => {
-						slideHTML += `<span class="glyphicon glyphicon-pencil" style="font-size:${size}px;"></span>`;
-					});
-				} else if (hobby.icon.type === 'glyphicon-globe') {
-					// Travelling icons
-					slideHTML += `<span class="glyphicon glyphicon-globe" style="font-size:30px;"></span>`;
-					slideHTML += `<span class="glyphicon glyphicon-plane" style="font-size:24px;"></span>`;
-					slideHTML += `<br>${hobby.title}`;
-				}
-				
-				slideHTML += `</h1>`;
-			}
-			
-			// Add description (for Music)
-			if (hobby.description) {
-				slideHTML += `<p style="font-size: 18px; color:white;">`;
-				hobby.description.forEach(desc => {
-					slideHTML += `&nbsp;&nbsp;&nbsp;&nbsp; ${desc}<br>`;
-				});
-				slideHTML += `</p>`;
-			}
-			
-			// Add section title
-			if (hobby.sectionTitle) {
-				const titleColor = hobby.titleColor || 'white';
-				slideHTML += `
-					<br><br>
-					<h1 style="font-family:'Charmonman',cursive; font-size: 30px; color: ${titleColor};">
-						&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;${hobby.sectionTitle}
-					</h1>`;
-			}
-			
-			// Add videos (for Music)
-			if (hobby.videos && hobby.videos.length > 0) {
-				hobby.videos.forEach(video => {
-					slideHTML += `
-						<div class="gallery">
-							<video controls>
-								<source src="${video.url}" type="video/mp4">
-								Your browser does not support the video tag.
-							</video>
-							<div class="desc">${video.title}</div>
-						</div>`;
-				});
-				
-				slideHTML += `<br><br><br><br><br><br><br><br><br><br><br><br><br><br>`;
-				
-				// Add links
-				if (hobby.links && hobby.links.length > 0) {
-					hobby.links.forEach(link => {
-						slideHTML += `
-							<p style="color: white">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-								${link.text}
-								<a href="${link.url}">
-									<img src="${link.image}">
-								</a>
-							</p>`;
-					});
-				}
-			}
-			
-			// Add images (for Art)
-			if (hobby.images && hobby.images.length > 0) {
-				hobby.images.forEach(image => {
-					slideHTML += `
-						<div class="gallery">
-							<img src="${image.url}">
-							<div class="desc" style="color: black"><b>${image.title}</b></div>
-						</div>`;
-				});
-				slideHTML += `<br><br><br><br><br> <br><br><br><br><br> <br><br><br><br><br> <br><br>`;
-			}
-			
-			// Add activities list (for Travelling)
-			if (hobby.activities && hobby.activities.length > 0) {
-				slideHTML += `<br><br><ul>`;
-				hobby.activities.forEach(activity => {
-					slideHTML += `<li>${activity}</li>`;
-				});
-				slideHTML += `</ul><br><br>`;
-			}
-			
-			// Add last visit info (for Travelling)
-			if (hobby.lastVisit) {
-				slideHTML += `
-					<h1 style="font-family:'Charmonman',cursive; font-size: 25px;">
-						&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;My Last Visit: ${hobby.lastVisit}
-					</h1>
-					<br><br><br><br><br> <br><br><br><br><br> <br><br><br><br><br> <br><br>`;
-			}
-			
-			slideHTML += `<br></div>`;
-			
-			// Insert before the prev button
-			$('#myModallightbox5 .modal-content-lightbox .prev').before(slideHTML);
-		});
-		
-		// Re-initialize the slideshow
-		console.log('Hobbies slides inserted, initializing slideshow');
-		showSlides5(1);
-	}).fail(function(jqXHR, textStatus, errorThrown) {
-		console.error('Error loading hobbies:', textStatus, errorThrown);
 	});
 }

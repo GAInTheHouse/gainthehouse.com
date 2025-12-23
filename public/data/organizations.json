@@ -11,7 +11,7 @@
       "links": [
         {
           "type": "document",
-          "url": "End%20of%20the%20Year.pdf",
+          "url": "docs/End%20of%20the%20Year.pdf",
           "image": "images/end_of_year.svg",
           "text": "End of Year Presentation"
         },
@@ -56,7 +56,7 @@
       "links": [
         {
           "type": "document",
-          "url": "bcc.pdf",
+          "url": "docs/bcc.pdf",
           "image": "images/bcc.jpeg",
           "text": "First Presentation"
         },
