@@ -34,8 +34,20 @@
     },
     {
       "id": 2,
+      "title": "Agentic Migration of Clinical Chatbots",
+      "period": "Jan 2026 - Present",
+      "image": "",
+      "thumbnail": "",
+      "description": [
+        "Designed and led migration of clinical chatbot towards an agentic infrastructure",
+        "Led research study comparing effects of chatbot performance between agentic infrastructure and monolithic prompt structure"
+      ],
+      "links": []
+    },
+    {
+      "id": 3,
       "title": "NFR Benchmarking Framework for IT Automation Agents",
-      "period": "Sep 2025 - Present",
+      "period": "Sep 2025 - Feb 2026",
       "image": "images/nfr_research.jpg",
       "thumbnail": "images/nfr_research.jpg",
       "description": [
@@ -65,7 +77,7 @@
       ]
     },
     {
-      "id": 3,
+      "id": 4,
       "title": "On-Policy Knowledge Distillation for Speculative Decoding in LLMs",
       "period": "Sep 2025 - Dec 2025",
       "image": "images/specdec.jpg",
@@ -91,7 +103,7 @@
       ]
     },
     {
-      "id": 4,
+      "id": 5,
       "title": "Machine Learning To Identify Diabetic Pathways in Mice and Humans",
       "period": "May 2021 - Dec 2022",
       "image": "images/projectx_2021.jpg",
@@ -117,16 +129,17 @@
       ]
     },
     {
-      "id": 5,
-      "title": "ProjectX - Air Quality Prediction",
-      "period": "2020-2021",
+      "id": 6,
+      "title": "Machine Learning for Air Quality Prediction from Wildfires",
+      "period": "Aug 2020 - Apr 2021",
       "image": "images/projectx_2020.png",
       "thumbnail": "images/projectx_2020.png",
       "logo": "images/badgerxlogo.png",
       "description": [
-        "Represented the university in an international Machine Learning Research Competition revolving around climate change.",
-        "We compared different Machine Learning models to predict the Air Quality Index of a region in Northern California, one day after the onset of a wildfire in the vicinity.",
-        "We plan to continue our research for the next six months. This research will be useful in determining the longer-term trend to air quality index due to wildfires."
+        "Led the team representing the university in an international Machine Learning Research Competition revolving around climate change.",
+        "Compared deep learning methods to predict the Air Quality Index of a region in Northern California, one day after the onset of a wildfire in the vicinity.",
+        "Created data processing pipelines to fetch, clean, complete & combine data from NASA satellites and NOAA ground stations.",
+        "Analyzed data to establish patterns between vegetation, humidity, air quality, and other factors around wildfires."
       ],
       "links": [
         {
@@ -167,9 +180,9 @@
       ]
     },
     {
-      "id": 6,
+      "id": 7,
       "title": "Water Infrastructure",
-      "period": "2020-2021",
+      "period": "Sep 2020 - May 2021",
       "image": "images/city_of_madison.png",
       "thumbnail": "images/city_of_madison.png",
       "description": [
@@ -204,14 +217,14 @@
       ]
     },
     {
-      "id": 7,
+      "id": 8,
       "title": "Uncertainty Estimation",
-      "period": "Spring 2021",
+      "period": "Jan 2021 - Aug 2021",
       "image": "images/skunkworks.png",
       "thumbnail": "images/skunkworks.png",
       "description": [
         "Research project using error analysis to estimate the domain of standard machine learning models.",
-        "Explored the relationship between different distance metrics and the error in different error metrics."
+        "Explored the relationship between different distance metrics and the error in different error metrics to establish blind spots."
       ],
       "links": [
         {
