@@ -9,7 +9,10 @@
         { "label": "C#", "icon": "images/c-sharp.svg" },
         { "label": "Java", "icon": "images/java.svg" },
         { "label": "Kotlin", "icon": "images/kotlin.svg" },
+        { "label": "Dart" },
+        { "label": "SQL" },
         { "label": "R", "icon": "images/R.png" },
+        { "label": "MATLAB" },
         { "label": "Octave", "icon": "images/octave.png" }
       ]
     },
@@ -17,6 +20,8 @@
       "name": "ML",
       "skills": [
         { "label": "Python", "icon": "images/python.png" },
+        { "label": "scikit-learn" },
+        { "label": "MastML" },
         { "label": "R", "icon": "images/R.png" },
         { "label": "Octave", "icon": "images/octave.png" }
       ]
@@ -26,6 +31,7 @@
       "skills": [
         { "label": "AWS", "icon": "images/aws.png" },
         { "label": "Google Cloud", "icon": "images/google-cloud.svg" },
+        { "label": "Azure", "icon": "images/microsoft.png" },
         { "label": "Terraform", "icon": "images/terraform.svg" },
         { "label": "SonarQube", "icon": "images/SonarQube2.png" },
         { "label": "Linux", "icon": "images/linux.png" },
@@ -47,6 +53,8 @@
         { "label": "HTML", "icon": "images/html.svg" },
         { "label": "CSS", "icon": "images/css.svg" },
         { "label": "JavaScript", "icon": "images/Javascript.svg" },
+        { "label": "React" },
+        { "label": "Flask" },
         { "label": "PHP", "icon": "images/php.svg" }
       ]
     },
@@ -57,6 +65,7 @@
         { "label": "GitHub", "icon": "images/github.png" },
         { "label": "GitLab", "icon": "images/gitlab.svg" },
         { "label": "Jira", "icon": "images/jira.svg" },
+        { "label": "SDVI" },
         { "label": "Arduino", "icon": "images/arduino.svg" },
         { "label": "Unity", "icon": "images/unity.svg" }
       ]

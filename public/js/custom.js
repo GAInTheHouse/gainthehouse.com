@@ -152,6 +152,11 @@ function renderEducation(container, schools) {
               <p class="education-card__group-label">Courses</p>
               <div class="education-card__chips">${school.courses.map((course) => `<span class="chip">${escapeHtml(course)}</span>`).join("")}</div>
             </div>` : ""}
+          ${school.certificates?.length ? `
+            <div class="education-card__group">
+              <p class="education-card__group-label">Certificates</p>
+              <div class="education-card__chips">${school.certificates.map((certificate) => `<span class="chip">${escapeHtml(certificate)}</span>`).join("")}</div>
+            </div>` : ""}
           ${school.awards?.length ? `
             <div class="education-card__group">
               <p class="education-card__group-label">Awards</p>
@@ -196,16 +201,18 @@ function renderStats({ research, projects, experience }) {
     .filter(Boolean)
     .sort((a, b) => a - b)[0];
   const yearCount = years ? Math.max(1, new Date().getFullYear() - years) : experience.length;
-  const studentMatch = experience
+  const studentCount = experience
     .flatMap((item) => item.description || [])
     .map((line) => String(line).match(/(\d+)\+?\s+students/i))
-    .find(Boolean);
+    .filter(Boolean)
+    .map((match) => Number(match[1]))
+    .sort((a, b) => b - a)[0];
 
   const stats = [
     { value: `${yearCount}+`, label: "Years in industry" },
     { value: String(research.length), label: "Research projects" },
     { value: String(experience.length), label: "Roles" },
-    { value: studentMatch ? `${studentMatch[1]}+` : String(projects.length), label: studentMatch ? "Students mentored" : "Software projects" }
+    { value: studentCount ? `${studentCount}+` : String(projects.length), label: studentCount ? "Students mentored" : "Software projects" }
   ];
 
   document.getElementById("stats-grid").innerHTML = stats.map((stat) => `

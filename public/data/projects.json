@@ -2,8 +2,47 @@
   "projects": [
     {
       "id": 1,
+      "title": "MisfitsAI",
+      "period": "Jan 2026 - May 2026",
+      "image": "",
+      "thumbnail": "",
+      "description": [
+        "Led product discovery and roadmap planning for MisfitAI Wardrobe Planner, a mobile app that turns users' closet and calendar into daily outfit recommendations for busy students and young professionals.",
+        "Conducted structured customer discovery interviews and translated insights into onboarding flows, wardrobe capture requirements, and objection handling that informed landing page copy and in-product messaging.",
+        "Partnered with engineers to scope and ship the first recommendation system MVP, defining API contracts, edge cases, and evaluation criteria for calendar and wardrobe based outfit suggestions."
+      ],
+      "links": []
+    },
+    {
+      "id": 2,
+      "title": "Rx.AI",
+      "period": "Apr 2026 - May 2026",
+      "image": "",
+      "thumbnail": "",
+      "description": [
+        "Built dynamic AI-powered patient check-in system that generates personalized clinical questionnaires",
+        "Integrated voice and camera multimodal features including TTS question playback, real-time STT answer transcription, and inline image capture for wound photos and medication labels",
+        "Designed end-to-end evaluation pipeline using DeepEval metrics with a BigQuery data sink to assess STT, TTS, image analysis, and question generation quality across 5 workflow combinations"
+      ],
+      "links": []
+    },
+    {
+      "id": 3,
+      "title": "Nutrigraph",
+      "period": "Jan 2026 - Mar 2026",
+      "image": "",
+      "thumbnail": "",
+      "description": [
+        "Built agentic multimodal RAG system that estimates dish macros from images and text using USDA and OpenFoodFacts.",
+        "Designed diner and restaurant workflows, including restaurant search, dish logging, nutrition dashboards, and catalog creation.",
+        "Added evaluation and feedback loops for macro accuracy, confidence based clarification, and repeated request handling."
+      ],
+      "links": []
+    },
+    {
+      "id": 4,
       "title": "TaskflowAI",
-      "period": "Sep 2025 - Present",
+      "period": "Sep 2025 - Jan 2026",
       "image": "images/taskflow.png",
       "thumbnail": "images/taskflow.png",
       "description": [
@@ -20,7 +59,7 @@
       ]
     },
     {
-      "id": 2,
+      "id": 5,
       "title": "MeetFree",
       "period": "May 2024 - June 2024",
       "image": "images/meetFree.jpeg",
@@ -40,9 +79,9 @@
       ]
     },
     {
-      "id": 3,
-      "title": "Cyber Jacket",
-      "period": "2020",
+      "id": 6,
+      "title": "Cybersecurity Jacket",
+      "period": "Sep 2022 - Dec 2022",
       "image": "images/cybersecurity.jpg",
       "thumbnail": "images/cybersecurity.jpg",
       "description": [
@@ -80,7 +119,7 @@
       ]
     },
     {
-      "id": 4,
+      "id": 7,
       "title": "Blind Man's Bluff",
       "period": "HackMIT 2020",
       "image": "images/blind.jpg",
@@ -117,7 +156,7 @@
       ]
     },
     {
-      "id": 5,
+      "id": 8,
       "title": "COVID Bot",
       "period": "SOS Hackathon 2020",
       "image": "images/bot.jpg",
