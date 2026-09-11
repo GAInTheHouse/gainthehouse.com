@@ -1,759 +1,201 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-
   <meta charset="utf-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Gautam Agarwal — Machine Learning Engineer</title>
+  <meta name="description" content="Portfolio of Gautam Agarwal, a machine learning engineer building production AI systems, research prototypes, and software products.">
+  <meta property="og:title" content="Gautam Agarwal — Machine Learning Engineer">
+  <meta property="og:description" content="Research, shipped products, and engineering work across conversational AI, ML systems, and software.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://gainthehouse.com/">
+  <meta property="og:image" content="images/1.png">
+  <meta name="theme-color" content="#15734C">
 
-  <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
-  <title>GAInTheHouse</title>
+  <link rel="apple-touch-icon" sizes="180x180" href="fav/apple-icon-180x180.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="fav/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="fav/favicon-16x16.png">
+  <link rel="manifest" href="fav/manifest.json">
 
-  <!-- Bootstrap Core CSS -->
-  <link href="css/bootstrap.min.css" rel="stylesheet">
-
-  <!-- Custom CSS: This stylesheet is to override any Bootstrap styles and apply own styles -->
-  <link href="css/custom.css" rel="stylesheet">
-  <link href="css/custom_header.css" rel="stylesheet">
-  <link href="css/custom_navigation.css" rel="stylesheet">
-  <link href="css/custom_footer.css" rel="stylesheet">
-  <link href="css/custom_gallery.css" rel="stylesheet">
-  <link href="css/custom_articles.css" rel="stylesheet">
-  <link href="css/custom_lightbox.css" rel="stylesheet">
-
-  <!--[if lt IE 9]>
-  <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
-  <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
-  <![endif]-->
-
-  <!-- Custom Fonts from Google -->
-  <link href="https://fonts.googleapis.com/css?family=Charmonman" rel="stylesheet">
-  <link href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
-
-  <!-- Title & Fav Icons -->
-  <link rel="apple-touch-icon" sizes="57x57" href="/fav/apple-icon-57x57.png">
-  <link rel="apple-touch-icon" sizes="60x60" href="/fav/apple-icon-60x60.png">
-  <link rel="apple-touch-icon" sizes="72x72" href="/fav/apple-icon-72x72.png">
-  <link rel="apple-touch-icon" sizes="76x76" href="/fav/apple-icon-76x76.png">
-  <link rel="apple-touch-icon" sizes="114x114" href="fav/apple-icon-114x114.png">
-  <link rel="apple-touch-icon" sizes="120x120" href="/fav/apple-icon-120x120.png">
-  <link rel="apple-touch-icon" sizes="144x144" href="/fav/apple-icon-144x144.png">
-  <link rel="apple-touch-icon" sizes="152x152" href="/fav/apple-icon-152x152.png">
-  <link rel="apple-touch-icon" sizes="180x180" href="/fav/apple-icon-180x180.png">
-  <link rel="icon" type="image/png" sizes="192x192"  href="/fav/android-icon-192x192.png">
-  <link rel="icon" type="image/png" sizes="32x32" href="/fav/favicon-32x32.png">
-  <link rel="icon" type="image/png" sizes="96x96" href="/fav/favicon-96x96.png">
-  <link rel="icon" type="image/png" sizes="16x16" href="/fav/favicon-16x16.png">
-  <link rel="manifest" href="/fav/manifest.json">
-  <meta name="msapplication-TileColor" content="#ffffff">
-  <meta name="msapplication-TileImage" content="/fav/ms-icon-144x144.png">
-  <meta name="theme-color" content="#ffffff">
-
+  <link rel="stylesheet" href="css/theme.css">
+  <link rel="stylesheet" href="css/components.css">
+  <link rel="stylesheet" href="css/lightbox.css">
 </head>
-
 <body>
+  <a class="skip-link" href="#main">Skip to content</a>
 
-    <!-- Navigation -->
-    <nav id="siteNav" class="navbar navbar-default navbar-fixed-top" role="navigation">
-    <div class="container">
-      <!-- Logo and responsive toggle -->
-      <div class="navbar-header">
-        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
-          <span class="sr-only">Toggle navigation</span>
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-        </button>
-        <a class="navbar-brand" href="#">
-          <span class="glyphicon glyphicon-fire"></span>
-          #GAInTheHouse
-        </a>
-      </div>
-      <!-- Navbar links -->
-      <div class="collapse navbar-collapse" id="navbar">
-        <ul class="nav navbar-nav navbar-right">
-          <li>
-            <a href="#head">Home</a>
-          </li>
-          <li>
-            <a href="#research">Research</a>
-          </li>
-          <li>
-            <a href="#projects">Software Projects</a>
-          </li>
-          <li>
-            <a href="#work-ex">Work Experience</a>
-          </li>
-          <li>
-            <a href="#org">My Organizations</a>
-          </li>
-          <li>
-            <a href="#education">Education</a>
-          </li>
-          <li>
-            <a href="#story">Articles</a>
-          </li>
-          <li>
-            <a href="#skills">Skillset</a>
-          </li>
-          <li>
-            <a href="#socials">Socials</a>
-          </li>
+  <header class="site-header" id="site-header">
+    <div class="container nav">
+      <a class="nav__brand" href="#top">Gautam Agarwal</a>
+      <button class="nav__toggle" id="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav" aria-label="Open menu">
+        <span class="nav__toggle-bar"></span>
+      </button>
+      <nav class="nav__panel" id="site-nav" aria-label="Primary">
+        <ul class="nav__links">
+          <li><a data-nav-link href="#work">Work</a></li>
+          <li><a data-nav-link href="#research">Research</a></li>
+          <li><a data-nav-link href="#projects">Projects</a></li>
+          <li><a data-nav-link href="#education">Education</a></li>
+          <li><a data-nav-link href="#about">About</a></li>
+          <li><a class="btn btn--primary nav__cta" href="docs/resume.pdf">Resume</a></li>
         </ul>
-
-      </div><!-- /.navbar-collapse -->
-    </div><!-- /.container -->
-  </nav>
-
-    <!-- Header -->
-    <header>
-    <div class="header-content" id="head">
-      <div class="header-content-inner">
-        <img src="images/1.png" class="gautam-image">
-        <br><br><br><br><br><br>
-        <h1  class="gautam-font"style="float:left;">&nbsp;&nbsp;Hi! I am Gautam</h1>
-        <br><br><br><br><br><br><br>
-
-      </div>
+      </nav>
     </div>
   </header>
 
-    <!-- Research Projects-->
-    <section class="content" id="research">
-    <div class="container">
-      <div class="row">
-        <div class="col-sm-6">
-          <h2 class="section-header">Research Projects</h2>
+  <main id="main">
+    <section class="hero" id="top">
+      <div class="container hero__grid">
+        <div>
+          <p class="section-label hero__eyebrow">Machine Learning Engineer</p>
+          <h1 class="hero__title">Building AI systems that ship.</h1>
+          <p class="hero__lede">I design and deploy machine learning infrastructure for production — from conversational AI at Epic to adaptive generative systems in research.</p>
+          <div class="hero__actions">
+            <a class="btn btn--primary" href="#work">View my work</a>
+            <a class="btn" href="docs/resume.pdf">Download resume</a>
+          </div>
+          <div class="hero__socials">
+            <a class="social-link" href="https://github.com/GAInTheHouse" aria-label="GitHub" target="_blank" rel="noopener noreferrer">
+              <svg viewBox="0 0 24 24"><path d="M12 .5A11.5 11.5 0 0 0 .5 12.4c0 5.25 3.4 9.7 8.12 11.26.6.12.82-.26.82-.58v-2.03c-3.3.73-4-1.6-4-1.6-.54-1.4-1.32-1.77-1.32-1.77-1.08-.76.08-.74.08-.74 1.2.08 1.83 1.26 1.83 1.26 1.06 1.84 2.78 1.3 3.46 1 .1-.8.41-1.3.75-1.6-2.64-.3-5.41-1.36-5.41-6.05 0-1.34.46-2.43 1.24-3.29-.13-.3-.54-1.54.12-3.2 0 0 1.01-.33 3.3 1.25a11.2 11.2 0 0 1 6 0c2.28-1.58 3.29-1.25 3.29-1.25.66 1.66.25 2.9.12 3.2.78.86 1.23 1.95 1.23 3.29 0 4.7-2.78 5.74-5.43 6.04.42.37.8 1.1.8 2.22v3.3c0 .32.21.7.82.58A11.5 11.5 0 0 0 23.5 12.4 11.5 11.5 0 0 0 12 .5z"/></svg>
+            </a>
+            <a class="social-link" href="https://www.linkedin.com/in/gainthehouse/" aria-label="LinkedIn" target="_blank" rel="noopener noreferrer">
+              <svg viewBox="0 0 24 24"><path d="M20.45 20.45h-3.55v-5.57c0-1.33-.03-3.04-1.85-3.04-1.86 0-2.14 1.45-2.14 2.94v5.67H9.36V9h3.41v1.56h.05c.47-.9 1.63-1.85 3.36-1.85 3.6 0 4.26 2.37 4.26 5.45v6.29zM5.34 7.43a2.06 2.06 0 1 1 0-4.12 2.06 2.06 0 0 1 0 4.12zM7.12 20.45H3.56V9h3.56v11.45zM22.23 0H1.77C.79 0 0 .77 0 1.73v20.54C0 23.23.79 24 1.77 24h20.46c.98 0 1.77-.77 1.77-1.73V1.73C24 .77 23.21 0 22.23 0z"/></svg>
+            </a>
+            <a class="social-link" href="https://www.youtube.com/channel/UCxS1_cz53xz7WYj1E4BYRvg" aria-label="YouTube" target="_blank" rel="noopener noreferrer">
+              <svg viewBox="0 0 24 24"><path d="M23.5 6.2a3.05 3.05 0 0 0-2.15-2.16C19.5 3.6 12 3.6 12 3.6s-7.5 0-9.35.44A3.05 3.05 0 0 0 .5 6.2 31.9 31.9 0 0 0 0 12a31.9 31.9 0 0 0 .5 5.8 3.05 3.05 0 0 0 2.15 2.16C4.5 20.4 12 20.4 12 20.4s7.5 0 9.35-.44a3.05 3.05 0 0 0 2.15-2.16A31.9 31.9 0 0 0 24 12a31.9 31.9 0 0 0-.5-5.8zM9.75 15.57V8.43L15.84 12l-6.09 3.57z"/></svg>
+            </a>
+            <a class="social-link" href="mailto:agarwalgautam2010@gmail.com" aria-label="Email">
+              <svg viewBox="0 0 24 24"><path d="M20 4H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V6a2 2 0 0 0-2-2zm0 4-8 5L4 8V6l8 5 8-5v2z"/></svg>
+            </a>
+          </div>
         </div>
-      </div>
-    </div>
-
-    <div class="container-fluid">
-      <div class="row promo">
-        <a onclick="openModal();currentSlide(1)" class="cursor">
-          <div class="col-md-4 promo-item item-1">
-          </div>
-        </a>
-        <a onclick="openModal();currentSlide(2)" class="cursor">
-          <div class="col-md-4 promo-item item-2">
-          </div>
-        </a>
-        <a onclick="openModal();currentSlide(3)" class="cursor">
-          <div class="col-md-4 promo-item item-3">
-          </div>
-        </a>
-      </div>
-      <div class="row promo">
-        <a onclick="openModal();currentSlide(4)" class="cursor">
-          <div class="col-md-4 promo-item item-4">
-          </div>
-        </a>
-        <a onclick="openModal();currentSlide(5)" class="cursor">
-          <div class="col-md-4 promo-item item-5">
-          </div>
-        </a>
-        <a onclick="openModal();currentSlide(6)" class="cursor">
-          <div class="col-md-4 promo-item item-6">
-            <h1>Water Infrastructure</h1>
-          </div>
-        </a>
-      </div>
-      <div class="row promo">
-        <a onclick="openModal();currentSlide(7)" class="cursor">
-          <div class="col-md-4 promo-item item-7">
-            <h1>Uncertainty Estimation</h1>
-          </div>
-        </a>
-      </div>
-    </div>
-    <div id="myModallightbox" class="modal-lightbox">
-      <span class="close-lightbox cursor" onclick="closeModallightbox()">&times;</span>
-      <div class="modal-content-lightbox">
-        <!-- Slides will be dynamically loaded here -->
-          <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-          <a class="next" onclick="plusSlides(1)">&#10095;</a>
-
-          <div class="caption-container">
-            <p id="caption"></p>
+        <div class="hero__portrait-wrap">
+          <div class="hero__portrait">
+            <img src="images/1.png" alt="Portrait of Gautam Agarwal">
           </div>
         </div>
       </div>
-
-      <script>
-      function openModal()
-      {
-        document.getElementById('myModallightbox').style.display = "block";
-      }
-
-      function closeModallightbox()
-      {
-        document.getElementById('myModallightbox').style.display = "none";
-      }
-
-      var slideIndex = 1;
-
-      function plusSlides(n)
-      {
-        showSlides(slideIndex += n);
-      }
-
-      function currentSlide(n)
-      {
-        showSlides(slideIndex = n);
-      }
-
-      function showSlides(n)
-      {
-        var i;
-        var slides = document.getElementsByClassName("mySlides");
-        var dots = document.getElementsByClassName("demo");
-        var captionText = document.getElementById("caption");
-        if (n > slides.length) {slideIndex = 1}
-        if (n < 1) {slideIndex = slides.length}
-        for (i = 0; i < slides.length; i++)
-        {
-          slides[i].style.display = "none";
-        }
-        for (i = 0; i < dots.length; i++)
-        {
-          dots[i].className = dots[i].className.replace(" active", "");
-        }
-        slides[slideIndex-1].style.display = "block";
-        dots[slideIndex-1].className += " active";
-        captionText.innerHTML = dots[slideIndex-1].alt;
-      }
-      </script>
-    </section>
-    
-    <!-- Software Projects-->
-    <section class="content content-2" id="projects">
-    <div class="container">
-      <div class="row">
-        <div class="col-sm-6">
-          <h2 class="section-header">Projects</h2>
-        </div>
-      </div>
-    </div>
-
-    <div class="container-fluid">
-      <div class="row promo">
-        <a onclick="openModal2();currentSlide2(1)" class="cursor">
-          <div class="col-md-4 promo-item item-8">
-            <h1>TaskflowAI</h1>
-          </div>
-        </a>
-        <a onclick="openModal2();currentSlide2(2)" class="cursor">
-          <div class="col-md-4 promo-item item-9">
-            <h1>MeetFree</h1>
-          </div>
-        </a>
-        <a onclick="openModal2();currentSlide2(3)" class="cursor">
-          <div class="col-md-4 promo-item item-10">
-          </div>
-        </a>
-      </div>
-      <div class="row promo">
-        <a onclick="openModal2();currentSlide2(4)" class="cursor">
-          <div class="col-md-4 promo-item item-11">
-            <h1>Blind Man's Bluff</h1>
-          </div>
-        </a>
-        <a onclick="openModal2();currentSlide2(5)" class="cursor">
-          <div class="col-md-4 promo-item item-12">
-            <h1>COVID Bot</h1>
-          </div>
-        </a>
-      </div>
-    </div>
-    <div id="myModallightbox2" class="modal-lightbox">
-      <span class="close-lightbox cursor" onclick="closeModallightbox2()">&times;</span>
-      <div class="modal-content-lightbox">
-        <!-- Slides will be dynamically loaded here -->
-          <a class="prev" onclick="plusSlides2(-1)">&#10094;</a>
-          <a class="next" onclick="plusSlides2(1)">&#10095;</a>
-
-          <div class="caption-container">
-            <p id="caption2"></p>
-          </div>
-        </div>
-      </div>
-
-      <script>
-      function openModal2()
-      {
-        document.getElementById('myModallightbox2').style.display = "block";
-      }
-
-      function closeModallightbox2()
-      {
-        document.getElementById('myModallightbox2').style.display = "none";
-      }
-
-      var slideIndex = 1;
-
-      function plusSlides2(n)
-      {
-        showSlides2(slideIndex += n);
-      }
-
-      function currentSlide2(n)
-      {
-        showSlides2(slideIndex = n);
-      }
-
-      function showSlides2(n)
-      {
-        var i;
-        var slides = document.getElementsByClassName("mySlides2");
-        var dots = document.getElementsByClassName("demo2");
-        var captionText = document.getElementById("caption2");
-        if (n > slides.length) {slideIndex = 1}
-        if (n < 1) {slideIndex = slides.length}
-        for (i = 0; i < slides.length; i++)
-        {
-          slides[i].style.display = "none";
-        }
-        for (i = 0; i < dots.length; i++)
-        {
-          dots[i].className = dots[i].className.replace(" active", "");
-        }
-        slides[slideIndex-1].style.display = "block";
-        dots[slideIndex-1].className += " active";
-        captionText.innerHTML = dots[slideIndex-1].alt;
-      }
-      </script>
     </section>
 
-    <!-- Work Experience-->
-    <section class="content" id="work-ex">
-    <div class="container">
-      <div class="row">
-        <div class="col-sm-6">
-          <h2 class="section-header">Work Experience</h2>
-        </div>
-      </div>
-    </div>
-
-    <div class="container-fluid">
-      <div class="row promo">
-        <a onclick="openModal3();currentSlide3(1)" class="cursor">
-          <div class="col-md-4 promo-item item-13">
-            <h1>MLE Intern</h1>
-          </div>
-        </a>
-        <a onclick="openModal3();currentSlide3(2)" class="cursor">
-          <div class="col-md-4 promo-item item-14">
-            <h1>SWE</h1>
-          </div>
-        </a>
-        <a onclick="openModal3();currentSlide3(3)" class="cursor">
-          <div class="col-md-4 promo-item item-15">
-            <h1>SWE Intern</h1>
-          </div>
-        </a>
-      </div>
-      <div class="row promo">
-        <a onclick="openModal3();currentSlide3(4)" class="cursor">
-          <div class="col-md-4 promo-item item-16">
-            <h1>Media Workflow Engineering Intern</h1>
-          </div>
-        </a>
-        <a onclick="openModal3();currentSlide3(5)" class="cursor">
-          <div class="col-md-4 promo-item item-17">
-            <h1>EI Intern</h1>
-          </div>
-        </a>
-        <a onclick="openModal3();currentSlide3(6)" class="cursor">
-          <div class="col-md-4 promo-item item-18">
-            <h1>Undergraduate TA</h1>
-          </div>
-        </a>
-      </div>
-      <div class="row promo">
-        <a onclick="openModal3();currentSlide3(7)" class="cursor">
-          <div class="col-md-4 promo-item item-19">
-            <h1>CV Intern</h1>
-          </div>
-        </a>
-        <a onclick="openModal3();currentSlide3(8)" class="cursor">
-          <div class="col-md-4 promo-item item-20">
-            <h1>Project Intern</h1>
-          </div>
-        </a>
-      </div>
-    </div>
-    <div id="myModallightbox3" class="modal-lightbox">
-      <span class="close-lightbox cursor" onclick="closeModallightbox3()">&times;</span>
-      <div class="modal-content-lightbox">
-        <!-- Slides will be dynamically loaded here -->
-          <a class="prev" onclick="plusSlides3(-1)">&#10094;</a>
-          <a class="next" onclick="plusSlides3(1)">&#10095;</a>
-
-          <div class="caption-container">
-            <p id="caption3"></p>
-          </div>
-        </div>
-      </div>
-
-      <script>
-      function openModal3()
-      {
-        document.getElementById('myModallightbox3').style.display = "block";
-      }
-
-      function closeModallightbox3()
-      {
-        document.getElementById('myModallightbox3').style.display = "none";
-      }
-
-      var slideIndex = 1;
-
-      function plusSlides3(n)
-      {
-        showSlides3(slideIndex += n);
-      }
-
-      function currentSlide3(n)
-      {
-        showSlides3(slideIndex = n);
-      }
-
-      function showSlides3(n)
-      {
-        var i;
-        var slides = document.getElementsByClassName("mySlides3");
-        var dots = document.getElementsByClassName("demo3");
-        var captionText = document.getElementById("caption3");
-        if (n > slides.length) {slideIndex = 1}
-        if (n < 1) {slideIndex = slides.length}
-        for (i = 0; i < slides.length; i++)
-        {
-          slides[i].style.display = "none";
-        }
-        for (i = 0; i < dots.length; i++)
-        {
-          dots[i].className = dots[i].className.replace(" active", "");
-        }
-        slides[slideIndex-1].style.display = "block";
-        dots[slideIndex-1].className += " active";
-        captionText.innerHTML = dots[slideIndex-1].alt;
-      }
-      </script>
-    </section>
-    
-    <!-- Organizations -->
-    <section class="content content-2" id="org">
+    <section class="stats section--alt" aria-label="Highlights">
       <div class="container">
-        <div class="row">
-          <div class="col-sm-6">
-            <h2 class="section-header">Organizations</h2>
-
-          </div>
-
-        </div>
+        <div class="stats__grid" id="stats-grid"></div>
       </div>
-
-
-      <div class="container-fluid">
-        <div class="row promo">
-          <a onclick="openModal4();currentSlide4(1)" class="cursor">
-            <div class="col-md-4 promo-item item-21">
-              <h1>DotData</h1>
-            </div>
-          </a>
-          <a onclick="openModal4();currentSlide4(2)" class="cursor">
-            <div class="col-md-4 promo-item item-22">
-              <h1>Badger Cricket Club</h1>
-            </div>
-          </a>
-        </div>
-      </div><!-- /.container-fluid -->
-      <div id="myModallightbox4" class="modal-lightbox">
-        <span class="close-lightbox cursor" onclick="closeModallightbox4()">&times;</span>
-        <div class="modal-content-lightbox">
-          <!-- Slides will be dynamically loaded here -->
-          <a class="prev" onclick="plusSlides4(-1)">&#10094;</a>
-          <a class="next" onclick="plusSlides4(1)">&#10095;</a>
-
-          <div class="caption-container">
-            <p id="caption4"></p>
-          </div>
-          <div class="column-lightbox">
-            <img class="demo4 cursor" src="images/dotData.png" style="width:100%; height:100%; object-fit:cover;" onclick="currentSlide4(1)" alt="dotData Science">
-          </div>
-          <div class="column-lightbox">
-            <img class="demo4 cursor" src="images/bcc.jpeg" style="width:100%; height:100%; object-fit:cover;" onclick="currentSlide4(2)" alt="Badger Cricket Club">
-          </div>
-        </div>
-      </div>
-      <script>
-      function openModal4()
-      {
-        document.getElementById('myModallightbox4').style.display = "block";
-      }
-
-      function closeModallightbox4()
-      {
-        document.getElementById('myModallightbox4').style.display = "none";
-      }
-
-      var slideIndex = 1;
-
-      function plusSlides4(n)
-      {
-        showSlides4(slideIndex += n);
-      }
-
-      function currentSlide4(n)
-      {
-        showSlides4(slideIndex = n);
-      }
-
-      function showSlides4(n)
-      {
-        var i;
-        var slides = document.getElementsByClassName("mySlides4");
-        var dots = document.getElementsByClassName("demo4");
-        var captionText = document.getElementById("caption4");
-        if (n > slides.length) {slideIndex = 1}
-        if (n < 1) {slideIndex = slides.length}
-        for (i = 0; i < slides.length; i++)
-        {
-          slides[i].style.display = "none";
-        }
-        for (i = 0; i < dots.length; i++)
-        {
-          dots[i].className = dots[i].className.replace(" active", "");
-        }
-        slides[slideIndex-1].style.display = "block";
-        dots[slideIndex-1].className += " active";
-        captionText.innerHTML = dots[slideIndex-1].alt;
-      }
-      </script>
     </section>
 
-    <!-- Education -->
-    <section class="content" id="education">
+    <section class="section" id="research">
       <div class="container">
-        <div class="row">
-          <div class="col-sm-6">
-            <h2 class="section-header">Education</h2>
+        <div class="section-header">
+          <div>
+            <p class="section-label">Research</p>
+            <h2 class="section-title">Selected research</h2>
           </div>
         </div>
-      </div>
-
-      <div class="container" id="education-list">
-        <!-- Education entries will be loaded dynamically -->
+        <div class="card-grid" id="research-grid"></div>
       </div>
     </section>
 
-    <!-- The Story Of My Life -->
-    <section class="content content-2" id="story">
-            <div class="container">
-              <div class="row">
-                <div class="col-sm-6">
-                  <br>
-                  <h2 class="section-header">
-                    &nbsp;&nbsp;&nbsp;&nbsp;<span class="glyphicon glyphicon-pushpin text-primary"></span>
-                    <br>
-                    Articles
-                  </h2>
-                </div>
-              </div>
-            </div>
-            <div class="responsive">
-              <div class="gallery">
-                <a target="_blank" href="https://www.dailycardinal.com/article/2020/09/college-from-afar-some-uw-madison-students-decide-to-stay-home-for-fall-semester">
-                  <img src="images/abroad.png" alt="Cinque Terre">
-                </a>
-                <div class="desc">Staying in India For Fall 2020</div>
-              </div>
-            </div>
-            <div class="responsive">
-              <div class="gallery">
-                <a target="_blank" href="https://www.instagram.com/p/CCllTuADaEI/">
-                  <img src="images/morgridge.png" alt="Forest">
-                </a>
-                <div class="desc">COVID BOT Initiative - Morgridge Center</div>
-              </div>
-            </div>
-
-            <div class="responsive">
-              <div class="gallery">
-                <a target="_blank" href="https://www.accuweather.com/podcast/everythingunderthesun?id=8e952980-1fbc-11eb-b4b7-b7db8cbfe574&autoplay=true">
-                  <img src="images/podcast.png" alt="Everything Under The Sun">
-                </a>
-                <div class="desc">Accuweather ProjectX Podcast</div>
-              </div>
-            </div>
-
-            <div class="responsive">
-              <div class="gallery">
-                <a target="_blank" href="https://madison.com/ct/news/local/govt-and-politics/data-science-in-madison-class-offers-uw-students-real-world-projects/article_9e5db95e-192c-5747-bd3a-a467d2228c30.html?omhide=true">
-                  <img src="images/638.png" alt="Madison">
-                </a>
-                <div class="desc">Data Science In Wisconsin</div>
-              </div>
-            </div>
-
-
+    <section class="section section--alt" id="work">
+      <div class="container">
+        <div class="section-header">
+          <div>
+            <p class="section-label">Experience</p>
+            <h2 class="section-title">Work</h2>
+          </div>
+        </div>
+        <div class="timeline" id="experience-list"></div>
+      </div>
     </section>
 
-    <!-- Skills -->
-    <section class="content content-4" id="skills">
-            <div class="container">
+    <section class="section" id="projects">
+      <div class="container">
+        <div class="section-header">
+          <div>
+            <p class="section-label">Build</p>
+            <h2 class="section-title">Software projects</h2>
+          </div>
+        </div>
+        <div class="card-grid" id="projects-grid"></div>
+      </div>
+    </section>
 
-              <h2 class="section-header">
-                <span class="glyphicon glyphicon-wrench text-primary"></span>
-                <br><br>
-                Skills
-              </h2>
+    <section class="section section--alt" id="org">
+      <div class="container">
+        <div class="section-header">
+          <div>
+            <p class="section-label">Community</p>
+            <h2 class="section-title">Organizations</h2>
+          </div>
+        </div>
+        <div class="card-grid" id="orgs-grid"></div>
+      </div>
+    </section>
 
-              <p float="centre">
-                <br>
-                <br>
-                <img class="skill-icon" src="images/python.png" >
-                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                <img class="skill-icon" src="images/octave.png" >
-                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                <img class="skill-icon" src="images/R.png" >
-                <br><br>
-                <img class="skill-icon" src="images/c.svg" >
-                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                <img class="skill-icon" src="images/cpp.svg">
-                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                <img class="skill-icon" src="images/c-sharp.svg">
-                <br><br>
-                <img class="skill-icon" src="images/macos.svg">
-                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                <img class="skill-icon" src="images/linux.png">
-                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                <img class="skill-icon" src="images/microsoft.png">
-                <br><br>
-                <img class="skill-icon" src="images/terraform.svg" >
-                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                <img class="skill-icon" src="images/aws.png" >
-                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                <img class="skill-icon" src="images/google-cloud.svg" >
-                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                <img class="skill-icon" src="images/SonarQube2.png" >
-                <br><br>
-                <img class="skill-icon" src="images/java.svg" >
-                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                <img class="skill-icon" src="images/kotlin.svg" >
-                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                <img class="skill-icon" src="images/flutter.svg" >
-                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                <img class="skill-icon" src="images/android.png">
-                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                <br> <br>
-                <img class="skill-icon" src="images/html.svg">
-                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                <img class="skill-icon" src="images/css.svg">
-                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                <img class="skill-icon" src="images/Javascript.svg">
-                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                <img class="skill-icon" src="images/php.svg">
-                <br><br>
+    <section class="section" id="education">
+      <div class="container">
+        <div class="section-header">
+          <div>
+            <p class="section-label">School</p>
+            <h2 class="section-title">Education</h2>
+          </div>
+        </div>
+        <div class="education-list" id="education-list"></div>
+      </div>
+    </section>
 
-                <img class="skill-icon" src="images/arduino.svg">
-                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                <img class="skill-icon" src="images/unity.svg">
-                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    <section class="section section--alt" id="story">
+      <div class="container">
+        <div class="section-header">
+          <div>
+            <p class="section-label">Writing</p>
+            <h2 class="section-title">Articles</h2>
+          </div>
+        </div>
+        <div class="article-grid" id="articles-grid"></div>
+      </div>
+    </section>
 
-                <br><br>
-                <img class="skill-icon" src="images/git.png">
-                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                <img class="skill-icon" src="images/github.png">
-                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                <img class="skill-icon" src="images/gitlab.svg">
-                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                <img class="skill-icon" src="images/jira.svg">
-                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                <br><br>
-                <a href="docs/resume.pdf">
-                  <img src="images/resume.png">
-                  <br> My Resume
-                </a>
-                <br><br>
-              </p>
-            </div>
-          </section>
+    <section class="section" id="about">
+      <div class="container">
+        <div class="section-header">
+          <div>
+            <p class="section-label">Toolkit</p>
+            <h2 class="section-title">Skills &amp; tools</h2>
+          </div>
+        </div>
+        <div class="skills-groups" id="skills-groups"></div>
+      </div>
+    </section>
+  </main>
 
+  <footer class="site-footer" id="socials">
+    <div class="container footer__inner">
+      <h2 class="footer__title">Let’s connect</h2>
+      <p class="footer__email">agarwal gautam 2010 at gmail</p>
+      <div class="footer__socials">
+        <a class="social-link" href="https://www.instagram.com/gainthehouse/" aria-label="Instagram" target="_blank" rel="noopener noreferrer">
+          <svg viewBox="0 0 24 24"><path d="M7 2h10a5 5 0 0 1 5 5v10a5 5 0 0 1-5 5H7a5 5 0 0 1-5-5V7a5 5 0 0 1 5-5zm10 2H7a3 3 0 0 0-3 3v10a3 3 0 0 0 3 3h10a3 3 0 0 0 3-3V7a3 3 0 0 0-3-3zm-5 3.2A4.8 4.8 0 1 1 7.2 12 4.8 4.8 0 0 1 12 7.2zm0 2A2.8 2.8 0 1 0 14.8 12 2.8 2.8 0 0 0 12 9.2zM18.2 6.1a1.1 1.1 0 1 1-1.1 1.1 1.1 1.1 0 0 1 1.1-1.1z"/></svg>
+        </a>
+        <a class="social-link" href="https://www.youtube.com/channel/UCxS1_cz53xz7WYj1E4BYRvg" aria-label="YouTube" target="_blank" rel="noopener noreferrer">
+          <svg viewBox="0 0 24 24"><path d="M23.5 6.2a3.05 3.05 0 0 0-2.15-2.16C19.5 3.6 12 3.6 12 3.6s-7.5 0-9.35.44A3.05 3.05 0 0 0 .5 6.2 31.9 31.9 0 0 0 0 12a31.9 31.9 0 0 0 .5 5.8 3.05 3.05 0 0 0 2.15 2.16C4.5 20.4 12 20.4 12 20.4s7.5 0 9.35-.44a3.05 3.05 0 0 0 2.15-2.16A31.9 31.9 0 0 0 24 12a31.9 31.9 0 0 0-.5-5.8zM9.75 15.57V8.43L15.84 12l-6.09 3.57z"/></svg>
+        </a>
+        <a class="social-link" href="https://www.linkedin.com/in/gainthehouse/" aria-label="LinkedIn" target="_blank" rel="noopener noreferrer">
+          <svg viewBox="0 0 24 24"><path d="M20.45 20.45h-3.55v-5.57c0-1.33-.03-3.04-1.85-3.04-1.86 0-2.14 1.45-2.14 2.94v5.67H9.36V9h3.41v1.56h.05c.47-.9 1.63-1.85 3.36-1.85 3.6 0 4.26 2.37 4.26 5.45v6.29zM5.34 7.43a2.06 2.06 0 1 1 0-4.12 2.06 2.06 0 0 1 0 4.12zM7.12 20.45H3.56V9h3.56v11.45zM22.23 0H1.77C.79 0 0 .77 0 1.73v20.54C0 23.23.79 24 1.77 24h20.46c.98 0 1.77-.77 1.77-1.73V1.73C24 .77 23.21 0 22.23 0z"/></svg>
+        </a>
+        <a class="social-link" href="https://github.com/GAInTheHouse" aria-label="GitHub" target="_blank" rel="noopener noreferrer">
+          <svg viewBox="0 0 24 24"><path d="M12 .5A11.5 11.5 0 0 0 .5 12.4c0 5.25 3.4 9.7 8.12 11.26.6.12.82-.26.82-.58v-2.03c-3.3.73-4-1.6-4-1.6-.54-1.4-1.32-1.77-1.32-1.77-1.08-.76.08-.74.08-.74 1.2.08 1.83 1.26 1.83 1.26 1.06 1.84 2.78 1.3 3.46 1 .1-.8.41-1.3.75-1.6-2.64-.3-5.41-1.36-5.41-6.05 0-1.34.46-2.43 1.24-3.29-.13-.3-.54-1.54.12-3.2 0 0 1.01-.33 3.3 1.25a11.2 11.2 0 0 1 6 0c2.28-1.58 3.29-1.25 3.29-1.25.66 1.66.25 2.9.12 3.2.78.86 1.23 1.95 1.23 3.29 0 4.7-2.78 5.74-5.43 6.04.42.37.8 1.1.8 2.22v3.3c0 .32.21.7.82.58A11.5 11.5 0 0 0 23.5 12.4 11.5 11.5 0 0 0 12 .5z"/></svg>
+        </a>
+        <a class="social-link" href="https://devpost.com/GAInTheHouse" aria-label="Devpost" target="_blank" rel="noopener noreferrer">
+          <svg viewBox="0 0 24 24"><path d="M6.2 6h4.4c3.7 0 6.2 2.3 6.2 6s-2.5 6-6.2 6H6.2V6zm3.2 9.3h1c1.9 0 3.1-1.2 3.1-3.3S12.3 8.7 10.4 8.7h-1v6.6zM18.3 6H22v2.4h-2.3V18h-3.2V6h1.8z"/></svg>
+        </a>
+      </div>
+      <p class="footer__copy">Made by Gautam Agarwal</p>
+    </div>
+  </footer>
 
-    <!-- Footer -->
-    <footer class="page-footer">
+  <div id="lightbox"></div>
 
-            <!-- Contact Us -->
-            <div class="contact" id="socials">
-              <div class="container">
-
-                <h2 class="footer-header">Get Connected!!</h2>
-                <p>
-                  <br>
-                  <a href="https://www.instagram.com/gainthehouse/"><img src="images/instagram.png" float="centre"></a>
-                  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                  <a href="https://www.youtube.com/channel/UCxS1_cz53xz7WYj1E4BYRvg?view_as=subscriber"><img src="images/youtube.png"></a>
-                  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                  <a href="https://www.linkedin.com/in/gainthehouse/"><img src="images/linkedin.png"></a>
-                  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                  <a href="https://github.com/GAInTheHouse"><img src="images/github.png"></a>
-                  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                  <a href="https://devpost.com/GAInTheHouse?ref_content=user-portfolio&ref_feature=portfolio&ref_medium=global-nav"><img src="images/devpost.png"></a>
-                  <br><br>                  
-                    <span class="glyphicon glyphicon-envelope" style="color:white;"></span>
-                    <br>agarwal gautam 2010 at gmail
-                </p>
-              </div>
-            </div>
-
-            <!-- Copyright etc -->
-            <div class="small-print">
-              <div class="container">
-                <p>
-                  Made by Gautam Agarwal
-                </p>
-              </div>
-            </div>
-
-          </footer>
-
-    <!-- jQuery -->
-    <script src="js/jquery-1.11.3.min.js"></script>
-
-    <!-- Bootstrap Core JavaScript -->
-    <script src="js/bootstrap.min.js"></script>
-
-    <!-- Plugin JavaScript -->
-    <script src="js/jquery.easing.min.js"></script>
-
-    <!-- Custom Javascript -->
-    <script src="js/custom.js"></script>
-    
-    <script type="module">
-  // Import the functions you need from the SDKs you need
-  import { initializeApp } from "https://www.gstatic.com/firebasejs/9.15.0/firebase-app.js";
-  import { getAnalytics } from "https://www.gstatic.com/firebasejs/9.15.0/firebase-analytics.js";
-  // TODO: Add SDKs for Firebase products that you want to use
-  // https://firebase.google.com/docs/web/setup#available-libraries
-
-  // Your web app's Firebase configuration
-  // For Firebase JS SDK v7.20.0 and later, measurementId is optional
-  const firebaseConfig = {
-    apiKey: "AIzaSyAFbEir_TzlorxtEoSnw2Iua6hCLvueiaM",
-    authDomain: "website-gainthehouse.firebaseapp.com",
-    projectId: "website-gainthehouse",
-    storageBucket: "website-gainthehouse.appspot.com",
-    messagingSenderId: "960402060248",
-    appId: "1:960402060248:web:28a5e0420374ae304578ad",
-    measurementId: "G-BLDSXDKTKP"
-  };
-
-  // Initialize Firebase
-  const app = initializeApp(firebaseConfig);
-  const analytics = getAnalytics(app);
-</script>
-
+  <script type="module" src="js/custom.js"></script>
+  <script type="module" src="js/firebase-config.js"></script>
 </body>
 </html>
-    

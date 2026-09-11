@@ -1,0 +1,65 @@
+{
+  "categories": [
+    {
+      "name": "Languages",
+      "skills": [
+        { "label": "Python", "icon": "images/python.png" },
+        { "label": "C", "icon": "images/c.svg" },
+        { "label": "C++", "icon": "images/cpp.svg" },
+        { "label": "C#", "icon": "images/c-sharp.svg" },
+        { "label": "Java", "icon": "images/java.svg" },
+        { "label": "Kotlin", "icon": "images/kotlin.svg" },
+        { "label": "R", "icon": "images/R.png" },
+        { "label": "Octave", "icon": "images/octave.png" }
+      ]
+    },
+    {
+      "name": "ML",
+      "skills": [
+        { "label": "Python", "icon": "images/python.png" },
+        { "label": "R", "icon": "images/R.png" },
+        { "label": "Octave", "icon": "images/octave.png" }
+      ]
+    },
+    {
+      "name": "Cloud & DevOps",
+      "skills": [
+        { "label": "AWS", "icon": "images/aws.png" },
+        { "label": "Google Cloud", "icon": "images/google-cloud.svg" },
+        { "label": "Terraform", "icon": "images/terraform.svg" },
+        { "label": "SonarQube", "icon": "images/SonarQube2.png" },
+        { "label": "Linux", "icon": "images/linux.png" },
+        { "label": "macOS", "icon": "images/macos.svg" },
+        { "label": "Windows", "icon": "images/microsoft.png" }
+      ]
+    },
+    {
+      "name": "Mobile",
+      "skills": [
+        { "label": "Flutter", "icon": "images/flutter.svg" },
+        { "label": "Android", "icon": "images/android.png" },
+        { "label": "Kotlin", "icon": "images/kotlin.svg" }
+      ]
+    },
+    {
+      "name": "Web",
+      "skills": [
+        { "label": "HTML", "icon": "images/html.svg" },
+        { "label": "CSS", "icon": "images/css.svg" },
+        { "label": "JavaScript", "icon": "images/Javascript.svg" },
+        { "label": "PHP", "icon": "images/php.svg" }
+      ]
+    },
+    {
+      "name": "Tools",
+      "skills": [
+        { "label": "Git", "icon": "images/git.png" },
+        { "label": "GitHub", "icon": "images/github.png" },
+        { "label": "GitLab", "icon": "images/gitlab.svg" },
+        { "label": "Jira", "icon": "images/jira.svg" },
+        { "label": "Arduino", "icon": "images/arduino.svg" },
+        { "label": "Unity", "icon": "images/unity.svg" }
+      ]
+    }
+  ]
+}
