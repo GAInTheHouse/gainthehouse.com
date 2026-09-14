@@ -25,14 +25,19 @@
 
 .nav__brand {
   margin-right: auto;
-  color: var(--color-text);
-  font-weight: 700;
-  letter-spacing: -0.03em;
-  font-size: 1.05rem;
+  color: yellowgreen;
+  font-family: 'Charmonman', cursive;
+  letter-spacing: 0.5em;
+  font-size: 1.35rem;
+  transition: all 0.35s ease;
 }
 
 .nav__brand:hover {
-  color: var(--color-text);
+  color: #eb3812;
+}
+
+.site-header.is-scrolled .nav__brand {
+  letter-spacing: 0;
 }
 
 .nav__links {
@@ -547,6 +552,11 @@
   margin: 1.25rem 0 0;
   color: var(--color-footer-muted);
   font-size: 0.85rem;
+}
+
+.brand-text {
+  color: yellowgreen;
+  font-family: 'Charmonman', cursive;
 }
 
 @media (max-width: 1024px) {
