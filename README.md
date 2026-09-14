@@ -46,7 +46,7 @@ gainthehouse.com/
 │   │   ├── jquery-1.11.3.min.js
 │   │   ├── bootstrap.min.js
 │   │   ├── jquery.easing.min.js
-│   │   ├── custom.js           # Navigation and smooth scrolling
+│   │   ├── custom.js           # Navigation, data loading, and rendering
 │   │   ├── lightbox.js         # Unified modal/lightbox system
 │   │   └── firebase-config.js  # Firebase initialization
 │   ├── data/                   # Content data (NEW)
@@ -54,7 +54,9 @@ gainthehouse.com/
 │   │   ├── projects.json       # Software projects
 │   │   ├── work-experience.json# Work history
 │   │   ├── organizations.json  # Organizations & clubs
-│   │   └── articles.json       # Press & articles
+│   │   ├── education.json      # Education history
+│   │   ├── articles.json       # Press & articles
+│   │   └── skills.json         # Skills grouped by category
 │   ├── images/                 # All image assets
 │   ├── videos/                 # Video assets
 │   ├── fonts/                  # Custom fonts
@@ -62,7 +64,6 @@ gainthehouse.com/
 │   └── *.pdf                   # Resume and presentations
 ├── firebase.json               # Firebase hosting config
 ├── README.md                   # This file
-├── JSON_USAGE.md               # Guide to using JSON data
 └── DATA_SCHEMA.md              # JSON schema reference
 ```
 
@@ -119,20 +120,22 @@ The website now renders ALL content dynamically from JSON files:
 **To update content:**
 
 Simply edit the appropriate JSON file:
-- **Research Projects**: `data/research.json`
-- **Software Projects**: `data/projects.json`
-- **Work Experience**: `data/work-experience.json`
-- **Organizations**: `data/organizations.json`
-- **Articles**: `data/articles.json`
+- **Research Projects**: `public/data/research.json`
+- **Software Projects**: `public/data/projects.json`
+- **Work Experience**: `public/data/work-experience.json`
+- **Organizations**: `public/data/organizations.json`
+- **Education**: `public/data/education.json`
+- **Articles**: `public/data/articles.json`
+- **Skills**: `public/data/skills.json`
 
 Changes appear immediately when you reload the page!
 
 ### Adding New Projects
 
 **All Sections (Fully Dynamic):**
-1. Edit the appropriate JSON file (e.g., `data/projects.json`)
+1. Edit the appropriate JSON file (e.g., `public/data/projects.json`)
 2. Add your new entry following the existing structure
-3. Add any images to the `images/` directory
+3. Add any images to the `public/images/` directory
 4. Reload the page - your content appears automatically!
 
 No need to touch HTML anymore! 🎉
@@ -146,24 +149,15 @@ The active stylesheets are loaded from `public/index.html` in this order:
 
 ### Customizing JavaScript
 
-- **Navigation behavior**: Edit `js/custom.js`
-- **Data loading**: Edit `js/data-loader.js` (see [JSON_USAGE.md](JSON_USAGE.md))
-- **Modal/Lightbox system**: Edit `js/lightbox.js`
-- **Firebase settings**: Edit `js/firebase-config.js`
+- **Navigation, data loading, and section rendering**: Edit `public/js/custom.js`
+- **Modal/Lightbox system**: Edit `public/js/lightbox.js`
+- **Firebase settings**: Edit `public/js/firebase-config.js`
 
 ### Debugging
 
-Open browser console to see:
-- ✓ Data loading status for each section
-- ⚠️ Validation warnings if JSON/HTML mismatch
-- 💡 Tips and available debug commands
-
-```javascript
-// In browser console:
-console.log(window.researchData);     // View loaded research data
-console.log(window.projectsData);     // View loaded projects data
-dataLoader.enableDynamicMode();       // Switch to full dynamic rendering
-```
+Open the browser console to see individual dataset-loading failures and other
+runtime errors. Each dataset is loaded independently, so one failed request does
+not prevent the remaining sections from rendering.
 
 ## 🔧 Technical Details
 
@@ -211,7 +205,6 @@ dataLoader.enableDynamicMode();       // Switch to full dynamic rendering
 ## 📖 Documentation
 
 - **[README.md](README.md)** (this file) - Getting started and overview
-- **[JSON_USAGE.md](JSON_USAGE.md)** - How JSON data is used and how to enable full dynamic mode
 - **[DATA_SCHEMA.md](DATA_SCHEMA.md)** - Complete JSON schema reference
 
 ## 🛠️ Future Improvements
@@ -219,7 +212,6 @@ dataLoader.enableDynamicMode();       // Switch to full dynamic rendering
 Potential enhancements for future iterations:
 
 1. **Content Management**
-   - Migrate to full dynamic rendering (see [JSON_USAGE.md](JSON_USAGE.md))
    - Implement loading states for dynamic content
    - Add content management interface
 

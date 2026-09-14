@@ -103,7 +103,10 @@ function normalizeOrg(org) {
     title: org.name,
     subtitle: org.position || "",
     summary: org.description,
-    description: [org.position && `Position: ${org.position}`, org.description && `About: ${org.description}`, org.role && `My role: ${org.role}`].filter(Boolean)
+    description: [
+      org.description && `About: ${org.description}`,
+      org.role && `My role: ${org.role}`
+    ].filter(Boolean)
   };
 }
 
@@ -201,19 +204,29 @@ function renderStats({ research, projects, experience }) {
     .filter(Boolean)
     .sort((a, b) => a - b)[0];
   const yearCount = years ? Math.max(1, new Date().getFullYear() - years) : experience.length;
-  const studentCount = experience
+  const studentMetric = experience
     .flatMap((item) => item.description || [])
     .filter((line) => /\b(?:mentor(?:ed|ing)?|teach(?:ing)?|guided?|office hours|course)\b/i.test(String(line)))
-    .map((line) => String(line).match(/(\d+)\+?\s+students/i))
+    .map((line) => {
+      const text = String(line);
+      const match = text.match(/\b(up to\s+)?(\d+)(\+)?\s+students/i);
+      if (!match) return null;
+      return {
+        count: Number(match[2]),
+        value: match[1] ? `Up to ${match[2]}` : `${match[2]}${match[3] || ""}`,
+        label: /\bguided?\b/i.test(text)
+          ? "Students guided"
+          : /\bmentor(?:ed|ing)?\b/i.test(text) ? "Students mentored" : "Students taught"
+      };
+    })
     .filter(Boolean)
-    .map((match) => Number(match[1]))
-    .sort((a, b) => b - a)[0];
+    .sort((a, b) => b.count - a.count)[0];
 
   const stats = [
     { value: `${yearCount}+`, label: "Years in industry" },
     { value: String(research.length), label: "Research projects" },
     { value: String(experience.length), label: "Roles" },
-    { value: studentCount ? `${studentCount}+` : String(projects.length), label: studentCount ? "Students mentored" : "Software projects" }
+    { value: studentMetric?.value || String(projects.length), label: studentMetric?.label || "Software projects" }
   ];
 
   document.getElementById("stats-grid").innerHTML = stats.map((stat) => `
