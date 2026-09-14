@@ -55,11 +55,16 @@
   color: var(--color-text);
 }
 
-.nav__cta {
+.nav__links a.nav__cta {
   margin-left: 0.4rem;
   min-height: 36px;
   padding: 0.45rem 0.9rem;
   font-size: 0.85rem;
+  color: #fff;
+}
+
+.nav__links a.nav__cta:hover {
+  color: #fff;
 }
 
 .nav__toggle {
@@ -580,7 +585,7 @@
     gap: 0.85rem;
   }
 
-  .nav__cta {
+  .nav__links a.nav__cta {
     margin: 0.35rem 0 0;
   }
 
