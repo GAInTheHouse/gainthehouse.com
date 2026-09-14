@@ -36,8 +36,8 @@
       "id": 2,
       "title": "Agentic Migration of Clinical Chatbots",
       "period": "Jan 2026 - Present",
-      "image": "",
-      "thumbnail": "",
+      "image": "images/clinical_migration.jpeg",
+      "thumbnail": "images/clinical_migration.jpeg",
       "description": [
         "Designed and led migration of clinical chatbot towards an agentic infrastructure",
         "Led research study comparing effects of chatbot performance between agentic infrastructure and monolithic prompt structure"

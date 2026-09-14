@@ -4,8 +4,8 @@
       "id": 1,
       "title": "MisfitsAI",
       "period": "Jan 2026 - May 2026",
-      "image": "",
-      "thumbnail": "",
+      "image": "images/misfits.jpeg",
+      "thumbnail": "images/misfits.jpeg",
       "description": [
         "Led product discovery and roadmap planning for MisfitAI Wardrobe Planner, a mobile app that turns users' closet and calendar into daily outfit recommendations for busy students and young professionals.",
         "Conducted structured customer discovery interviews and translated insights into onboarding flows, wardrobe capture requirements, and objection handling that informed landing page copy and in-product messaging.",
@@ -17,8 +17,8 @@
       "id": 2,
       "title": "Rx.AI",
       "period": "Apr 2026 - May 2026",
-      "image": "",
-      "thumbnail": "",
+      "image": "images/rx.jpeg",
+      "thumbnail": "images/rx.jpeg",
       "description": [
         "Built dynamic AI-powered patient check-in system that generates personalized clinical questionnaires",
         "Integrated voice and camera multimodal features including TTS question playback, real-time STT answer transcription, and inline image capture for wound photos and medication labels",
@@ -30,8 +30,8 @@
       "id": 3,
       "title": "Nutrigraph",
       "period": "Jan 2026 - Mar 2026",
-      "image": "",
-      "thumbnail": "",
+      "image": "images/nutrigraph.jpeg",
+      "thumbnail": "images/nutrigraph.jpeg",
       "description": [
         "Built agentic multimodal RAG system that estimates dish macros from images and text using USDA and OpenFoodFacts.",
         "Designed diner and restaurant workflows, including restaurant search, dish logging, nutrition dashboards, and catalog creation.",
