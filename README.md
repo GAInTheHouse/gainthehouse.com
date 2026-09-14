@@ -39,14 +39,9 @@ gainthehouse.com/
 ├── public/
 │   ├── index.html              # Main HTML file (clean, no inline scripts)
 │   ├── css/
-│   │   ├── bootstrap.min.css        # Bootstrap framework
-│   │   ├── custom.css               # Base styles and utilities
-│   │   ├── custom_header.css        # Header section styles
-│   │   ├── custom_navigation.css    # Navigation bar styles
-│   │   ├── custom_footer.css        # Footer section styles
-│   │   ├── custom_gallery.css       # Gallery and responsive images
-│   │   ├── custom_articles.css      # Articles section styles
-│   │   └── custom_lightbox.css      # Modal/lightbox styles
+│   │   ├── theme.css                # Design tokens, typography, and page layout
+│   │   ├── components.css           # Navigation, cards, sections, and responsive UI
+│   │   └── lightbox.css             # Modal/lightbox styles
 │   ├── js/
 │   │   ├── jquery-1.11.3.min.js
 │   │   ├── bootstrap.min.js
@@ -144,14 +139,10 @@ No need to touch HTML anymore! 🎉
 
 ### Modifying Styles
 
-Styles are organized into separate files by component:
-- **Base styles**: `css/custom.css` - Colors, typography, content sections
-- **Header**: `css/custom_header.css` - Header background and profile image
-- **Navigation**: `css/custom_navigation.css` - Navbar and menu styles
-- **Footer**: `css/custom_footer.css` - Footer and contact section
-- **Gallery**: `css/custom_gallery.css` - Image galleries and responsive behavior
-- **Articles**: `css/custom_articles.css` - Articles section layout
-- **Lightbox**: `css/custom_lightbox.css` - Modal windows and slideshows
+The active stylesheets are loaded from `public/index.html` in this order:
+- **Theme and layout**: `public/css/theme.css` - Design tokens, typography, resets, and shared page layout
+- **Site components**: `public/css/components.css` - Navigation, header, cards, content sections, footer, and responsive behavior
+- **Lightbox**: `public/css/lightbox.css` - Modal, gallery, and slideshow styles
 
 ### Customizing JavaScript
 

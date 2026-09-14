@@ -52,7 +52,7 @@
       "skills": [
         { "label": "HTML", "icon": "images/html.svg" },
         { "label": "CSS", "icon": "images/css.svg" },
-        { "label": "JavaScript", "icon": "images/Javascript.svg" },
+        { "label": "JavaScript", "icon": "images/javascript.svg" },
         { "label": "React" },
         { "label": "Flask" },
         { "label": "PHP", "icon": "images/php.svg" }

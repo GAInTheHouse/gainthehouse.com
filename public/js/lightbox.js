@@ -29,6 +29,14 @@ function renderMedia(link) {
       </figure>`;
   }
 
+  if (link.type === "video" && link.url && link.image) {
+    return `
+      <a class="lightbox-media" href="${escapeHtml(link.url)}" target="_blank" rel="noopener noreferrer">
+        <img src="${escapeHtml(link.image)}" alt="${caption}" loading="lazy">
+        <span class="lightbox-media__caption">${caption}</span>
+      </a>`;
+  }
+
   if (["image", "paper", "document"].includes(link.type) && link.image) {
     const inner = `
       <img src="${escapeHtml(link.image)}" alt="${caption}" loading="lazy">
@@ -44,7 +52,12 @@ function renderMedia(link) {
 
 function renderTextLinks(links) {
   return (links || [])
-    .filter((link) => ["external", "github", "devpost", "linkedin", "video"].includes(link.type) && link.url && !isLocalVideo(link.url))
+    .filter((link) =>
+      ["external", "github", "devpost", "linkedin", "video"].includes(link.type)
+      && link.url
+      && !isLocalVideo(link.url)
+      && !(link.type === "video" && link.image)
+    )
     .map((link) => `<a class="lightbox-link" href="${escapeHtml(link.url)}" target="_blank" rel="noopener noreferrer">${escapeHtml(link.text || "Open link")}</a>`)
     .join("");
 }
