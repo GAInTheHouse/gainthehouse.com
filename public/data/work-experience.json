@@ -2,8 +2,33 @@
   "experiences": [
     {
       "id": 1,
+      "title": "Software Engineering Intern - Google Photos",
+      "subtitle": "Modelling | May 2026 - Sep 2026",
+      "image": "images/google.png",
+      "thumbnail": "images/google.png",
+      "description": [
+        "Engineered 4 mathematical post-processing methodologies to mitigate over-segmentation in the Wardrobe pipeline, eliminating user visible duplicate items and reducing LLM API calls by 44% in benchmark testing",
+        "Conducted 8 prompt tuning experiments to engineer alternative methods for improving precision on hard-to-cluster apparel",
+        "Developed internal web-based prototyping environment to evaluate these LLM-based strategies on authentic data",
+        "Migrated model evaluation framework from research notebooks to production-grade distributed system for automated testing"
+      ]
+    },
+    {
+      "id": 2,
+      "title": "Lead Graduate Teaching Assistant",
+      "subtitle": "Columbia Engineering | Jan 2026 - Present",
+      "image": "images/columbia_logo.png",
+      "thumbnail": "images/columbia_logo.png",
+      "description": [
+        "Directed teaching team for High Performance Machine Learning course with 120+ students, coordinating staff operations and curriculum planning",
+        "Designed and graded technical assignments covering distributed training, model optimization, and GPU acceleration techniques",
+        "Mentored students through office hours and individual consultations, translating complex ML systems concepts into practical implementations"
+      ]
+    },
+    {
+      "id": 3,
       "title": "Machine Learning Engineering Intern",
-      "subtitle": "ArklexAI | Aug 2025 - Present",
+      "subtitle": "ArklexAI | Aug 2025 - Dec 2025",
       "image": "images/arklexlogo.jpeg",
       "thumbnail": "images/arklexlogo.jpeg",
       "description": [
@@ -12,9 +37,9 @@
       ]
     },
     {
-      "id": 2,
+      "id": 4,
       "title": "Software Engineer - Epic Systems",
-      "subtitle": "Epic Assistant - Natural Language Platform | Mar 2023 - Present",
+      "subtitle": "Epic Assistant - Natural Language Platform | Mar 2023 - Aug 2025",
       "image": "images/epic.svg",
       "thumbnail": "images/epic.svg",
       "description": [
@@ -33,7 +58,7 @@
       ]
     },
     {
-      "id": 3,
+      "id": 5,
       "title": "Software Engineering Intern - Google",
       "subtitle": "Display & Video 360 | May 2022 - Sep 2022",
       "image": "images/google.png",
@@ -45,7 +70,7 @@
       ]
     },
     {
-      "id": 4,
+      "id": 6,
       "title": "Media Workflow Engineering Intern - WarnerMedia",
       "subtitle": "Sep 2021 - Apr 2022",
       "image": "images/warnermedia.jpg",
@@ -56,7 +81,7 @@
       ]
     },
     {
-      "id": 5,
+      "id": 7,
       "title": "Enterprise Integration Intern",
       "subtitle": "UW-Madison Division of Information Technology | Feb 2021 - Sep 2021",
       "image": "images/uw_logo.png",
@@ -67,7 +92,7 @@
       ]
     },
     {
-      "id": 6,
+      "id": 8,
       "title": "Undergraduate Teaching Assistant",
       "subtitle": "UW-Madison Dept. of Computer Science | Jan 2021 - May 2021",
       "image": "images/uw_logo.png",
@@ -78,7 +103,7 @@
       ]
     },
     {
-      "id": 7,
+      "id": 9,
       "title": "AI & Computer Vision Intern",
       "subtitle": "CamfyVision Innovations | May 2020 - Sep 2020",
       "image": "images/camfyvision.jpg",
@@ -89,7 +114,7 @@
       ]
     },
     {
-      "id": 8,
+      "id": 10,
       "title": "Project Intern",
       "subtitle": "The Tata Power Company Ltd. | Mumbai, India | Jul 2018 - Oct 2018",
       "image": "images/tata.webp",

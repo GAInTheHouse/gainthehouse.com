@@ -9,6 +9,7 @@
       "degree": "Master of Science",
       "major": "Computer Science",
       "track": "Machine Learning Track",
+      "gpa": "4.0/4.0",
       "courses": [
         "NLP",
         "High Performance ML",
@@ -17,7 +18,15 @@
         "Computer Vision",
         "Spoken Language Processing",
         "Big Data",
-        "Applied ML Cloud"
+        "Applied ML Cloud",
+        "StartUp Studio"
+      ],
+      "certificates": [
+        "ISSO Engage",
+        "ISSO Global Leadership",
+        "Columbia StartMeUp Bootcamp",
+        "PDL Fellowship",
+        "PDS Scholarship"
       ]
     },
     {

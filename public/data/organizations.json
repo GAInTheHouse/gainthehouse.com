@@ -7,7 +7,7 @@
       "image": "images/dotData.png",
       "thumbnail": "images/dotData.png",
       "description": "Data Science Club is an inspirational place to begin surfing society's next big wave — Big Data. Data science has grown immensely across CS, statistics, business, sciences, and other fields, and we would like to connect, educate, and inspire students across campus, helping them understand how data science fits into their interests and careers. Our main activities/events will range from seminars & talks to study groups to semester long projects, and other opportunities to get students engaged outside of lectures.",
-      "role": "Contribute to Industry & Faculty Outreach, Social Media Marketing, Collaboration Discussions. Organize Data Science and Career Development Workshops and Virtual Networking Events for 525 club members",
+      "role": "Spearheaded a 950-member organization to help students transform interests into career opportunities. Organized networking events, research seminars, and career development & practical learning workshops, and created collaboration opportunities through hackathons & group projects while securing industry sponsorships for student support (Sep 2020 - Dec 2022)",
       "links": [
         {
           "type": "document",
@@ -47,12 +47,12 @@
     {
       "id": 2,
       "name": "Badger Cricket Club",
-      "position": "Co-founder",
+      "position": "Co-Founder & Vice-President",
       "image": "images/bcc.jpeg",
       "thumbnail": "images/bcc.jpeg",
       "logo": "images/bcc_no_bg.png",
       "description": "The only active cricket club on the campus of the University of Wisconsin - Madison. We are affiliated with American College Cricket (ACC) and aspire to spread recreational and competitive cricket. We intend to play cricket both indoors and outdoors as the weather permits. The game will be played using synthetic and tennis balls for recreation cricket and leather balls with cricketing gear for competitive. The equipment will be provided by the club but members are open to bring their own equipment too. No prior experience is required. We would like to promote greater bonds of friendships between organization members by playing cricket together.",
-      "role": "Manage organization affiliation, organize cricket matches, live match streams, and networking events. Promote cricket on campus and develop a community of about 275 cricket enthusiasts",
+      "role": "Built a community of 350+ cricket enthusiasts through inclusive organizational efforts. Advocated and secured athletic department recognition, funding, and institutional support for the club. Managed national organization affiliation, taught cricket, and organized matches, live streams, & networking events (Nov 2019 - Dec 2022)",
       "links": [
         {
           "type": "document",
@@ -76,6 +76,16 @@
           "text": "Wisonsin Involvment Network"
         }
       ]
+    },
+    {
+      "id": 3,
+      "name": "Undergraduate Computing Council",
+      "position": "Vice-President",
+      "image": "images/uw_logo.png",
+      "thumbnail": "images/uw_logo.png",
+      "description": "A council at the University of Wisconsin - Madison established to bridge the gap between computing students and university professionals, giving undergraduates a direct voice in how computing education evolves on campus.",
+      "role": "Established the council, advocated for aligning classroom education with evolving industry requirements to enhance student readiness, and spearheaded diversity initiatives to empower underrepresented students and foster inclusivity (Jan 2022 - Dec 2022)",
+      "links": []
     }
   ]
 }

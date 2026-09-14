@@ -194,6 +194,33 @@ Contains student organizations, clubs, and leadership roles.
 }
 ```
 
+### education.json
+Contains degrees, coursework, certificates, and academic awards.
+
+**Location:** `public/data/education.json`
+
+**Schema:**
+```json
+{
+  "education": [
+    {
+      "id": number,
+      "institution": string,
+      "location": string,
+      "date": string,
+      "logo": string,
+      "degree": string,
+      "major": string,
+      "track": string,           // Optional
+      "gpa": string,
+      "courses": [string],
+      "certificates": [string],  // Optional
+      "awards": [string]         // Optional
+    }
+  ]
+}
+```
+
 ### articles.json
 Contains press coverage, articles, podcasts, and media appearances.
 
@@ -222,6 +249,28 @@ Contains press coverage, articles, podcasts, and media appearances.
       "title": "Data Science In Wisconsin",
       "image": "images/638.png",
       "url": "https://madison.com/article-link"
+    }
+  ]
+}
+```
+
+### skills.json
+Contains skills grouped into categories for the “Skills & tools” section.
+
+**Location:** `public/data/skills.json`
+
+**Schema:**
+```json
+{
+  "categories": [
+    {
+      "name": string,
+      "skills": [
+        {
+          "label": string,
+          "icon": string         // Optional image path
+        }
+      ]
     }
   ]
 }
