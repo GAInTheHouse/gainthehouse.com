@@ -347,6 +347,7 @@
 }
 
 .timeline__title {
+  display: block;
   margin: 0;
   font-size: 1.02rem;
   font-weight: 650;
@@ -354,6 +355,7 @@
 }
 
 .timeline__company {
+  display: block;
   margin: 0.15rem 0 0;
   color: var(--color-text-muted);
   font-size: 0.92rem;

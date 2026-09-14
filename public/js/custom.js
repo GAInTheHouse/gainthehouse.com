@@ -64,15 +64,15 @@ function renderCards(container, items, { tag, onOpen }) {
     const meta = item.period || item.position || "";
     return `
       <button type="button" class="card" data-index="${index}">
-        <div class="card__media">
+        <span class="card__media">
           ${image ? `<img src="${escapeHtml(image)}" alt="" loading="lazy">` : ""}
-        </div>
-        <div class="card__body">
+        </span>
+        <span class="card__body">
           ${tag ? `<span class="tag">${escapeHtml(tag)}</span>` : ""}
-          <h3 class="card__title">${escapeHtml(title)}</h3>
-          <p class="card__summary">${escapeHtml(truncate(firstLine(item)))}</p>
-          ${meta ? `<p class="card__meta">${escapeHtml(meta)}</p>` : ""}
-        </div>
+          <span class="card__title">${escapeHtml(title)}</span>
+          <span class="card__summary">${escapeHtml(truncate(firstLine(item)))}</span>
+          ${meta ? `<span class="card__meta">${escapeHtml(meta)}</span>` : ""}
+        </span>
       </button>`;
   }).join("");
 
@@ -124,8 +124,8 @@ function renderExperience(container, items) {
         ${item.thumbnail || item.image ? `<img src="${escapeHtml(item.thumbnail || item.image)}" alt="" loading="lazy">` : ""}
       </span>
       <span>
-        <h3 class="timeline__title">${escapeHtml(item.title)}</h3>
-        ${item.company ? `<p class="timeline__company">${escapeHtml(item.company)}</p>` : ""}
+        <span class="timeline__title">${escapeHtml(item.title)}</span>
+        ${item.company ? `<span class="timeline__company">${escapeHtml(item.company)}</span>` : ""}
       </span>
       ${item.dates ? `<span class="timeline__dates">${escapeHtml(item.dates)}</span>` : ""}
     </button>
