@@ -180,6 +180,9 @@ export class LightboxManager {
       this.close();
       return;
     }
+    if (document.activeElement?.matches("video")) {
+      return;
+    }
     if (event.key === "ArrowRight") {
       event.preventDefault();
       this.show(this.index + 1);

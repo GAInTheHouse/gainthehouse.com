@@ -1,6 +1,24 @@
 {
   "articles": [
     {
+      "id": 7,
+      "title": "Featured by Google: Meet Gautam",
+      "image": "images/google.png",
+      "url": "https://www.linkedin.com/feed/update/urn:li:activity:7495134704224948225/"
+    },
+    {
+      "id": 6,
+      "title": "Columbia PDL Fellowship Recipient",
+      "image": "images/1.png",
+      "url": "https://pdl.engineering.columbia.edu/content/pdl-fellows"
+    },
+    {
+      "id": 5,
+      "title": "PDS Scholarship Winner — Spring 2026",
+      "image": "images/1.png",
+      "url": "https://egsc.engineering.columbia.edu/content/pds-winners-spring-2026"
+    },
+    {
       "id": 1,
       "title": "Staying in India For Fall 2020",
       "image": "images/abroad.png",

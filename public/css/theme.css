@@ -115,6 +115,7 @@ textarea {
 
 .section {
   padding: var(--space-8) 0;
+  scroll-margin-top: var(--nav-height);
 }
 
 .section--alt {

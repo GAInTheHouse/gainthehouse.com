@@ -25,7 +25,7 @@
 
 .nav__brand {
   margin-right: auto;
-  color: yellowgreen;
+  color: var(--color-accent);
   font-family: 'Charmonman', cursive;
   letter-spacing: 0.5em;
   font-size: 1.35rem;
@@ -33,7 +33,7 @@
 }
 
 .nav__brand:hover {
-  color: #eb3812;
+  color: var(--color-accent-hover);
 }
 
 .site-header.is-scrolled .nav__brand {

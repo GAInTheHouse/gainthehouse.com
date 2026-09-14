@@ -203,6 +203,7 @@ function renderStats({ research, projects, experience }) {
   const yearCount = years ? Math.max(1, new Date().getFullYear() - years) : experience.length;
   const studentCount = experience
     .flatMap((item) => item.description || [])
+    .filter((line) => /\b(?:mentor(?:ed|ing)?|teach(?:ing)?|guided?|office hours|course)\b/i.test(String(line)))
     .map((line) => String(line).match(/(\d+)\+?\s+students/i))
     .filter(Boolean)
     .map((match) => Number(match[1]))
@@ -275,15 +276,22 @@ function initNav() {
 async function init() {
   initNav();
 
-  const [research, projects, work, orgs, education, articles, skills] = await Promise.all([
-    loadJson("data/research.json"),
-    loadJson("data/projects.json"),
-    loadJson("data/work-experience.json"),
-    loadJson("data/organizations.json"),
-    loadJson("data/education.json"),
-    loadJson("data/articles.json"),
-    loadJson("data/skills.json")
-  ]);
+  const paths = [
+    "data/research.json",
+    "data/projects.json",
+    "data/work-experience.json",
+    "data/organizations.json",
+    "data/education.json",
+    "data/articles.json",
+    "data/skills.json"
+  ];
+  const results = await Promise.allSettled(paths.map(loadJson));
+  const datasets = results.map((result, index) => {
+    if (result.status === "fulfilled") return result.value;
+    console.error(`Failed to load ${paths[index]}`, result.reason);
+    return {};
+  });
+  const [research, projects, work, orgs, education, articles, skills] = datasets;
 
   state.research = (research.projects || []).map(normalizeResearch);
   state.projects = (projects.projects || []).map(normalizeProject);
