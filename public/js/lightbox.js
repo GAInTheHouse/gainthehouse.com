@@ -180,7 +180,7 @@ export class LightboxManager {
       this.close();
       return;
     }
-    if (document.activeElement?.matches("video")) {
+    if (document.activeElement?.matches("video") && ["ArrowRight", "ArrowLeft"].includes(event.key)) {
       return;
     }
     if (event.key === "ArrowRight") {
