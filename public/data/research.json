@@ -120,6 +120,12 @@
           "text": "Course Presentation"
         },
         {
+          "type": "document",
+          "url": "docs/NFR_Survey_Paper.pdf",
+          "image": "images/nfr_research.jpg",
+          "text": "Survey Paper"
+        },
+        {
           "type": "github",
           "url": "https://github.com/ITBench-NFR",
           "image": "images/github.png",
@@ -185,7 +191,13 @@
           "type": "paper",
           "url": "https://openreview.net/forum?id=HObGjRkXOAY",
           "image": "images/paper_1.png",
-          "text": "Research Paper"
+          "text": "Research Paper (OpenReview)"
+        },
+        {
+          "type": "document",
+          "url": "docs/ProjectX_2021__University_of_Wisconsin_Madison_Submission.pdf",
+          "image": "images/projectx_2021.jpg",
+          "text": "Research Paper (Named Authors)"
         },
         {
           "type": "github",
