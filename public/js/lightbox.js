@@ -62,6 +62,33 @@ function renderTextLinks(links) {
     .join("");
 }
 
+function renderAdvisors(advisors) {
+  if (!advisors?.length) return "";
+  return `
+    <section class="lightbox-advisors" aria-label="Research advisors">
+      <h3 class="lightbox-advisors__heading">Research advisors</h3>
+      <ul class="lightbox-advisors__list">
+        ${advisors.map((advisor) => {
+          const photo = advisor.image
+            ? `<img class="advisor-card__photo" src="${escapeHtml(advisor.image)}" alt="" loading="lazy" width="56" height="56">`
+            : `<span class="advisor-card__photo advisor-card__photo--placeholder" aria-hidden="true"></span>`;
+          const profile = advisor.profile
+            ? `<a class="advisor-card" href="${escapeHtml(advisor.profile)}" target="_blank" rel="noopener noreferrer">${photo}<span class="advisor-card__body">`
+            : `<div class="advisor-card">${photo}<span class="advisor-card__body">`;
+          const close = advisor.profile ? `</span></a>` : `</span></div>`;
+          return `
+            <li>
+              ${profile}
+                <span class="advisor-card__name">${escapeHtml(advisor.name)}</span>
+                ${advisor.affiliation ? `<span class="advisor-card__affiliation">${escapeHtml(advisor.affiliation)}</span>` : ""}
+                ${advisor.bio ? `<span class="advisor-card__bio">${escapeHtml(advisor.bio)}</span>` : ""}
+              ${close}
+            </li>`;
+        }).join("")}
+      </ul>
+    </section>`;
+}
+
 export function renderSlide(item) {
   const image = item.logo || item.image || item.thumbnail || "";
   const description = Array.isArray(item.description)
@@ -75,6 +102,7 @@ export function renderSlide(item) {
       ${image ? `<div class="lightbox-slide__media"><img src="${escapeHtml(image)}" alt="${escapeHtml(item.title)}"></div>` : ""}
       <h2 id="lightbox-title">${escapeHtml(item.title)}</h2>
       ${item.subtitle ? `<p class="lightbox-slide__subtitle">${escapeHtml(item.subtitle)}</p>` : ""}
+      ${renderAdvisors(item.advisors)}
       ${description.length ? `<ul>${description.map((line) => `<li>${escapeHtml(line)}</li>`).join("")}</ul>` : ""}
       ${media ? `<div class="lightbox-slide__gallery">${media}</div>` : ""}
       ${textLinks ? `<div class="lightbox-slide__links">${textLinks}</div>` : ""}
