@@ -13,6 +13,12 @@
       ],
       "links": [
         {
+          "type": "document",
+          "url": "docs/pitch_draft1_leavebehind.pptx",
+          "image": "images/misfits.jpeg",
+          "text": "Pitch Deck (Leave-behind)"
+        },
+        {
           "type": "github",
           "url": "https://github.com/GAInTheHouse/MisfitsAI",
           "image": "images/github.png",
@@ -39,6 +45,23 @@
       ],
       "links": [
         {
+          "type": "video",
+          "url": "videos/Rx_AI_Demo.mp4",
+          "text": "Demo"
+        },
+        {
+          "type": "document",
+          "url": "docs/Rx.pdf",
+          "image": "images/rx.jpeg",
+          "text": "Overview"
+        },
+        {
+          "type": "document",
+          "url": "docs/Rx.AI%20Multimodal%20Final%20Presenation.ppt",
+          "image": "images/rx.jpeg",
+          "text": "Final Presentation"
+        },
+        {
           "type": "github",
           "url": "https://github.com/GAInTheHouse/rx-ai",
           "image": "images/github.png",
@@ -59,6 +82,11 @@
       ],
       "links": [
         {
+          "type": "video",
+          "url": "videos/Nutrigraph%20Demo.mp4",
+          "text": "Demo"
+        },
+        {
           "type": "github",
           "url": "https://github.com/GAInTheHouse/NutriGraph",
           "image": "images/github.png",
@@ -77,6 +105,17 @@
         "Designed orchestration layer for multi-agent coordination, enabling seamless integration between task extraction, categorization, and calendar management components."
       ],
       "links": [
+        {
+          "type": "external",
+          "url": "https://taskflow-474913.web.app/",
+          "text": "Live Demo"
+        },
+        {
+          "type": "document",
+          "url": "docs/TaskflowAI.pptx",
+          "image": "images/taskflow.png",
+          "text": "Presentation"
+        },
         {
           "type": "github",
           "url": "https://github.com/NavinColumbia/emailToTaskDev",
