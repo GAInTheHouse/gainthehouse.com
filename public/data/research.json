@@ -6,6 +6,15 @@
       "period": "Sep 2025 - Present",
       "image": "images/genai_project.jpg",
       "thumbnail": "images/genai_project.jpg",
+      "advisors": [
+        {
+          "name": "Chen Wang",
+          "affiliation": "Senior Research Scientist, IBM Research · Adjunct, Columbia University",
+          "bio": "Cloud-native AI and Kubernetes resource management, with research on sustainable LLM inference, agentic workflows, and production ML platforms.",
+          "profile": "https://research.ibm.com/people/chen-wang",
+          "image": "images/advisors/chen-wang.jpg"
+        }
+      ],
       "description": [
         "Architected closed-loop self-improvement framework integrating LLM-based error detection, automated fine-tuning orchestration, and adaptive scheduling, enabling generative models to autonomously improve post-deployment without manual retraining.",
         "Implemented adaptive hyperparameter optimization pipeline with performance-driven scheduling algorithm that dynamically adjusts fine-tuning frequency, mitigating catastrophic forgetting while maximizing convergence efficiency and cost reduction.",
@@ -25,10 +34,34 @@
           "text": "Course Presentation"
         },
         {
+          "type": "document",
+          "url": "docs/SASL_Survey_Paper_Spr_2026.pdf",
+          "image": "images/genai_project.jpg",
+          "text": "Survey Paper (Spring 2026)"
+        },
+        {
+          "type": "document",
+          "url": "docs/SASL%20Research%20Presentation%20Spring%202026.pdf",
+          "image": "images/genai_project.jpg",
+          "text": "Research Presentation (Spring 2026)"
+        },
+        {
           "type": "github",
           "url": "https://github.com/GAInTheHouse/Adaptive-Self-Learning-Agentic-AI-System",
           "image": "images/github.png",
           "text": "Project Repository"
+        },
+        {
+          "type": "github",
+          "url": "https://github.com/GAInTheHouse/espnet/tree/master",
+          "image": "images/github.png",
+          "text": "ESPnet (GAInTheHouse Fork)"
+        },
+        {
+          "type": "github",
+          "url": "https://github.com/shivangi221b/ASR-Fine-Tuning-Modules-and-RL-Adaptation-Analysis/tree/main",
+          "image": "images/github.png",
+          "text": "ASR Fine-Tuning & RL Adaptation Analysis"
         }
       ]
     },
@@ -38,6 +71,15 @@
       "period": "Jan 2026 - Present",
       "image": "images/clinical_migration.jpeg",
       "thumbnail": "images/clinical_migration.jpeg",
+      "advisors": [
+        {
+          "name": "Noémie Elhadad",
+          "affiliation": "Professor & Chair, Biomedical Informatics, Columbia University",
+          "bio": "Leads AI initiatives at VP&S; research at the intersection of machine learning, NLP, and medicine, including patient-facing and clinician-facing clinical AI systems.",
+          "profile": "https://people.dbmi.columbia.edu/noemie/",
+          "image": "images/advisors/noemie-elhadad.jpg"
+        }
+      ],
       "description": [
         "Designed and led migration of clinical chatbot towards an agentic infrastructure",
         "Led research study comparing effects of chatbot performance between agentic infrastructure and monolithic prompt structure"
@@ -50,6 +92,15 @@
       "period": "Sep 2025 - Feb 2026",
       "image": "images/nfr_research.jpg",
       "thumbnail": "images/nfr_research.jpg",
+      "advisors": [
+        {
+          "name": "Ruchi Mahindru",
+          "affiliation": "Distinguished Engineer, IBM Research",
+          "bio": "Co-leads IBM Research strategy for AI-based IT operations; inventor and researcher in AIOps, agent evaluation, and enterprise automation (including ITBench).",
+          "profile": "https://research.ibm.com/people/ruchi-mahindru",
+          "image": "images/advisors/ruchi-mahindru.jpg"
+        }
+      ],
       "description": [
         "Conducted comprehensive literature review synthesizing 182+ sources to establish unified NFR taxonomy bridging software quality standards with agent-specific observability requirements, identifying critical gaps in production-readiness evaluation",
         "Implemented streaming API support for ITBench CISO agents using GPT-4o-mini, instrumenting Langfuse-based telemetry to capture Time-to-First-Token (0.79-1.69s) and token generation speed (59-72 tokens/s), revealing prefill latency as the dominant bottleneck for interactive security workflows",
@@ -67,6 +118,12 @@
           "url": "docs/NFR_Course_Presentation.pdf",
           "image": "images/nfr_research.jpg",
           "text": "Course Presentation"
+        },
+        {
+          "type": "document",
+          "url": "docs/NFR_Survey_Paper.pdf",
+          "image": "images/nfr_research.jpg",
+          "text": "Survey Paper"
         },
         {
           "type": "github",
@@ -108,6 +165,22 @@
       "period": "May 2021 - Dec 2022",
       "image": "images/projectx_2021.jpg",
       "thumbnail": "images/projectx_2021.jpg",
+      "advisors": [
+        {
+          "name": "Steven Schrodi",
+          "affiliation": "Professor, Medical Genetics, UW–Madison",
+          "bio": "Statistical and human genetics of metabolic and immune disease; applies machine learning and biomarker modeling to diabetes susceptibility and prediction.",
+          "profile": "https://genetics.wisc.edu/staff/schrodi-steven/",
+          "image": "images/advisors/steven-schrodi.jpeg"
+        },
+        {
+          "name": "Mark Keller",
+          "affiliation": "Distinguished Scientist, Biochemistry, UW–Madison",
+          "bio": "Co-manages the Attie Lab; expert in statistical genetics and bioinformatics for metabolism, diabetes, and complex trait mapping.",
+          "profile": "https://attielab.biochem.wisc.edu/staff/keller-mark/",
+          "image": "images/advisors/mark-keller.jpg"
+        }
+      ],
       "description": [
         "Led team representing university in international ML research competition, competing against 21 universities worldwide",
         "Applied 16 ML and Data Science Methods to correlate insulin & glucose levels in mice with gene expression data",
@@ -118,7 +191,13 @@
           "type": "paper",
           "url": "https://openreview.net/forum?id=HObGjRkXOAY",
           "image": "images/paper_1.png",
-          "text": "Research Paper"
+          "text": "Research Paper (OpenReview)"
+        },
+        {
+          "type": "document",
+          "url": "docs/ProjectX_2021__University_of_Wisconsin_Madison_Submission.pdf",
+          "image": "images/projectx_2021.jpg",
+          "text": "Research Paper (Named Authors)"
         },
         {
           "type": "github",
@@ -135,6 +214,22 @@
       "image": "images/projectx_2020.png",
       "thumbnail": "images/projectx_2020.png",
       "logo": "images/badgerxlogo.png",
+      "advisors": [
+        {
+          "name": "Vahe Vardanyan",
+          "affiliation": "AI Researcher · ProjectX mentor (BadgerX)",
+          "bio": "Climate and generative-AI researcher (Mila, Ubisoft); mentored the BadgerX team on climate-ML modeling for ProjectX 2020.",
+          "profile": "https://mila.quebec/en/directory/vahe-vardanyan",
+          "image": "images/advisors/vahe-vardanyan.jpg"
+        },
+        {
+          "name": "Ankur Desai",
+          "affiliation": "Professor, Atmospheric & Oceanic Sciences, UW–Madison",
+          "bio": "Studies land–atmosphere carbon and water exchange, wildfire-linked meteorology, and ecosystem flux networks informing climate and air-quality research.",
+          "profile": "https://aos.wisc.edu/faculty/Desai/",
+          "image": "images/advisors/ankur-desai.jpg"
+        }
+      ],
       "description": [
         "Led the team representing the university in an international Machine Learning Research Competition revolving around climate change.",
         "Compared deep learning methods to predict the Air Quality Index of a region in Northern California, one day after the onset of a wildfire in the vicinity.",
@@ -185,6 +280,15 @@
       "period": "Sep 2020 - May 2021",
       "image": "images/city_of_madison.png",
       "thumbnail": "images/city_of_madison.png",
+      "advisors": [
+        {
+          "name": "Tyler Caraza-Harter",
+          "affiliation": "Teaching Professor, Computer Sciences, UW–Madison",
+          "bio": "Leads data-science-in-the-city courses partnering with Madison; research on serverless computing and the OpenLambda project.",
+          "profile": "https://www.cs.wisc.edu/staff/harter-tyler-2/",
+          "image": "images/advisors/tyler-caraza-harter.jpg"
+        }
+      ],
       "description": [
         "Research project using data analysis and machine learning to optimize the maintenance of roads and water mains in Madison.",
         "Analyzed breakage factors and predicted future breakages in water pipes; factored road quality to suggest a combined repair plan."
@@ -222,6 +326,15 @@
       "period": "Jan 2021 - Aug 2021",
       "image": "images/skunkworks.png",
       "thumbnail": "images/skunkworks.png",
+      "advisors": [
+        {
+          "name": "Dane Morgan",
+          "affiliation": "Harvey D. Spangler Professor, Materials Science & Engineering, UW–Madison",
+          "bio": "Computational materials design, thermokinetics, and machine learning for materials discovery; leads the Computational Materials Group.",
+          "profile": "https://engineering.wisc.edu/directory/profile/dane-morgan/",
+          "image": "images/advisors/dane-morgan.webp"
+        }
+      ],
       "description": [
         "Research project using error analysis to estimate the domain of standard machine learning models.",
         "Explored the relationship between different distance metrics and the error in different error metrics to establish blind spots."
