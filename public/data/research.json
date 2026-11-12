@@ -34,10 +34,34 @@
           "text": "Course Presentation"
         },
         {
+          "type": "document",
+          "url": "docs/SASL_Survey_Paper_Spr_2026.pdf",
+          "image": "images/genai_project.jpg",
+          "text": "Survey Paper (Spring 2026)"
+        },
+        {
+          "type": "document",
+          "url": "docs/SASL%20Research%20Presentation%20Spring%202026.pdf",
+          "image": "images/genai_project.jpg",
+          "text": "Research Presentation (Spring 2026)"
+        },
+        {
           "type": "github",
           "url": "https://github.com/GAInTheHouse/Adaptive-Self-Learning-Agentic-AI-System",
           "image": "images/github.png",
           "text": "Project Repository"
+        },
+        {
+          "type": "github",
+          "url": "https://github.com/GAInTheHouse/espnet/tree/master",
+          "image": "images/github.png",
+          "text": "ESPnet (GAInTheHouse Fork)"
+        },
+        {
+          "type": "github",
+          "url": "https://github.com/shivangi221b/ASR-Fine-Tuning-Modules-and-RL-Adaptation-Analysis/tree/main",
+          "image": "images/github.png",
+          "text": "ASR Fine-Tuning & RL Adaptation Analysis"
         }
       ]
     },
