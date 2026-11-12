@@ -51,8 +51,10 @@ function parseStartYear(subtitle) {
   return match ? Number(match[1]) : null;
 }
 
+const DATA_CACHE_BUST = "2026-11-13";
+
 async function loadJson(path) {
-  const response = await fetch(path);
+  const response = await fetch(`${path}?v=${DATA_CACHE_BUST}`);
   if (!response.ok) throw new Error(`Failed to load ${path}`);
   return response.json();
 }
