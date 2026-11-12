@@ -11,7 +11,20 @@
         "Conducted structured customer discovery interviews and translated insights into onboarding flows, wardrobe capture requirements, and objection handling that informed landing page copy and in-product messaging.",
         "Partnered with engineers to scope and ship the first recommendation system MVP, defining API contracts, edge cases, and evaluation criteria for calendar and wardrobe based outfit suggestions."
       ],
-      "links": []
+      "links": [
+        {
+          "type": "github",
+          "url": "https://github.com/GAInTheHouse/MisfitsAI",
+          "image": "images/github.png",
+          "text": "Project Repository"
+        },
+        {
+          "type": "github",
+          "url": "https://github.com/shivangi221b/AI_Wardrobe_Planner",
+          "image": "images/github.png",
+          "text": "AI Wardrobe Planner"
+        }
+      ]
     },
     {
       "id": 2,
@@ -24,7 +37,14 @@
         "Integrated voice and camera multimodal features including TTS question playback, real-time STT answer transcription, and inline image capture for wound photos and medication labels",
         "Designed end-to-end evaluation pipeline using DeepEval metrics with a BigQuery data sink to assess STT, TTS, image analysis, and question generation quality across 5 workflow combinations"
       ],
-      "links": []
+      "links": [
+        {
+          "type": "github",
+          "url": "https://github.com/GAInTheHouse/rx-ai",
+          "image": "images/github.png",
+          "text": "Project Repository"
+        }
+      ]
     },
     {
       "id": 3,
@@ -37,7 +57,14 @@
         "Designed diner and restaurant workflows, including restaurant search, dish logging, nutrition dashboards, and catalog creation.",
         "Added evaluation and feedback loops for macro accuracy, confidence based clarification, and repeated request handling."
       ],
-      "links": []
+      "links": [
+        {
+          "type": "github",
+          "url": "https://github.com/GAInTheHouse/NutriGraph",
+          "image": "images/github.png",
+          "text": "Project Repository"
+        }
+      ]
     },
     {
       "id": 4,
